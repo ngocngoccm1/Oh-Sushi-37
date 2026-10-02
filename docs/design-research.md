@@ -19,7 +19,7 @@
 | Freitag–Sonntag | 11:30–23:00 — Word |
 | Facebook | [Oh Sushi-37](https://www.facebook.com/share/1ErfTDVLSe/?mibextid=LQQJ4d) — Word |
 | Instagram | [Oh Sushi-37](https://www.instagram.com/ohsushirestaurent?stkn=bzJxaWx1Nmh0MXlp&utm_source=qr) — Word |
-| Brand palette | Word ban đầu: nâu–đen. Sau các phản hồi giảm tối, giảm sáng/đơn điệu và tăng sự hài hòa, phiên bản hiện tại dùng taupe–walnut–đỏ rượu. |
+| Brand palette | Word ban đầu: nâu–đen. Yêu cầu mới nhất: bám phong cách PDF. Bản mới lấy đen, vàng, đỏ và trắng của menu; xen giấy sáng để cân bằng. |
 | Ẩm thực | Nhật, Việt, châu Á — suy ra từ các món thật trong PDF |
 | Menu | 105 món, 21 nhóm, 39 lựa chọn; xem `data/menu.json` và `docs/menu-transcription.md` |
 | Dị ứng/phụ gia | 14 nhóm A–N và toàn bộ mã phụ gia trong PDF trang 2 |
@@ -34,11 +34,11 @@ CTA đặt bàn dùng `tel:029439800335`. Không tạo form booking, xác nhận
 
 Đã search chính xác bốn câu theo brief, truy cập website chính thức bằng web tool, và kiểm tra giao diện/typography trên Chromium desktop 1440px. Không dùng ảnh, logo, font độc quyền, text, code hay animation từ những website này.
 
-### [MINA Berlin](https://minaberlin.de/) — PRIMARY
+### [MINA Berlin](https://minaberlin.de/) — ĐÃ ĐÁNH GIÁ
 
 Quan sát: hero photography lớn; display serif và sans gọn; navigation đi trực tiếp đến menu, giới thiệu và contact; narrative chuyển từ atmosphere sang cuisine, ảnh món và location. Booking là CTA rõ trong header. Website hiện tại dùng màu xanh và kem cùng typography Instrument.
 
-Áp dụng nguyên tắc: dẫn từ cảm nhận món ăn đến lựa chọn món và đặt bàn; nhịp ảnh lớn xen typography; contact đầy đủ ở cuối. Oh! Sushi 37 dùng hero chữ lớn bên trái/ảnh dạng vòm bên phải, palette taupe–walnut–đỏ rượu, cặp font khác, không tái tạo hero centered hay bố cục MINA.
+Áp dụng nguyên tắc: dẫn từ cảm nhận món ăn đến lựa chọn món và đặt bàn; nhịp ảnh lớn xen typography; contact đầy đủ ở cuối. Bản hiện tại chọn bộ màu và chữ đậm từ PDF, không dùng lại hero ảnh vòm hoặc cặp serif mảnh của phiên bản trước.
 
 ### [CODA Berlin](https://coda-berlin.com/) — SECONDARY
 
@@ -52,19 +52,44 @@ Quan sát: headline rất lớn, menu navigation đơn giản về mặt nội d
 
 Áp dụng nguyên tắc: reservation đơn giản, thông tin ghé quán dễ tìm, hierarchy heading mạnh. Không lấy palette, biểu tượng chim, gradient hay typography đặc trưng của Tim Raue.
 
-### [NENI Berlin](https://nenifood.com/restaurants/berlin) — SECONDARY
+### [NENI Berlin](https://nenifood.com/restaurants/berlin) — ĐÃ ĐÁNH GIÁ
 
 Quan sát trong lượt truy cập lại: nền kem ở navigation, mảng lavender ở section menu, vàng và nâu ở logo/CTA; grotesk lớn; section menu và thông tin giờ rõ; nội dung xoay quanh cùng ăn và chia sẻ. Page có ảnh và thông tin nhóm/private celebrations.
 
-Áp dụng nguyên tắc: chuyển mảng màu rõ giữa section và hospitality gắn với các sushi sets trong PDF. Bản chỉnh mới kết hợp nhịp ảnh của MINA, chuyển màu của NENI và tiết chế typography của CODA. Không dùng palette lavender/vàng của NENI, font Roc Grotesk, bố cục hay ảnh của reference. Không thêm private events hay group booking khi khách chưa cung cấp dịch vụ đó.
+Áp dụng nguyên tắc: chuyển mảng màu rõ giữa section và hospitality gắn với các sushi sets trong PDF. Không dùng palette lavender/vàng của NENI, font Roc Grotesk, bố cục hay ảnh của reference. Không thêm private events hay group booking khi khách chưa cung cấp dịch vụ đó.
+
+## Nghiên cứu thêm cho bản thiết kế 02/10/2026
+
+Đã tìm website chính thức, đọc nội dung, truy cập bằng Edge 1440×1000px và xem screenshot ở đầu trang/phần bên dưới. Các file screenshot chỉ nằm trong `.work/`, không được dùng làm asset của website khách hàng.
+
+### [Sticks’n’Sushi](https://www.sticksnsushi.com/de/de/) — PRIMARY
+
+Website chính thức tiếng Đức có ảnh lớn về món ăn và cùng ăn, navigation đến Menü/Reservierung/Takeaway, chuyển từ ảnh trải nghiệm sang menu rồi thông tin quán. Gần personality sushi và social dining của Oh! Sushi 37 hơn hướng fine dining thuần.
+
+Áp dụng: ảnh làm một phần bố cục, đường đi rõ từ thương hiệu → món → chọn món/đặt bàn. Không lấy hình, logo, copy, chương trình Sake/loyalty/catering, menu hoặc giao diện đặt món của reference. Oh! Sushi 37 có masthead serif đậm phía trên ảnh–mảng vàng, không dùng hero lifestyle và cụm navigation dạng pill của Sticks’n’Sushi.
+
+### [KINK Berlin](https://www.kink-berlin.de/de) — SECONDARY
+
+Quan sát: lettering lớn, nền đen ở phần đầu, serif đậm và tương phản mạnh giữa các phần, màu khác nhau phục vụ từng phần nội dung. Chữ và graphic có cá tính thay vì những khối thông tin đồng dạng.
+
+Áp dụng: tự tin về cỡ chữ, thay nhịp serif/grotesk và tương phản sáng–tối. Không lấy wordmark, lavender, copy, event grid, animation hoặc cấu trúc navigation của KINK. Không thêm events nếu tài liệu khách hàng không cung cấp.
+
+### [OMA London](https://www.oma.london/) — ĐÃ ĐÁNH GIÁ
+
+Quan sát: photography rất lớn, ít nội dung, danh sách contact/opening hours tiết chế. Không chọn làm reference chính vì palette và cuisine không gần tài liệu quán bằng Sticks’n’Sushi.
+
+## Đọc lại visual identity của toàn bộ PDF
+
+Đã xem lại đủ 14 trang trước khi code. Menu có nền gần đen, tre chìm, tên món vàng, description/giá trắng, serif đậm ở nhóm món và đường gạch chéo đỏ. Bìa có logo thật với vòng brush vàng, mặt trời/cổng torii đỏ và nigiri. Đây là nguồn màu/graphic chính của bản mới.
 
 ## Identity riêng
 
 - Personality: modern Japanese & Asian casual dining, ấm và tinh tế; không tự gán fine dining hay chất lượng được chứng nhận.
-- Palette hiện tại (02/10/2026): taupe hero `#c7b7a0`, nền chung `#ddd3c5`, giấy menu `#e7ded1`, nền preview/sidebar `#d7cabb`, walnut `#484039` và mực `#342c27`. Đỏ rượu `#743e38` cho CTA/chữ nhấn; mảng reservation `#6c403a`. Chữ trên nền tối dùng cùng màu giấy `#eee5d8` và champagne nhạt `#dbc0ae`. Đã giảm saturation, bỏ mảng xanh olive/cam vàng/đỏ đất cạnh tranh; giữ nhịp sáng–trầm bằng độ đậm của cùng hệ màu ấm. Logo gốc giữ màu đỏ/vàng. Các màu dùng chung được gom thành CSS variables trong `:root`.
-- Typography: Cormorant Garamond cho display; Manrope cho navigation và menu. Font open-source, lưu local, kèm OFL.
-- Grid: hero ảnh vòm + typography lớn + dấu tròn thương hiệu; thanh navigation đến nhóm món; introduction ảnh trái/chữ phải; preview headline sticky trái và danh sách món phải; sharing đổi nhịp ảnh lớn; menu giấy ấm và sidebar có nền; reservation hai cột trên đỏ rượu; contact taupe nhạt, footer walnut.
-- Mobile: hero chữ phía trên/ảnh vòm phía dưới, thanh nhóm món 2×2; intro chữ rồi ảnh; preview một cột; sharing ảnh rồi chữ; category select native, menu một cột, thanh CTA cố định 56px có safe area, dialog đặt món responsive. Input/select cỡ 16px để hạn chế zoom khi nhập trên iOS.
+- Palette hiện tại: đen `#151511`, vàng `#e5c04a`, đỏ `#a72d24`, giấy `#f2eee4`. Đỏ là màu nhấn cho thương hiệu/đặt món và phần chia sẻ; vàng dùng ở hero, tên món trên nền tối và reservation. Chữ phụ dùng neutral có đủ contrast. Không thêm olive, tím hoặc những accent ngoài hệ màu nguồn.
+- Typography: Bodoni Moda variable 600–800 cho masthead/display, phù hợp high contrast serif đậm trong PDF; Manrope cho menu/navigation và heading preview. Font WOFF2 local, hai family, kèm OFL. Không lấy font độc quyền của reference.
+- Grid: masthead tên quán khổ lớn; ảnh chữ nhật 62% cạnh mảng vàng 38%; navigation món bằng các đường kẻ; introduction giấy sáng/chữ trái/ảnh portrait bên phải; preview đen hai cột có leader chấm; statement chữ full-width trên đỏ; menu HTML trình bày như trang menu đen/vàng bên cạnh category navigation thoáng; reservation vàng; contact giấy và footer đen.
+- Graphic: `assets/bamboo.svg` là họa tiết vector mới vẽ cho project, gợi tre trong PDF, độ tương phản thấp. Gạch chéo đỏ dưới heading nhóm món và tên/giá vàng bám menu thật. Bỏ ảnh dạng vòm, con dấu tròn và serif mảnh của phiên bản trước.
+- Mobile: masthead hai dòng, ảnh phía trên mảng vàng với tagline/CTA hai cột; navigation món 2×2; introduction một cột, ảnh lệch; preview một cột; statement đỏ căn trái hai dòng; menu đen full-width với native category select và search, dish/variant wrap; thanh Bestellen cố định, safe area, dialog responsive. Tất cả input/select cỡ 16px ở mobile.
 - Interaction: underline/hover và navigation transition nhẹ; không library animation; tôn trọng reduced motion.
 - Architecture: HTML/CSS/JS thuần, menu sinh ra HTML lúc build để đọc được không cần JS. Filter chỉ ẩn/hiện semantic sections. Tất cả nguồn ảnh/font ở local.
 - Ordering: catalog sinh từ cùng dữ liệu menu; giá tính bằng integer cents; lựa chọn lưu trong localStorage, thông tin liên hệ không được lưu. Soạn email theo địa chỉ thật, có sao chép/gọi điện thay thế. Không tạo xác nhận nhận đơn hoặc thông tin giao hàng khi chưa có hệ thống đó.

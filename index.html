@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ddd3c5">
+  <meta name="theme-color" content="#f2eee4">
   <title>Oh! Sushi 37 — Sushi & asiatische Küche in Erwitte</title>
   <meta name="description" content="Entdecken Sie Sushi, Fusion Rolls und asiatische Gerichte bei Oh! Sushi 37 in Erwitte. Hellweg Straße 30. Täglich ab 11:30 Uhr. Reservierung: 02943 9800335.">
   <meta property="og:type" content="website">
@@ -14,9 +14,9 @@
   <meta property="og:image:alt" content="Sushi-Bildillustration mit Lachs-Nigiri, Thunfisch-Nigiri und Maki">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="preload" href="assets/fonts/cormorant-garamond-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/bodoni-moda-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/sushi-hero-1536.webp" as="image" imagesrcset="assets/sushi-hero-640.webp 640w, assets/sushi-hero-960.webp 960w, assets/sushi-hero-1536.webp 1536w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" href="assets/sushi-hero-1536.webp" as="image" imagesrcset="assets/sushi-hero-640.webp 640w, assets/sushi-hero-960.webp 960w, assets/sushi-hero-1536.webp 1536w" imagesizes="(max-width: 767px) 100vw, 62vw" fetchpriority="high">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
@@ -50,18 +50,22 @@
 
   <main id="main">
     <section class="hero" id="start" aria-labelledby="hero-title">
-      <picture class="hero-photo">
-        <img src="assets/sushi-hero-1536.webp" srcset="assets/sushi-hero-640.webp 640w, assets/sushi-hero-960.webp 960w, assets/sushi-hero-1536.webp 1536w" sizes="100vw" width="1536" height="1024" alt="Bildillustration: Lachs-Nigiri, Thunfisch-Nigiri und Maki auf einem dunklen Keramikteller" fetchpriority="high">
-      </picture>
-      <div class="hero-stamp" aria-hidden="true"><span>SUSHI &</span><strong>Asian<br>Kitchen</strong><span>ERWITTE</span></div>
-      <div class="hero-content">
-        <p class="eyebrow hero-eyebrow"><span class="small-line" aria-hidden="true"></span> SUSHI & ASIAN KITCHEN · ERWITTE</p>
-        <h1 id="hero-title"><span>Oh!</span><span>Sushi <em>37</em><span class="hero-dot" aria-hidden="true">.</span></span></h1>
-        <p class="hero-tagline">Japanische Klassiker. Asiatische Vielfalt.</p>
-        <div class="hero-actions"><a class="button button-light" href="#speisekarte">Gerichte auswählen <span aria-hidden="true">↗</span></a><a class="text-link hero-call" href="tel:029439800335">Tisch reservieren <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-masthead">
+        <div class="hero-kicker"><p class="eyebrow">SUSHI & ASIAN KITCHEN</p><span class="eyebrow">ERWITTE, DEUTSCHLAND</span></div>
+        <h1 id="hero-title"><span class="hero-oh">OH!</span> <span class="hero-sushi">SUSHI</span> <span class="hero-number">37</span></h1>
       </div>
-      <div class="hero-footer"><a class="hero-scroll" href="#kueche"><span class="scroll-circle" aria-hidden="true">↓</span><span>Ein Stück Asien entdecken</span></a><p>Täglich ab 11:30 Uhr <span>Hellweg Straße 30 · Erwitte</span></p></div>
-      <span class="image-note">Bildillustration</span>
+      <div class="hero-stage">
+        <picture class="hero-photo">
+          <img src="assets/sushi-hero-1536.webp" srcset="assets/sushi-hero-640.webp 640w, assets/sushi-hero-960.webp 960w, assets/sushi-hero-1536.webp 1536w" sizes="(max-width: 767px) 100vw, 62vw" width="1536" height="1024" alt="Bildillustration: Lachs-Nigiri, Thunfisch-Nigiri und Maki auf einem dunklen Keramikteller" fetchpriority="high">
+        </picture>
+        <div class="hero-content">
+          <span class="eyebrow">WILLKOMMEN BEI OH! SUSHI 37</span>
+          <p class="hero-tagline">Japanische<br>Klassiker.<br>Asiatische<br>Vielfalt.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#speisekarte">Gerichte auswählen <span aria-hidden="true">↗</span></a><a class="text-link hero-call" href="tel:029439800335">Tisch reservieren <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <span class="image-note">Bildillustration</span>
+      </div>
+      <div class="hero-footer"><a class="hero-scroll" href="#kueche"><span aria-hidden="true">↓</span> Unsere Küche entdecken</a><p>Hellweg Straße 30 · Erwitte <span>Täglich ab 11:30 Uhr</span></p></div>
     </section>
 
     <nav class="cuisine-strip" aria-label="Unsere Karte entdecken"><a href="#menu-nigiri" data-show-category="nigiri">Nigiri <span aria-hidden="true">↗</span></a><span class="strip-dot" aria-hidden="true"></span><a href="#menu-fusion" data-show-category="fusion">Fusion Rolls <span aria-hidden="true">↗</span></a><span class="strip-dot" aria-hidden="true"></span><a href="#menu-hauptspeisen" data-show-category="hauptspeisen">Warme Küche <span aria-hidden="true">↗</span></a><span class="strip-dot" aria-hidden="true"></span><a href="#menu-sets" data-show-category="sets">Sushi Sets <span aria-hidden="true">↗</span></a></nav>
@@ -69,14 +73,14 @@
     <section class="intro section-space" id="kueche" aria-labelledby="intro-title">
       <div class="section-top"><span class="eyebrow">01 / UNSERE KÜCHE</span><span class="eyebrow muted">JAPANISCH. VIETNAMESISCH. ASIATISCH.</span></div>
       <div class="intro-layout">
-        <div class="intro-copy"><h2 id="intro-title">Ein Tisch.<br>Viele <em>Lieblingsgerichte.</em></h2><p>Ein Nigiri. Eine warme Schale Pho. Oder Fusion Rolls für den ganzen Tisch. Bei Oh! Sushi 37 treffen japanische Klassiker auf die Aromen der asiatischen Küche.</p><p>Zum Mittagessen, zum Abendessen, zum gemeinsamen Genießen. Hier in Erwitte.</p><a class="text-link" href="#auswahl">Unsere Karte kennenlernen <span aria-hidden="true">↗</span></a><span class="intro-decoration" aria-hidden="true">Oh!</span></div>
-        <figure class="craft-figure"><img src="assets/sushi-craft-960.webp" srcset="assets/sushi-craft-480.webp 480w, assets/sushi-craft-960.webp 960w" sizes="(max-width: 767px) 90vw, 40vw" width="960" height="1440" loading="lazy" decoding="async" alt="Bildillustration: Hände formen ein Lachs-Nigiri auf einer dunklen Arbeitsfläche"><figcaption><span>Die kleinen Dinge. Der große Genuss.</span><span>Bildillustration</span></figcaption></figure>
+        <div class="intro-copy"><h2 id="intro-title">Von <em>Nigiri</em><br>bis Pho.</h2><p>Ein Nigiri. Eine warme Schale Pho. Oder Fusion Rolls für den ganzen Tisch. Bei Oh! Sushi 37 treffen japanische Klassiker auf die Aromen der asiatischen Küche.</p><p>Zum Mittagessen. Zum Abendessen. Zum Teilen.</p><a class="text-link" href="#auswahl">Unsere Karte kennenlernen <span aria-hidden="true">↗</span></a></div>
+        <figure class="craft-figure"><img src="assets/sushi-craft-960.webp" srcset="assets/sushi-craft-480.webp 480w, assets/sushi-craft-960.webp 960w" sizes="(max-width: 767px) 85vw, 35vw" width="960" height="1440" loading="lazy" decoding="async" alt="Bildillustration: Hände formen ein Lachs-Nigiri auf einer dunklen Arbeitsfläche"><figcaption><span>Sushi & Asian Kitchen · Oh! Sushi 37</span><span>Bildillustration</span></figcaption></figure>
       </div>
     </section>
 
     <section class="selection section-space" id="auswahl" aria-labelledby="selection-title">
       <div class="section-top"><span class="eyebrow">02 / EINE KOSTPROBE</span><a class="text-link" href="#speisekarte">Die ganze Speisekarte <span aria-hidden="true">↗</span></a></div>
-      <div class="selection-heading"><h2 id="selection-title">Worauf haben Sie<br>heute <em>Lust?</em></h2><p>Von der ersten kleinen Vorspeise<br>bis zur großen Sushi-Platte.</p></div>
+      <div class="selection-heading"><h2 id="selection-title">Sushi.<br><em>Und mehr.</em></h2><p>Ein Nigiri zum Anfang.<br>Eine Platte für den ganzen Tisch.<br>Und alles dazwischen.</p></div>
       <div class="dish-previews">
         <!-- PREVIEWS START -->
 <article class="dish-preview"><p class="eyebrow">01 / NIGIRI</p><div class="preview-title"><h3><a href="#menu-nigiri" data-show-category="nigiri">SAKE – LACHS</a></h3><span class="preview-price">5,90 €</span></div><p>Sushi-Reishäppchen mit Lachs.</p><div class="preview-bottom"><span class="dish-marks"><span class="sr-only">Allergene und Zusatzstoffe: </span>D, N</span><span class="eyebrow">2 STK.</span></div></article>
@@ -89,13 +93,12 @@
     </section>
 
     <section class="sharing" aria-labelledby="sharing-title">
-      <div class="sharing-copy"><span class="eyebrow">FÜR IHREN GEMEINSAMEN ABEND</span><h2 id="sharing-title">Gutes Essen.<br>Noch besser<br><em>zusammen.</em></h2><p>Best Friend Plate, Sumo Platte oder Oh! Sushi37 Family: Entdecken Sie unsere Sushi Sets zum Teilen.</p><a class="text-link" href="#menu-sets" data-show-category="sets">Sushi Sets entdecken <span aria-hidden="true">↗</span></a></div>
-      <figure class="sharing-photo"><img src="assets/sushi-hero-960.webp" srcset="assets/sushi-hero-640.webp 640w, assets/sushi-hero-960.webp 960w, assets/sushi-hero-1536.webp 1536w" sizes="(max-width: 767px) 100vw, 60vw" width="1536" height="1024" loading="lazy" decoding="async" alt="Bildillustration: Sushi-Auswahl auf dunkler Keramik"><figcaption>Bildillustration</figcaption></figure>
+      <div class="sharing-copy"><span class="eyebrow">SUSHI SETS · ZUM TEILEN</span><h2 id="sharing-title">Ein Tisch.<br> Für <em>alle.</em></h2><p>Best Friend Plate, Sumo Platte oder Oh! Sushi37 Family: Entdecken Sie unsere Sushi Sets zum Teilen.</p><a class="text-link" href="#menu-sets" data-show-category="sets">Sushi Sets entdecken <span aria-hidden="true">↗</span></a></div>
     </section>
 
     <section class="menu-section section-space" id="speisekarte" aria-labelledby="menu-title">
       <div class="section-top"><span class="eyebrow">03 / SPEISEKARTE</span><a class="text-link pdf-link" href="2026-Oh-Sushi-37-A4-Copyright.pdf" target="_blank" rel="noopener">Speisekarte als PDF <span aria-hidden="true">↓</span></a></div>
-      <div class="menu-heading"><h2 id="menu-title">Eine Karte.<br><em>Viele Möglichkeiten.</em></h2><p>Sushi, warme Gerichte und etwas Süßes zum Schluss.<br>Wählen Sie Ihre Gerichte und stellen Sie Ihre Bestellung zusammen.</p></div>
+      <div class="menu-heading"><h2 id="menu-title">Unsere<br><em>Speisekarte.</em></h2><p>Sushi, warme Gerichte und etwas Süßes zum Schluss.<br>Wählen Sie Ihre Gerichte und stellen Sie Ihre Bestellung zusammen.</p></div>
       <div class="menu-toolbar" hidden>
         <label class="category-select-label" for="menu-category">Kategorie wählen</label>
         <div class="category-select-wrap"><select id="menu-category" aria-controls="menu-content"><option value="all">Die ganze Karte</option><option value="suppe">SUPPE</option><option value="salat">SALAT</option><option value="vorspeisen">VORSPEISEN</option><option value="hauptspeisen">HAUPTSPEISEN</option><option value="deli">DELI</option><option value="signature">Oh! SUSHI37 SIGNATURE</option><option value="bowl">BOWL</option><option value="vorspeise-sushi">VORSPEISE SUSHI</option><option value="nigiri">NIGIRI</option><option value="sashimi">SASHIMI</option><option value="gunkan">GUNKAN</option><option value="maki">MAKI</option><option value="inside-out">URA MAKI INSIDE OUT</option><option value="fusion">FUSION ROLLS</option><option value="aburi">ABURI FUSION ROLL</option><option value="crunchy">CRUNCHY BIG ROLL</option><option value="tempura">TEMPURA MINI ROLL</option><option value="sets">SUSHI SET</option><option value="nachspeisen">NACHSPEISEN</option><option value="beilage">BEILAGE</option><option value="sauce">SAUCE</option></select><span aria-hidden="true">⌄</span></div>
@@ -139,15 +142,15 @@
 <!-- ALLERGENS END --></div></details>
     </section>
 
-    <section class="reservation section-space" id="reservieren" aria-labelledby="reservation-title"><span class="eyebrow">WIR FREUEN UNS AUF IHREN BESUCH</span><div class="reservation-main"><h2 id="reservation-title">Ihr Tisch.<br><em>Ihr Moment.</em></h2><div class="reservation-action"><p>Reservieren Sie Ihren Tisch telefonisch.</p><a class="reservation-phone" href="tel:029439800335">02943 9800335 <span aria-hidden="true">↗</span></a></div></div><div class="reservation-bottom"><span>TÄGLICH AB 11:30 UHR</span><span>OH! SUSHI 37 · ERWITTE</span></div></section>
+    <section class="reservation section-space" id="reservieren" aria-labelledby="reservation-title"><span class="eyebrow">WIR FREUEN UNS AUF IHREN BESUCH</span><div class="reservation-main"><h2 id="reservation-title">Bis gleich<br>am Tisch.</h2><div class="reservation-action"><p>Reservieren Sie Ihren Tisch telefonisch.</p><a class="reservation-phone" href="tel:029439800335">02943 9800335 <span aria-hidden="true">↗</span></a></div></div><div class="reservation-bottom"><span>TÄGLICH AB 11:30 UHR</span><span>OH! SUSHI 37 · ERWITTE</span></div></section>
 
     <section class="contact section-space" id="kontakt" aria-labelledby="contact-title">
       <div class="section-top"><span class="eyebrow">04 / IHR BESUCH</span><span class="eyebrow muted">MITTEN IN ERWITTE</span></div>
-      <div class="contact-layout"><div class="contact-location"><h2 id="contact-title">Hier sind<br>wir <em>zu Hause.</em></h2><address>Oh! Sushi 37<br>Hellweg Straße 30<br>59597 Erwitte</address><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Oh%21%20Sushi%2037%20Hellweg%20Stra%C3%9Fe%2030%2059597%20Erwitte" target="_blank" rel="noopener noreferrer">Route planen <span aria-hidden="true">↗</span></a></div>
+      <div class="contact-layout"><div class="contact-location"><h2 id="contact-title">Hallo,<br><em>Erwitte.</em></h2><address>Oh! Sushi 37<br>Hellweg Straße 30<br>59597 Erwitte</address><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Oh%21%20Sushi%2037%20Hellweg%20Stra%C3%9Fe%2030%2059597%20Erwitte" target="_blank" rel="noopener noreferrer">Route planen <span aria-hidden="true">↗</span></a></div>
       <div class="contact-details"><div class="hours"><h3>Öffnungszeiten</h3><dl><div><dt>Montag</dt><dd>11:30–22:00</dd></div><div><dt>Dienstag</dt><dd>11:30–22:00</dd></div><div><dt>Mittwoch</dt><dd>11:30–22:00</dd></div><div><dt>Donnerstag</dt><dd>11:30–22:00</dd></div><div><dt>Freitag</dt><dd>11:30–23:00</dd></div><div><dt>Samstag</dt><dd>11:30–23:00</dd></div><div><dt>Sonntag</dt><dd>11:30–23:00</dd></div></dl></div><div class="contact-direct"><h3>Kontakt</h3><a href="tel:029439800335">02943 9800335</a><a href="mailto:ohsushirestaurent@gmail.com">ohsushirestaurent@gmail.com</a><div class="social-links"><a href="https://www.instagram.com/ohsushirestaurent?stkn=bzJxaWx1Nmh0MXlp&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/share/1ErfTDVLSe/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a></div></div></div></div>
     </section>
   </main>
-  <footer class="site-footer"><a class="footer-wordmark" href="#start" aria-label="Oh! Sushi 37 — Zurück zum Anfang">Oh! Sushi <em>37.</em></a><div class="footer-bottom"><p>© 2026 Oh! Sushi 37</p><span>SUSHI & ASIAN KITCHEN · ERWITTE</span><a href="#start">Nach oben <span aria-hidden="true">↑</span></a></div></footer>
+  <footer class="site-footer"><a class="footer-wordmark" href="#start" aria-label="Oh! Sushi 37 — Zurück zum Anfang">OH! SUSHI <em>37</em></a><div class="footer-bottom"><p>© 2026 Oh! Sushi 37</p><span>SUSHI & ASIAN KITCHEN · ERWITTE</span><a href="#start">Nach oben <span aria-hidden="true">↑</span></a></div></footer>
   <nav class="mobile-cta" aria-label="Schnellzugriff"><a href="#speisekarte">Speisekarte <span aria-hidden="true">↗</span></a><button type="button" data-open-cart hidden>Bestellen <span class="cart-count" data-cart-count aria-hidden="true">0</span></button></nav>
   <button type="button" class="cart-launcher" data-open-cart hidden><span>Ihre Bestellung <span data-cart-count class="cart-count" aria-hidden="true">0</span></span><span data-cart-total>0,00 €</span><span aria-hidden="true">↗</span></button>
   <div class="order-toast" role="status" aria-live="polite" aria-atomic="true"></div>

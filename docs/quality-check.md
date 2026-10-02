@@ -1,6 +1,6 @@
-# Quality check — 01/10/2026
+# Quality check — 02/10/2026
 
-Kiểm tra bằng Playwright trên Chromium / Microsoft Edge, phục vụ project qua HTTP local. Đã kiểm tra ảnh render thực tế của hero, introduction, selection, sharing, menu và contact trên desktop; hero, introduction và menu trên điện thoại. Phiên bản hiện tại dùng taupe–walnut–đỏ rượu, giữ composition hero/intro/preview/sharing/reservation và luồng đặt món.
+Kiểm tra bằng Playwright trên Microsoft Edge, phục vụ project qua HTTP local. Bản hiện tại đã thiết kế lại theo PDF: đen–vàng–đỏ, giấy sáng, Bodoni Moda/Manrope, masthead lớn và ảnh chữ nhật. Đã xem ảnh render desktop/mobile, giữ nguyên toàn bộ menu và luồng đặt món.
 
 ## Responsive
 
@@ -17,9 +17,7 @@ Kiểm tra bằng Playwright trên Chromium / Microsoft Edge, phục vụ projec
 
 Đã chọn lần lượt 21 nhóm và “Die ganze Karte” ở mỗi kích thước để kiểm tra overflow. Mobile có layout riêng, menu một cột, native select và CTA cố định với safe area. Món có variant dài vẫn wrap đúng ở 320px.
 
-Sau lần redesign mới, đã chạy lại đủ 8 viewport, kiểm tra riêng ảnh hero 320/768/1024px và form đặt món 320×480px. Thanh nhóm món mới có 2 cột trên mobile; link không tràn ở 320px hoặc tablet 768px. Đã chỉnh chữ phụ để đạt contrast trên nền cát/ochre/sage và kiểm tra lại axe.
-
-Cập nhật 02/10/2026: cân bằng lại palette, dùng các sắc độ taupe/nâu ấm và một accent đỏ rượu. Đã chạy lại đủ 8 viewport (không tràn ngang, không lỗi ảnh/JavaScript), xem screenshot desktop/mobile và kiểm tra axe mặc định 390/1440px cùng navigation mobile: 0 violations. Bảng màu mới được áp dụng chung cho dialog, input, giỏ hàng và thanh CTA mobile.
+Bản mới đã kiểm tra lại tám viewport và tất cả nhóm món. Đã phát hiện và sửa link Fusion Rolls tràn ngang ở 320px bằng grid có cột co được và typography riêng cho màn hình hẹp. Kiểm tra dialog đặt món cũng chạy đủ tám viewport. Đã xem hero 320/375/390/430/768/1024/1440/1920px, menu điện thoại, ảnh/crop và các section desktop.
 
 ## Nội dung và interaction
 

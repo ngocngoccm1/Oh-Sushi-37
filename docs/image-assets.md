@@ -41,4 +41,4 @@ Sau khi thay ảnh, cập nhật alt/caption phù hợp ảnh thật và kiểm 
 
 - `assets/logo.webp`: crop logo nguyên bản từ bìa PDF.
 - `assets/favicon.png`: crop biểu tượng từ cùng logo.
-- `assets/fonts/`: Cormorant Garamond và Manrope tải từ Google Fonts; file OFL đi kèm. Không có request Google Fonts khi khách mở website.
+- `assets/fonts/`: Bodoni Moda và Manrope được website tải local, nguồn Google Fonts, file OFL đi kèm. Cormorant Garamond của bản trước còn được lưu nhưng không được load trong giao diện hiện tại. Không có request Google Fonts khi khách mở website.
