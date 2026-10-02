@@ -1,0 +1,1279 @@
+{
+  "source": "2026-Oh-Sushi-37-A4-Copyright.pdf",
+  "categories": [
+    {
+      "id": "suppe",
+      "name": "SUPPE",
+      "sourcePage": 3,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "1",
+          "name": "TOM KHA GAI",
+          "price": "6,50",
+          "marks": "G",
+          "description": "Suppe mit Hühnerfleisch, Kokosmilch, Zitronengras, Gemüse, verfeinert mit Koriander.",
+          "sourcePage": 3
+        },
+        {
+          "code": "2",
+          "name": "WANTAN SUPPE",
+          "price": "6,50",
+          "marks": "A, N, 6",
+          "description": "Klare Brühe mit gefüllten Wantan, Garnelen, Hühnerfleisch, Gemüse und Koriander.",
+          "sourcePage": 3
+        },
+        {
+          "code": "3",
+          "name": "OCEAN SUPPE",
+          "price": "7,50",
+          "marks": "A, D, N",
+          "description": "Suppe mit Lachs, Garnelen, Surimi und Gemüse, verfeinert mit Koriander.",
+          "sourcePage": 3
+        }
+      ]
+    },
+    {
+      "id": "salat",
+      "name": "SALAT",
+      "sourcePage": 3,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "6",
+          "name": "WAKAME SALAT",
+          "price": "6,50",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "7",
+          "name": "KIMCHI SALAT",
+          "price": "6,50",
+          "marks": "A, K, 4",
+          "description": "Scharf eingelegter Chinakohl mit Knoblauch nach traditioneller Art.",
+          "sourcePage": 3
+        },
+        {
+          "code": "8",
+          "name": "MANGO SALAT",
+          "price": "9,90",
+          "marks": "E, N",
+          "description": "Frische Mangostreifen mit Garnelen, Gemüse, Salat, Koriander, Röstzwiebeln und Fisch-Limetten-Dressing.",
+          "sourcePage": 3
+        },
+        {
+          "code": "9",
+          "name": "SALAX MIX",
+          "price": null,
+          "marks": "A, D, E, H, K",
+          "description": "Saisonaler Salatteller mit Avocado, Erdnüssen, Tomaten, Gurke und Bohnen, dazu Sesam-Dressing.",
+          "sourcePage": 3,
+          "variants": [
+            {
+              "code": "A",
+              "name": "TOFU / tofu",
+              "price": "12,00"
+            },
+            {
+              "code": "B",
+              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "price": "14,50"
+            },
+            {
+              "code": "C",
+              "name": "RINDFLEISCH / beef",
+              "price": "15,90"
+            },
+            {
+              "code": "D",
+              "name": "LACHS MEDIUM / medium salmon",
+              "price": "16,90"
+            },
+            {
+              "code": "E",
+              "name": "HÄHNCHEN TEMPURA / chicken tempura",
+              "price": "16,90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vorspeisen",
+      "name": "VORSPEISEN",
+      "sourcePage": 4,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "15",
+          "name": "BABY MINI TEMPURA (VEGI, [UNLESERLICH] STK.)",
+          "price": "6,50",
+          "marks": "A, F, K",
+          "description": "Frisches Gemüse, umhüllt von knusprigen Frühlingsblättern.",
+          "sourcePage": 4
+        },
+        {
+          "code": "16",
+          "name": "HOT GYOZA (5 STK.)",
+          "price": "6,90",
+          "marks": "A, I, L",
+          "description": "Bratteigtaschen gefüllt mit Hühnerfleisch, dazu Süß-Chili-Dip.",
+          "sourcePage": 4
+        },
+        {
+          "code": "17",
+          "name": "YAKITORI (2 STK.)",
+          "price": "7,50",
+          "marks": "A, F, K",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "18",
+          "name": "FRÜHLINGSROLLEN VIETNAM (2 STK.)",
+          "price": "6,90",
+          "marks": "A, B, C, K",
+          "description": "Traditionelle hausgemachte Frühlingsrollen mit Glasnudeln, Morcheln, Frühlingszwiebeln, Kohlrabi, Hähnchenschenkel und Garnelen.",
+          "sourcePage": 4
+        },
+        {
+          "code": "19",
+          "name": "SOMMERROLLEN",
+          "price": null,
+          "marks": "A, B, C, E, F, K",
+          "description": "Frische Rolle gefüllt mit Salat, Reisnudeln, Erdnüssen, serviert mit Hoisin-Soße",
+          "sourcePage": 4,
+          "variants": [
+            {
+              "code": "A",
+              "name": "TOFU / tofu",
+              "price": "6,50"
+            },
+            {
+              "code": "B",
+              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "price": "7,50"
+            },
+            {
+              "code": "C",
+              "name": "TEMPURA GARNELEN / tempura prawns",
+              "price": "8,50"
+            }
+          ]
+        },
+        {
+          "code": "20",
+          "name": "EBI TEMPTATION",
+          "price": "8,90",
+          "marks": "A, B, C, K, 1",
+          "description": "3 × Tempura Garnelen und Salat mit Unagi-Cocktail-Soße.",
+          "sourcePage": 4
+        },
+        {
+          "code": "21",
+          "name": "EDAMAME",
+          "price": "6,50",
+          "marks": "",
+          "description": "Japanische Sojabohnen mit Meersalz.",
+          "sourcePage": 4
+        },
+        {
+          "code": "22",
+          "name": "OH! SUSHI37 TAPAS LOVE SET",
+          "price": null,
+          "marks": "A, B, C, E, K",
+          "description": "Sommerrollen, Gyoza, Edamame, Yaki Tori, Kimchi-Salat, Frühlingsrollen, dazu Teriyaki-Soße. Gemischte Vorspeisenplatte für:",
+          "sourcePage": 4,
+          "variants": [
+            {
+              "code": "",
+              "name": "2 Personen / 2 people",
+              "price": "28,00"
+            },
+            {
+              "code": "",
+              "name": "3 Personen / 3 people",
+              "price": "39,90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hauptspeisen",
+      "name": "HAUPTSPEISEN",
+      "sourcePage": 5,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "31",
+          "name": "NEW STYLE CURRY",
+          "price": null,
+          "marks": "A, C, G, H, K, 4",
+          "description": "Cremige Curry-Kokos-Soße mit Pilzen, Zucchini, Karotten, Brokkoli und Sesam, serviert mit Kurkuma-Reis. Wahlweise mit:",
+          "sourcePage": 5,
+          "variants": [
+            {
+              "code": "A",
+              "name": "TOFU / tofu",
+              "price": "14,90"
+            },
+            {
+              "code": "B",
+              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "price": "16,90"
+            },
+            {
+              "code": "C",
+              "name": "KNUSPRIGE ENTE / crispy duck",
+              "price": "19,90"
+            },
+            {
+              "code": "D",
+              "name": "GARNELEN / prawns",
+              "price": "20,90"
+            },
+            {
+              "code": "F",
+              "name": "LACHS MEDIUM / medium salmon",
+              "price": "21,50"
+            },
+            {
+              "code": "R",
+              "name": "HÄHNCHENTEMPURA / chicken tempura",
+              "price": "16,90"
+            },
+            {
+              "code": "E",
+              "name": "GEGRILLTE ENTENBRUST / grilled duck breast",
+              "price": "21,50"
+            }
+          ]
+        },
+        {
+          "code": "32",
+          "name": "UDON",
+          "price": null,
+          "marks": "A, B, H, K, 4",
+          "description": "Gebratene japanische Udon-Nudeln mit Paprika, Zucchini und Karotten in hausgemachter Unagi-Soße, dazu Röstzwiebeln. Wahlweise mit:",
+          "sourcePage": 5,
+          "variants": [
+            {
+              "code": "A",
+              "name": "TOFU / tofu",
+              "price": "15,50"
+            },
+            {
+              "code": "B",
+              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "price": "16,90"
+            },
+            {
+              "code": "C",
+              "name": "RINDFLEISCH STREIFEN / beef strips",
+              "price": "17,50"
+            },
+            {
+              "code": "D",
+              "name": "KNUSPRIGE ENTE / crispy duck",
+              "price": "19,90"
+            },
+            {
+              "code": "E",
+              "name": "GARNELEN / prawns",
+              "price": "20,50"
+            },
+            {
+              "code": "F",
+              "name": "HÄHNCHENTEMPURA / chicken tempura",
+              "price": "16,90"
+            },
+            {
+              "code": "G",
+              "name": "LACHS MEDIUM / medium salmon",
+              "price": "21,50"
+            }
+          ]
+        },
+        {
+          "code": "33",
+          "name": "TAMARIND",
+          "price": null,
+          "marks": "A, B, D, K",
+          "description": "Tamarind Soße mit Paprika, Pilze, Zucchini, Karotten, Brokkoli, serviert mit Kurkuma-Reis. Wahlweise mit:",
+          "sourcePage": 5,
+          "variants": [
+            {
+              "code": "A",
+              "name": "TOFU / tofu",
+              "price": "15,50"
+            },
+            {
+              "code": "B",
+              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "price": "16,90"
+            },
+            {
+              "code": "C",
+              "name": "RINDFLEISCH STREIFEN / beef strips",
+              "price": "17,50"
+            },
+            {
+              "code": "D",
+              "name": "KNUSPRIGE ENTE / crispy duck",
+              "price": "19,90"
+            },
+            {
+              "code": "E",
+              "name": "GARNELEN / prawns",
+              "price": "20,50"
+            },
+            {
+              "code": "F",
+              "name": "HÄHNCHENTEMPURA / chicken tempura",
+              "price": "16,90"
+            },
+            {
+              "code": "G",
+              "name": "LACHS MEDIUM / medium salmon",
+              "price": "21,50"
+            }
+          ]
+        },
+        {
+          "code": "33",
+          "name": "PHO IN LOVE",
+          "price": null,
+          "marks": "A, B, F",
+          "description": "Traditionelle vietnamesische Reisbandnudelsuppe mit einer kräftigen Rinderbrühe und frischen Kräutern.",
+          "sourcePage": 5,
+          "variants": [
+            {
+              "code": "A",
+              "name": "TOFU / tofu",
+              "price": "14,90"
+            },
+            {
+              "code": "B",
+              "name": "HÄHNCHEN / chicken",
+              "price": "16,90"
+            },
+            {
+              "code": "C",
+              "name": "RINDFLEISCH / beef",
+              "price": "17,90"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deli",
+      "name": "DELI",
+      "sourcePage": 6,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "36",
+          "name": "BO XAO KHOM",
+          "price": "18,90",
+          "marks": "A, D, K",
+          "description": "Im Wok geschwenkte Rinderstreifen mit Ananas, Tomaten, Zuckerschoten, Peperoni und Zwiebeln. Dazu Kurkuma-Reis.",
+          "sourcePage": 6
+        },
+        {
+          "code": "37",
+          "name": "KAFIR JAKOBSMUSCHELN",
+          "price": "22,90",
+          "marks": "A, C, K, N",
+          "description": "Gebratene Jakobsmuscheln mit Zitronengras, Chili und saisonalem Gemüse, Limettenblättern, dazu Kurkuma-Reis.",
+          "sourcePage": 6
+        },
+        {
+          "code": "38",
+          "name": "GOLDEN DUCK",
+          "price": "18,90",
+          "marks": "A, H, 4",
+          "description": "Knusprige Entenbrust mit frischer Ananas, Brokkoli, Tomaten in frischer Süß-Sauer-Soße. Dazu Duftreis. Mit Kurkuma-Reis.",
+          "sourcePage": 6
+        },
+        {
+          "code": "39",
+          "name": "BUN BO NAM BO",
+          "price": "17,50",
+          "marks": "A, D, E, K",
+          "description": "Mariniertes Rindfleisch gebraten auf Reisnudeln mit gemischtem Salat, Koriander, Erdnüssen, Röstzwiebeln, dazu Fisch-Limetten-Dressing.",
+          "sourcePage": 6
+        }
+      ]
+    },
+    {
+      "id": "signature",
+      "name": "Oh! SUSHI37 SIGNATURE",
+      "sourcePage": 6,
+      "intro": "Gebratenes saisonales Gemüse in Yakinikusoße mit Wildkräutersalat. Dazu wahlweise Süßkartoffeln, Pommes oder Reis.",
+      "quantity": "",
+      "items": [
+        {
+          "code": "41",
+          "name": "GRILLED SALMON TERIYAKI",
+          "price": "23,90",
+          "marks": "A, D, K",
+          "description": "Medium gegrilltes Lachsfilet.",
+          "sourcePage": 6
+        },
+        {
+          "code": "42",
+          "name": "SHRIMP LOVE JAKOBSMUSCHELN",
+          "price": "24,50",
+          "marks": "D, K, N",
+          "description": "Gegrillte Garnelen und Jakobsmuscheln mit Rosmarin.",
+          "sourcePage": 6
+        },
+        {
+          "code": "43",
+          "name": "BEEF LUC LAC",
+          "price": "22,90",
+          "marks": "A, D, I",
+          "description": "Geschwenktes Rinderfilet mit Paprika, Zwiebeln, Knoblauch, Koriander, Lauchzwiebeln und Pilzen.",
+          "sourcePage": 6
+        }
+      ]
+    },
+    {
+      "id": "bowl",
+      "name": "BOWL",
+      "sourcePage": 6,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "42",
+          "name": "FITNESS BOWL",
+          "price": null,
+          "marks": "A, D, G, J, K",
+          "description": "Sushi-Reis, Avocado, japanische Bohnen, Gurke, gemischter Salat mit Cocktail-Unagi-Soße",
+          "sourcePage": 6,
+          "variants": [
+            {
+              "code": "A",
+              "name": "HÄHNCHEN TEMPURA / chicken tempura",
+              "price": "15,50"
+            },
+            {
+              "code": "B",
+              "name": "KNUSPRIGE ENTE / crispy duck",
+              "price": "17,50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vorspeise-sushi",
+      "name": "VORSPEISE SUSHI",
+      "sourcePage": 7,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "23",
+          "name": "TATARE",
+          "price": "13,90",
+          "marks": "D, G, J, K",
+          "description": "Mit Lauchzwiebeln, Koriander, scharfer Sauce & Reiscrackern auf Avocadobett. Wahlweise mit Lachs oder Thunfisch.",
+          "sourcePage": 7
+        },
+        {
+          "code": "24",
+          "name": "CARPACCIO",
+          "price": "13,90",
+          "marks": "D, G, J, K",
+          "description": "Mit Zwiebeln, Lotuswurzel, Shiso Purple und Ponzu-Oliven-Soße. Wahlweise mit Lachs (flambiert) oder Thunfisch (flambiert).",
+          "sourcePage": 7
+        },
+        {
+          "code": "25",
+          "name": "WAKAME MIX",
+          "price": null,
+          "marks": "A, D, F, J, K, N",
+          "description": "Wakame Salat mit Sakura-Sprossen, Shiso Purple, Sesam-Teriyaki-Dressing und ...",
+          "sourcePage": 7,
+          "variants": [
+            {
+              "code": "A",
+              "name": "LACHS / salmon",
+              "price": "12,50"
+            },
+            {
+              "code": "B",
+              "name": "THUNFISCH / tuna",
+              "price": "12,50"
+            },
+            {
+              "code": "C",
+              "name": "JAKOBSMUSCHELN / scallops",
+              "price": "12,50"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nigiri",
+      "name": "NIGIRI",
+      "sourcePage": 7,
+      "intro": "Sushi-Reishäppchen mit verschiedenen Toppings.",
+      "quantity": "2 STK.",
+      "items": [
+        {
+          "code": "N1",
+          "name": "SAKE – LACHS",
+          "price": "5,90",
+          "marks": "D, N",
+          "description": "Sushi-Reishäppchen mit Lachs.",
+          "sourcePage": 7
+        },
+        {
+          "code": "N2",
+          "name": "MAGURO – THUNFISCH",
+          "price": "6,20",
+          "marks": "D, N",
+          "description": "Sushi-Reishäppchen mit Thunfisch.",
+          "sourcePage": 7
+        },
+        {
+          "code": "N3",
+          "name": "EBI – GARNELEN",
+          "price": "6,50",
+          "marks": "D, N",
+          "description": "Sushi-Reishäppchen mit Garnelen.",
+          "sourcePage": 7
+        },
+        {
+          "code": "N4",
+          "name": "UNAGI BBQ – AAL",
+          "price": "6,50",
+          "marks": "D, N",
+          "description": "Sushi-Reishäppchen mit BBQ Aal.",
+          "sourcePage": 7
+        },
+        {
+          "code": "N5",
+          "name": "HOTATE – JAKOBSMUSCHELN",
+          "price": "7,50",
+          "marks": "D, N",
+          "description": "Sushi-Reishäppchen mit Jakobsmuscheln.",
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "id": "sashimi",
+      "name": "SASHIMI",
+      "sourcePage": 8,
+      "intro": "Rohes Fischfilet oder Meeresfrüchte auf Seetang-Salat und Sesam-Dressing.",
+      "quantity": "6 STK.",
+      "items": [
+        {
+          "code": "S40",
+          "name": "LACHS",
+          "price": "17,90",
+          "marks": "B, D, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "S41",
+          "name": "THUNFISCH",
+          "price": "17,90",
+          "marks": "B, D, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "S42",
+          "name": "UNAGI – BBQ AAL",
+          "price": "18,50",
+          "marks": "B, D, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "S43",
+          "name": "HOTATEGAI – JAKOBSMUSCHELN",
+          "price": "18,50",
+          "marks": "B, D, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "S44",
+          "name": "IKIGAI DELUXE",
+          "price": "34,00",
+          "marks": "B, D, N",
+          "description": "Lachs, Thunfisch, Jakobsmuscheln, Garnelen.",
+          "sourcePage": 8
+        }
+      ]
+    },
+    {
+      "id": "gunkan",
+      "name": "GUNKAN",
+      "sourcePage": 8,
+      "intro": "",
+      "quantity": "2 STK.",
+      "items": [
+        {
+          "code": "G45",
+          "name": "ABURI SAKE",
+          "price": "7,90",
+          "marks": "D, F, G, K",
+          "description": "Flambierter Lachs mit Lauchzwiebeln und Spezial-Sauce.",
+          "sourcePage": 8
+        },
+        {
+          "code": "G46",
+          "name": "ABURI MAGURO",
+          "price": "7,90",
+          "marks": "D, F, G, K",
+          "description": "Flambierter Thunfisch mit Lauchzwiebeln und Spezial-Sauce.",
+          "sourcePage": 8
+        }
+      ]
+    },
+    {
+      "id": "maki",
+      "name": "MAKI",
+      "sourcePage": 8,
+      "intro": "",
+      "quantity": "2 STK.",
+      "items": [
+        {
+          "code": "M8",
+          "name": "AVOCADO – AVOCADO",
+          "price": "5,50",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M9",
+          "name": "KAPPA – GURKE",
+          "price": "5,00",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M10",
+          "name": "SAKE – LACHS",
+          "price": "6,00",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M11",
+          "name": "TEKKA – TUNA",
+          "price": "6,20",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M12",
+          "name": "EBI – GARNELEN",
+          "price": "6,90",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M13",
+          "name": "FRY EBI – TEMPURA GARNELEN",
+          "price": "6,90",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M14",
+          "name": "SALMONSKIN – GEBACKENE LACHSHAUT",
+          "price": "6,00",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M15",
+          "name": "KANI – SURIMI & AVOCADO",
+          "price": "5,90",
+          "marks": "B, D, K, N",
+          "description": "",
+          "sourcePage": 8
+        },
+        {
+          "code": "M16",
+          "name": "HOT TUNA",
+          "price": "5,50",
+          "marks": "B, D, K, N",
+          "description": "Gekochter Thunfisch, Mayo, Chilisauce, Pfeffer, Lauchzwiebeln.",
+          "sourcePage": 8
+        }
+      ]
+    },
+    {
+      "id": "inside-out",
+      "name": "URA MAKI INSIDE OUT",
+      "sourcePage": 9,
+      "intro": "Füllung mit Frischkäse, gewickelt in Reis, ummantelt von Fischrogen oder Sesam.",
+      "quantity": "8 STK.",
+      "items": [
+        {
+          "code": "U17",
+          "name": "ALASKA",
+          "price": "10,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Lachs, Avocado, Frischkäse, Tobiko.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U18",
+          "name": "CALIFORNIA",
+          "price": "9,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Avocado, Surimi, Frischkäse, Tobiko.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U19",
+          "name": "MAGURO",
+          "price": "11,90",
+          "marks": "B, D, G, J, K, N",
+          "description": "Thunfisch, Avocado, Frischkäse, Tobiko.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U20",
+          "name": "UNAGI",
+          "price": "12,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "BBQ Aal, Avocado, Frischkäse, Sesam.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U21",
+          "name": "EBI TEMPURA",
+          "price": "11,90",
+          "marks": "B, D, G, J, K, N",
+          "description": "Gebackene Garnelen, Avocado, Frischkäse, Sesam.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U22",
+          "name": "SALMONSKIN",
+          "price": "10,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Gebackene Lachshaut, Gurke, Sesam.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U23",
+          "name": "VEGGIE",
+          "price": "8,90",
+          "marks": "B, D, G, J, K, N",
+          "description": "Avocado, Gurke, Mango, Oshinko, Sesam.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U24",
+          "name": "SPICY MAGURO",
+          "price": "10,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Thunfischtatar, Avocado, Lauchzwiebeln und scharfe Soße.",
+          "sourcePage": 9
+        },
+        {
+          "code": "U25",
+          "name": "SPICY SAKE",
+          "price": "10,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Lachstatar, Avocado, Lauchzwiebeln und scharfe Soße.",
+          "sourcePage": 9
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "name": "FUSION ROLLS",
+      "sourcePage": 10,
+      "intro": "Spezialitäten des Sushi-Meisters.",
+      "quantity": "8 STK.",
+      "items": [
+        {
+          "code": "F26",
+          "name": "SPECIAL VEGGIE",
+          "price": "14,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Kreative Kreation unseres Sushi-Chefs.",
+          "sourcePage": 10
+        },
+        {
+          "code": "F27",
+          "name": "SPECIAL FREESTYLE",
+          "price": "17,90",
+          "marks": "B, D, G, J, K, N",
+          "description": "Kreative Kreation unseres Sushi-Chefs.",
+          "sourcePage": 10
+        },
+        {
+          "code": "F28",
+          "name": "HERO SUSHI ROLLS",
+          "price": "16,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Lachshaut, Avocado, Philadelphia, Surimi, Gurke, Sesam, bedeckt mit BBQ Aal und Unagi-Soße.",
+          "sourcePage": 10
+        },
+        {
+          "code": "F29",
+          "name": "RAINBOW ROLL",
+          "price": "17,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Avocado, Gurke, Mango, Philadelphia, Surimi, Tempura Garnelen, Lachs, Thunfisch und Jakobsmuscheln, dazu Unagi-Soße und Sesam.",
+          "sourcePage": 10
+        },
+        {
+          "code": "F30",
+          "name": "FIRE TUNA",
+          "price": "17,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Ebi Tempura, Gurke, Avocado, Surimi, Mango, Thunfischmantel, Philadelphia und Unagi-Soße, Sesam.",
+          "sourcePage": 10
+        },
+        {
+          "code": "F31",
+          "name": "SPICY SALMON ROLL",
+          "price": "17,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Lachstatar, Gurke, Mango, Surimi, Avocado, Lauchzwiebeln, scharfe Soße.",
+          "sourcePage": 10
+        },
+        {
+          "code": "F32",
+          "name": "SPICY TUNA ROLL",
+          "price": "17,50",
+          "marks": "B, D, G, J, K, N",
+          "description": "Thunfischtatar, Gurke, Lauchzwiebeln, Avocado, Surimi, Mango, scharfe Soße.",
+          "sourcePage": 10
+        }
+      ]
+    },
+    {
+      "id": "aburi",
+      "name": "ABURI FUSION ROLL",
+      "sourcePage": 11,
+      "intro": "Flambierte Spezialitäten des Sushimeisters.",
+      "quantity": "8 STK.",
+      "items": [
+        {
+          "code": "A33",
+          "name": "KAMIKAZE ROLL",
+          "price": "15,90",
+          "marks": "B, D, G, I, K, N",
+          "description": "Thunfischtatar, Avocado, Lauchzwiebeln, Surimi, Gurke, Cocktailsoße, Spicy Soße, Tobiko.",
+          "sourcePage": 11
+        },
+        {
+          "code": "A34",
+          "name": "VOLCANO ROLL",
+          "price": "15,90",
+          "marks": "B, D, G, I, K, N",
+          "description": "Lachstatar, Avocado, Gurke, Surimi, Lauchzwiebeln, Cocktailsoße, Spicy Soße, Tobiko.",
+          "sourcePage": 11
+        },
+        {
+          "code": "A35",
+          "name": "FRENCH KISS ROLL",
+          "price": "16,50",
+          "marks": "B, D, G, I, K, N",
+          "description": "Lachs, Thunfisch, Avocado, Gurke, Surimi, Cocktailsoße, Spicy Soße, Unagi-Soße und Tobiko.",
+          "sourcePage": 11
+        },
+        {
+          "code": "A36",
+          "name": "SAKE FANCY ROLL",
+          "price": "16,50",
+          "marks": "B, D, G, I, K, N",
+          "description": "Avocado, Gurke, Philadelphia, Surimi, Mango, Lachshaut & flambierter Lachsmantel.",
+          "sourcePage": 11
+        },
+        {
+          "code": "A37",
+          "name": "SURF & TURF ROLL",
+          "price": "17,90",
+          "marks": "B, D, G, I, K, N",
+          "description": "Avocado, Gurke, Philadelphia und gebackene Garnelen, bedeckt mit flambiertem Rindfleisch, dazu Unagi-Soße.",
+          "sourcePage": 11
+        },
+        {
+          "code": "A38",
+          "name": "DRAGON ROLL",
+          "price": "17,50",
+          "marks": "B, D, G, I, K, N",
+          "description": "Ebi Tempura, Gurke, Avocado, Mango, Surimi, Philadelphia, Lachsmantel, Cocktailsoße, Unagi-Soße, Spicy Soße.",
+          "sourcePage": 11
+        },
+        {
+          "code": "A39",
+          "name": "GEISHA ROLL",
+          "price": "17,50",
+          "marks": "B, D, G, I, K, N",
+          "description": "Lachstatar, Avocado, Gurke, Garnelen, Philadelphia, Surimi, Lauchzwiebeln, Cocktailsoße, Unagi-Soße und Tobiko.",
+          "sourcePage": 11
+        }
+      ]
+    },
+    {
+      "id": "crunchy",
+      "name": "CRUNCHY BIG ROLL",
+      "sourcePage": 12,
+      "intro": "Gebackenes Sushi im Tempuramantel. Mit Frischkäse, Cocktailsoße und Unagi-Soße.",
+      "quantity": "10 STK.",
+      "items": [
+        {
+          "code": "T47",
+          "name": "TORONTO CRUNCHY",
+          "price": "16,50",
+          "marks": "B, D, G, I, K, N",
+          "description": "Lachs, Avocado. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
+          "sourcePage": 12
+        },
+        {
+          "code": "T48",
+          "name": "TUNA CRUNCHY",
+          "price": "16,50",
+          "marks": "B, D, G, I, K, N",
+          "description": "Thunfisch, Avocado. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
+          "sourcePage": 12
+        },
+        {
+          "code": "T49",
+          "name": "EBI CRUNCHY",
+          "price": "16,90",
+          "marks": "B, D, G, I, K, N",
+          "description": "Tempura Garnelen, Avocado. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
+          "sourcePage": 12
+        },
+        {
+          "code": "T50",
+          "name": "TORI CRUNCHY",
+          "price": "16,50",
+          "marks": "B, D, G, I, K, N",
+          "description": "Huhn, Avocado, Gurke. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
+          "sourcePage": 12
+        },
+        {
+          "code": "T51",
+          "name": "VEGGIE CRUNCHY",
+          "price": "14,90",
+          "marks": "B, D, G, I, K, N",
+          "description": "Grüner Spargel, Avocado, Gurke, Mango, eingelegter Rettich. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
+          "sourcePage": 12
+        },
+        {
+          "code": "T52",
+          "name": "SAMURAI CRUNCHY",
+          "price": "19,90",
+          "marks": "B, D, G, K, N",
+          "description": "Surimi, Avocado, Gurke, Frischkäse, scharf gewürzter Thunfisch, Unagi-Soße.",
+          "sourcePage": 12
+        }
+      ]
+    },
+    {
+      "id": "tempura",
+      "name": "TEMPURA MINI ROLL",
+      "sourcePage": 12,
+      "intro": "Gebackenes Sushi im Tempuramantel. Mit Mango-Soße und Unagi-Soße.",
+      "quantity": "8 STK.",
+      "items": [
+        {
+          "code": "T53",
+          "name": "SAKE ROLL – MIT LACHS",
+          "price": "10,50",
+          "marks": "D, G, K",
+          "description": "",
+          "sourcePage": 12
+        },
+        {
+          "code": "T54",
+          "name": "SPICY TEKKA – MIT SCHARFEM THUNFISCH",
+          "price": "10,50",
+          "marks": "D, G, K",
+          "description": "",
+          "sourcePage": 12
+        },
+        {
+          "code": "T56",
+          "name": "BUDDHA ROLL – MIT AVOCADO",
+          "price": "9,90",
+          "marks": "D, G, K",
+          "description": "",
+          "sourcePage": 12
+        }
+      ]
+    },
+    {
+      "id": "sets",
+      "name": "SUSHI SET",
+      "sourcePage": 13,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "M98",
+          "name": "SALMON LOVE SET",
+          "price": "22,00",
+          "marks": "D, G, K",
+          "description": "6 St. Sake Maki, 3 St. Sake Nigiri, 3 St. Sake Sashimi.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M99",
+          "name": "FULL TUNA SET",
+          "price": "22,90",
+          "marks": "D, G, K",
+          "description": "6 St. Tekka Maki, 3 St. Maguro Nigiri, 3 Maguro Sashimi.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M100",
+          "name": "CALI MAKI SET",
+          "price": "23,50",
+          "marks": "B, D, G, K",
+          "description": "8 St. California I-O, 6 St. Sake Maki, 3 St. flambierte Sashimi Tuna.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M101",
+          "name": "VEGGIE SET",
+          "price": "19,00",
+          "marks": "K",
+          "description": "8 St. Vegetarische I-O, 6 St. Kappa Maki, 6 St. Avocado Maki und Wakame-Salat.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M102",
+          "name": "CROUCHING TIGER",
+          "price": "29,00",
+          "marks": "B, D, G, K, N",
+          "description": "8 St. Dragon Roll, 6 St. verschiedene Nigiri.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M103",
+          "name": "BEST FRIEND PLATE",
+          "price": "50,00",
+          "marks": "A, B, D, G, K, N",
+          "description": "8 St. Freestyle Roll, 6 St. Maki, 2 St. Nigiri, 10 St. Toronto Crunchy, 3 St. Sashimi.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M104",
+          "name": "SUMO PLATTE",
+          "price": "75,00",
+          "marks": "A, B, D, G, K, N",
+          "description": "8 St. Freestyle Roll, 8 St. Fusion Roll, 6 St. Maki, 1 St. Nigiri, 6 St. Sashimi, 10 St. Crunchy Big Roll.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M105",
+          "name": "OH! SUSHI37 FAMILY",
+          "price": "100,00",
+          "marks": "A, B, D, G, K, N",
+          "description": "8 St. Freestyle Roll, 8 St. Aburi Fusion Roll, 8 St. Inside Out, 6 St. Maki, 4 St. Nigiri, 20 St. Crunchy Big Roll, 6 St. Sashimi.",
+          "sourcePage": 13
+        },
+        {
+          "code": "M106",
+          "name": "PARTY PLATTE",
+          "price": "145,00",
+          "marks": "A, B, D, G, K, N",
+          "description": "All-in-Kreation des Sushi-Chefs (Überraschungsmenü).",
+          "sourcePage": 13
+        }
+      ]
+    },
+    {
+      "id": "nachspeisen",
+      "name": "NACHSPEISEN",
+      "sourcePage": 14,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "250",
+          "name": "CHUỐI CHIÊN – GEBACKENE BANANE",
+          "price": "3,50",
+          "marks": "A, E, 4",
+          "description": "Gebackene Banane mit Vanilleeis, dazu Honig und Erdnüssen.",
+          "sourcePage": 14
+        },
+        {
+          "code": "251",
+          "name": "MANGO PANNA COTTA",
+          "price": "4,90",
+          "marks": "A, G",
+          "description": "Hausgemachte Panna Cotta mit Mango.",
+          "sourcePage": 14
+        },
+        {
+          "code": "252",
+          "name": "MOCHI-EIS",
+          "price": "5,90",
+          "marks": "A, G, 4",
+          "description": "Japanische Reisküchlein mit Grüntee-Eisfüllung.",
+          "sourcePage": 14
+        },
+        {
+          "code": "254",
+          "name": "KNUSPRIGES KOKOS-EIS",
+          "price": "6,50",
+          "marks": "A, C, G, 4",
+          "description": "Knusprig gebackenes Vanilleeis im Kokosmantel.",
+          "sourcePage": 14
+        },
+        {
+          "code": "256",
+          "name": "BLACK RICE",
+          "price": "5,50",
+          "marks": "A, E, G, K",
+          "description": "Schwarzer Klebreis mit Kokosmilch, Mangopüree und Ingwer.",
+          "sourcePage": 14
+        }
+      ]
+    },
+    {
+      "id": "beilage",
+      "name": "BEILAGE",
+      "sourcePage": 14,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "B1",
+          "name": "REIS",
+          "price": "3,00",
+          "marks": "",
+          "description": "",
+          "sourcePage": 14
+        },
+        {
+          "code": "B2",
+          "name": "UDONNUDELN",
+          "price": "6,50",
+          "marks": "",
+          "description": "",
+          "sourcePage": 14
+        },
+        {
+          "code": "B3",
+          "name": "POMMES",
+          "price": "4,00",
+          "marks": "",
+          "description": "",
+          "sourcePage": 14
+        },
+        {
+          "code": "B4",
+          "name": "SÜSSKARTOFFELN",
+          "price": "4,50",
+          "marks": "",
+          "description": "",
+          "sourcePage": 14
+        }
+      ]
+    },
+    {
+      "id": "sauce",
+      "name": "SAUCE",
+      "sourcePage": 14,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "C1",
+          "name": "UNAGISOSSE",
+          "price": "1,50",
+          "marks": "D, F, N",
+          "description": "",
+          "sourcePage": 14
+        },
+        {
+          "code": "C2",
+          "name": "COCKTAIL SAUCE",
+          "price": "1,50",
+          "marks": "A, F, G",
+          "description": "",
+          "sourcePage": 14
+        },
+        {
+          "code": "C3",
+          "name": "TERIYAKI SOSSE",
+          "price": "1,50",
+          "marks": "A, F",
+          "description": "",
+          "sourcePage": 14
+        },
+        {
+          "code": "C4",
+          "name": "SÜSSSAUERSOSSE",
+          "price": "1,00",
+          "marks": "A",
+          "description": "",
+          "sourcePage": 14
+        }
+      ]
+    }
+  ],
+  "allergens": {
+    "A": "Glutenhaltiges Getreide: A1 Weizen, A2 Roggen, A3 Gerste, A4 Hafer, A5 Dinkel, A6 Kamut/Khorasan, A7 Hybridstämme",
+    "B": "Krebstiere und daraus gewonnene Erzeugnisse",
+    "C": "Eier und daraus gewonnene Erzeugnisse",
+    "D": "Fische und daraus gewonnene Erzeugnisse",
+    "E": "Erdnüsse und daraus gewonnene Erzeugnisse",
+    "F": "Sojabohnen und daraus gewonnene Erzeugnisse",
+    "G": "Milch und Milchprodukte einschließlich Laktose",
+    "H": "Schalenfrüchte: H1 Mandeln, H2 Haselnüsse, H3 Walnuss, H4 Cashew, H5 Pecannuss, H6 Paranuss, H7 Pistazie",
+    "I": "Sellerie und daraus gewonnene Erzeugnisse",
+    "J": "Senf und daraus gewonnene Erzeugnisse",
+    "K": "Sesamsamen und daraus gewonnene Erzeugnisse",
+    "L": "Schwefeldioxid und Sulfite",
+    "M": "Lupinen und daraus gewonnene Erzeugnisse",
+    "N": "Weichtiere und daraus gewonnene Erzeugnisse"
+  },
+  "additives": {
+    "1": "mit Farbstoff",
+    "2": "mit Konservierungsstoff",
+    "2a": "mit Nitritpökelsalz",
+    "2b": "mit Nitrat (bei Lebensmitteln mit Natrium- oder Kaliumnitrat)",
+    "3": "mit Antioxidationsmittel",
+    "4": "mit Geschmacksverstärker",
+    "5": "geschwärzt",
+    "6": "mit Phosphat",
+    "7": "koffeinhaltig",
+    "8": "chininhaltig",
+    "9": "gewachst",
+    "10": "mit Taurin",
+    "11": "enthält eine Phenylalaninquelle (z. B. Aspartam)",
+    "12": "mit Süßungsmittel"
+  }
+}
