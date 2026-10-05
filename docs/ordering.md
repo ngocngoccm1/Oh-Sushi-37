@@ -14,7 +14,7 @@ Nút Bestellung kopieren sao chép nội dung; nếu clipboard bị chặn, hi�
 
 ## Dữ liệu và bảo trì
 
-- `data/menu.json` là nguồn món/giá. Sau khi cập nhật, chạy `python3 scripts/build.py` để dựng lại HTML và JSON catalog nhúng cùng trang.
+- `data/menu.json` và `data/drinks.json` là nguồn món/đồ uống/giá. Sau khi cập nhật, chạy `python3 scripts/build.py` để dựng lại HTML và JSON catalog nhúng cùng trang.
 - Khóa món gồm category, số nguồn và tên, tránh ghi đè các mã 33/42 trùng trong PDF.
 - Giá tính bằng integer cents; không lấy giá từ localStorage. Dữ liệu giỏ đã lưu được kiểm tra lại với catalog khi tải trang.
 - `localStorage` chỉ chứa mã lựa chọn/biến thể/beilage/số lượng. Tên, điện thoại và ghi chú không được lưu. Nếu storage bị chặn, giỏ vẫn hoạt động trong lượt truy cập đó.
@@ -26,3 +26,9 @@ Nút Bestellung kopieren sao chép nội dung; nếu clipboard bị chặn, hi�
 Đã kiểm tra chọn món cố định, nhiều biến thể của cùng món, lựa chọn beilage, giới hạn số lượng, giá/tổng tiền, tăng giảm/xóa, tải lại, giỏ rỗng, dữ liệu lưu hỏng/không hợp lệ, sao chép và fallback. Email được chặn trong script kiểm thử để kiểm tra nội dung; không gửi đơn thử đến nhà hàng.
 
 Dialog đã kiểm tra tại 320/375/390/430/768/1024/1440/1920px; keyboard Tab/Shift+Tab, Escape và trả focus. Axe kiểm tra giỏ mobile/desktop, hộp biến thể và giỏ rỗng: 0 violations.
+
+## Đồ uống — 05/10/2026
+
+85 đồ uống từ PDF mới được thêm vào catalog, giữ 105 món cũ. Whiskey/wodka có 2 cl và 4 cl; rượu vang có 0,2 l và 0,7 l đúng nguồn. Khách phải chọn dung tích trước khi thêm; hai dung tích tạo hai dòng giỏ riêng. Dung tích cố định cũng xuất hiện trong giỏ và email nháp. Giá vẫn tính bằng cents từ catalog, không tin giá trong localStorage.
+
+Các ký hiệu đồ uống được ghi là “Kennzeichnungen (Getränkekarte)”. PDF đồ uống không kèm legend, vì vậy không áp cách diễn giải mã của PDF món ăn cho đồ uống.

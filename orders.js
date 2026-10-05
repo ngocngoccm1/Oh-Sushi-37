@@ -88,8 +88,8 @@
       heading.append(element('h3', '', item.name), element('strong', '', money(unitPrice(line) * line.quantity)));
       row.append(heading);
       const variant = item.variants[line.variantIndex];
-      if (variant || line.option) row.append(element('p', 'cart-item-option', [variant?.name, line.option].filter(Boolean).join(' · ')));
-      if (item.marks) row.append(element('p', 'dish-marks', `Allergene & Zusatzstoffe: ${item.marks}`));
+      if (variant || line.option || item.volume) row.append(element('p', 'cart-item-option', [item.volume, variant?.name, line.option].filter(Boolean).join(' · ')));
+      if (item.marks) row.append(element('p', 'dish-marks', `${item.marksLabel}: ${item.marks}`));
       const bottom = element('div', 'cart-item-bottom');
       const stepper = element('div', 'quantity-stepper');
       const minus = element('button', '', '−');
@@ -106,7 +106,7 @@
       const remove = element('button', 'cart-remove', 'Entfernen');
       remove.type = 'button'; remove.dataset.cartAction = 'remove'; remove.dataset.index = index;
       remove.setAttribute('aria-label', `${item.name} aus der Bestellung entfernen`);
-      bottom.append(stepper, element('span', 'cart-unit-price', `${money(unitPrice(line))} / Portion`), remove);
+      bottom.append(stepper, element('span', 'cart-unit-price', `${money(unitPrice(line))} / ${item.menuType === 'getraenke' ? 'Getränk' : 'Portion'}`), remove);
       row.append(bottom);
       fragment.append(row);
     });
@@ -115,7 +115,7 @@
     document.querySelector('#cart-filled').hidden = cart.length === 0;
     document.querySelectorAll('[data-cart-count]').forEach(node => { node.textContent = count(); });
     document.querySelectorAll('[data-cart-total]').forEach(node => { node.textContent = money(total()); });
-    document.querySelectorAll('[data-open-cart]').forEach(button => button.setAttribute('aria-label', `Warenkorb öffnen, ${count()} Gerichte, ${money(total())}`));
+    document.querySelectorAll('[data-open-cart]').forEach(button => button.setAttribute('aria-label', `Warenkorb öffnen, ${count()} Artikel, ${money(total())}`));
     document.querySelector('.cart-launcher').hidden = cart.length === 0;
     feedback.textContent = '';
     document.querySelector('#manual-copy-field').hidden = true;
@@ -171,7 +171,8 @@
       currentDish = item;
       document.querySelector('#dish-dialog-title').textContent = item.name;
       document.querySelector('#dish-dialog-description').textContent = item.description;
-      document.querySelector('#dish-dialog-marks').textContent = item.marks ? `Allergene & Zusatzstoffe: ${item.marks}` : '';
+      document.querySelector('#dish-dialog-marks').textContent = item.marks ? `${item.marksLabel}: ${item.marks}` : '';
+      document.querySelector('label[for="dish-variant"]').textContent = item.variantLabel;
       document.querySelector('#dish-variant-field').hidden = !item.variants.length;
       document.querySelector('#dish-option-field').hidden = !item.options.length;
       variantSelect.required = item.variants.length > 0;
@@ -206,9 +207,9 @@
     const lines = ['Bestellanfrage — Oh! Sushi 37', '', ...cart.map(line => {
       const item = catalog.get(line.key);
       const variant = item.variants[line.variantIndex];
-      const options = [variant?.name, line.option].filter(Boolean);
+      const options = [item.volume, variant?.name, line.option].filter(Boolean);
       return `${line.quantity} × ${variant?.code || item.code} ${item.name}${options.length ? ' (' + options.join(' · ') + ')' : ''} — ${money(unitPrice(line) * line.quantity)}`;
-    }), '', `Summe der ausgewählten Gerichte: ${money(total())}`];
+    }), '', `Summe der Bestellung: ${money(total())}`];
     const name = document.querySelector('#customer-name').value.trim();
     const phone = document.querySelector('#customer-phone').value.trim();
     const notes = document.querySelector('#order-notes').value.trim();

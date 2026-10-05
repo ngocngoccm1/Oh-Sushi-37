@@ -71,3 +71,19 @@ Có semantic landmarks, một h1, heading hierarchy, alt, focus states, skip lin
 ## Giới hạn dữ liệu
 
 Ảnh hiện tại là minh họa được tạo bằng imagegen, có ghi chú; chưa có ảnh thật của quán. Tài liệu không có nội dung pháp lý đầy đủ hoặc booking URL. Các điểm chưa rõ/sai khác trong PDF được ghi tại `docs/design-research.md`; website giữ dữ liệu nguồn Đức, không tự đoán.
+
+## Cập nhật giờ và QR — 05/10/2026
+
+- Giờ trong ảnh khách gửi được cập nhật ở bảng giờ, hero/reservation, meta description và Restaurant JSON-LD. Montag là Ruhetag; Dienstag–Donnerstag/Sonntag 11:30–22:00; Freitag/Samstag 11:30–22:30. Địa chỉ và tên quán giữ nguyên.
+- QR SVG footer mở đúng link Google Maps hiện có của quán, có vùng trống bốn module. Đã dùng bộ đọc barcode độc lập (zxing-cpp) giải mã ảnh render thực tế ở viewport 320, 390 và 1440px; cả ba trả đúng URL đích. Không dùng QR localhost hoặc URL website phỏng đoán.
+- Đã xem screenshot bảng giờ và QR ở 320/390/1440px; chạy lại đủ tám viewport 320–1920px, tất cả nhóm menu, kiểm tra ảnh/link/JavaScript/no-JS/reduced motion: pass.
+- axe: trang mặc định 390/1440px và navigation mobile 0 violations. Kiểm tra nội dung 105 món, schema, link và toàn bộ menu/allergen cũng pass.
+
+## Menu đồ uống mới — 05/10/2026
+
+- Đọc/render đủ 10 trang PDF `2026 Oh Sushi 37 Drink Demo 2.pdf`, đối chiếu thủ công tên, mã, giá, dung tích, mô tả và ký hiệu. Thêm 85 đồ uống / 10 nhóm, giữ 105 món cũ; tổng 190 mục / 31 nhóm và 87 lựa chọn giá. PDF lưu nguyên vẹn, checksum trùng file khách cung cấp; link riêng trả HTTP 200.
+- Đối chiếu HTML và catalog với cả hai bản chép: tên, mô tả, giá cố định và 87 giá biến thể đều khớp. Mỗi mục có tên file và trang nguồn. Build chạy lại không đổi kết quả.
+- Menu có lối vào Speisen/Getränke và native select chia nhóm trên điện thoại. Tìm kiếm đồ uống ẩn các nhóm bia không có kết quả. Không áp legend của món ăn cho ký hiệu đồ uống thiếu bảng giải thích trong PDF.
+- Kiểm tra 320/375/390/430/768/1024/1440/1920px, toàn bộ nhóm menu, navigation mobile, tìm kiếm, deep link, reduced motion và no-JS: không overflow, ảnh hỏng, link nội bộ hỏng hoặc lỗi JavaScript. Đã xem screenshot thực tế phần đồ uống/đơn hàng ở 320/390px và desktop 1440px.
+- Kiểm tra thêm nước ép dung tích cố định, hai mã bia cùng tên, rượu vang 0,2 l/0,7 l, whisky 2 cl/4 cl, số lượng, dòng giỏ riêng, tổng tiền, lưu/tải lại và nội dung email có dung tích. Đơn mẫu 6 dòng / 7 đồ uống tổng 62,70 € đúng cộng từng giá; email bị chặn trong test, không gửi đơn thử.
+- axe: toàn bộ 190 mục và legend mở, toàn bộ đồ uống, hộp chọn dung tích mobile và giỏ đồ uống ở 390/1440px đều 0 violations. Kiểm tra schema xác nhận giờ mới và địa chỉ cũ vẫn đúng; QR footer giữ nguyên đích Google Maps đã xác minh.

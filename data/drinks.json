@@ -1,0 +1,1182 @@
+{
+  "source": "2026-Oh-Sushi-37-Drink-Demo-2.pdf",
+  "categories": [
+    {
+      "id": "saft",
+      "name": "SAFT",
+      "sourcePage": 3,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "170",
+          "name": "APFEL NATURTRÜB",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "171",
+          "name": "ANANAS",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "172",
+          "name": "BANANE",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "173",
+          "name": "KIRSCHE",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "174",
+          "name": "MARACUJA",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "175",
+          "name": "ORANGE",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "176",
+          "name": "RHABARBER NATURTRÜB",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "177",
+          "name": "KIBA",
+          "price": "3,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "178",
+          "name": "SCHORLEN",
+          "price": "3,10",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        },
+        {
+          "code": "179",
+          "name": "FRISCH GEPRESSTER ORANGENSAFT",
+          "price": "6,50",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 3
+        }
+      ]
+    },
+    {
+      "id": "limonaden-eistee",
+      "name": "LIMONADEN & EISTEE’S",
+      "sourcePage": 4,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "180",
+          "name": "COLA",
+          "price": "3,20",
+          "volume": "0,3 l",
+          "marks": "2, 8",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "181",
+          "name": "COLA OHNE ZUCKER",
+          "price": "3,20",
+          "volume": "0,3 l",
+          "marks": "2, 3, 5, 8",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "182",
+          "name": "BLUNA ORANGE",
+          "price": "3,20",
+          "volume": "0,3 l",
+          "marks": "2",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "183",
+          "name": "ZITRONE",
+          "price": "3,20",
+          "volume": "0,3 l",
+          "marks": "4",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "184",
+          "name": "MIX",
+          "price": "3,20",
+          "volume": "0,3 l",
+          "marks": "2, 4, 8",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "185",
+          "name": "THOMAS HENRY",
+          "price": "3,20",
+          "volume": "0,2 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "186",
+          "name": "GINGER ALE",
+          "price": "3,20",
+          "volume": "0,2 l",
+          "marks": "2",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "187",
+          "name": "BITTER LEMON",
+          "price": "3,20",
+          "volume": "0,2 l",
+          "marks": "4, 9",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "188",
+          "name": "TONIC WATER",
+          "price": "3,20",
+          "volume": "0,2 l",
+          "marks": "4, 9",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "189",
+          "name": "MYSTIC MANGO",
+          "price": "3,20",
+          "volume": "0,2 l",
+          "marks": "2, 4",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "190",
+          "name": "SPICY GINGER BEER",
+          "price": "3,20",
+          "volume": "0,2 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "191",
+          "name": "CHERRY BLOSSOM",
+          "price": "3,20",
+          "volume": "0,2 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "192",
+          "name": "CHANH DA-LIMETTENLIMONADE",
+          "price": "4,90",
+          "volume": "",
+          "marks": "4, 9",
+          "description": "Limettensaft, Rohrzucker, Minze, Mineralwasser",
+          "sourcePage": 4
+        },
+        {
+          "code": "193",
+          "name": "GINGER COOLER",
+          "price": "4,90",
+          "volume": "",
+          "marks": "2",
+          "description": "Frischer Ingwer, Ginger Ale, Tonic Wasser",
+          "sourcePage": 4
+        },
+        {
+          "code": "194",
+          "name": "EISTEE LEMON",
+          "price": "4,90",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 4
+        },
+        {
+          "code": "195",
+          "name": "ROTER EISTEE",
+          "price": "5,50",
+          "volume": "",
+          "marks": "",
+          "description": "Früchtetee mit Minze und Beeren",
+          "sourcePage": 4
+        },
+        {
+          "code": "196",
+          "name": "GURKE-ZITRONEN BRAUSE",
+          "price": "4,90",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 4
+        }
+      ]
+    },
+    {
+      "id": "kaffee-tee",
+      "name": "KAFFEE & TEE",
+      "sourcePage": 5,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "205",
+          "name": "HEISSE SCHOKOLADE",
+          "price": "3,10",
+          "volume": "",
+          "marks": "10",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
+          "code": "206",
+          "name": "JAZZMINE BABY",
+          "price": "3,80",
+          "volume": "",
+          "marks": "",
+          "description": "Grüner Tee",
+          "sourcePage": 5
+        },
+        {
+          "code": "207",
+          "name": "WHITE N’ROSES",
+          "price": "4,20",
+          "volume": "",
+          "marks": "",
+          "description": "Weißer und Grüner Tee mit rosiger Note",
+          "sourcePage": 5
+        },
+        {
+          "code": "208",
+          "name": "SCHARFE ORANGE",
+          "price": "3,80",
+          "volume": "",
+          "marks": "",
+          "description": "Ingwer / Orange",
+          "sourcePage": 5
+        },
+        {
+          "code": "209",
+          "name": "FRISCHER MINZ-TEE",
+          "price": "3,50",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
+          "code": "210",
+          "name": "HEISSER INGWER",
+          "price": "3,50",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
+          "code": "211",
+          "name": "HEISSE ZITRONE",
+          "price": "3,40",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
+          "code": "212",
+          "name": "HEISSER INGWER-MINZ- & ZITRONE",
+          "price": "4,20",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 5
+        }
+      ]
+    },
+    {
+      "id": "bier",
+      "name": "BIER",
+      "sourcePage": 6,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "220",
+          "name": "BITBURGER PREMIUM PILS",
+          "price": "5,90",
+          "volume": "0,5 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "BIER VOM FASS"
+        },
+        {
+          "code": "221",
+          "name": "TH. KÖNIG ZWICKL",
+          "price": "6,20",
+          "volume": "0,5 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "BIER VOM FASS"
+        },
+        {
+          "code": "222",
+          "name": "BENEDIKTINER WEISSBIER NATURTRÜB",
+          "price": "5,90",
+          "volume": "0,5 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "BIER VOM FASS"
+        },
+        {
+          "code": "223",
+          "name": "BENEDIKTINER HELL",
+          "price": "6,20",
+          "volume": "0,5 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "BIER VOM FASS"
+        },
+        {
+          "code": "224",
+          "name": "BITBURGER PREMIUM PILS",
+          "price": "5,90",
+          "volume": "0,5 l Fl.",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "PILS"
+        },
+        {
+          "code": "225",
+          "name": "BITBURGER RADLER",
+          "price": "3,90",
+          "volume": "0,33 l Fl.",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "RADLER VOM FASS"
+        },
+        {
+          "code": "226",
+          "name": "KÖSTRITZER",
+          "price": "5,90",
+          "volume": "0,5 l Fl.",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "SCHWARZBIER"
+        },
+        {
+          "code": "227",
+          "name": "JAPANISCHE ASAHI",
+          "price": "4,60",
+          "volume": "0,3 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "JAPANESE BIER"
+        },
+        {
+          "code": "228",
+          "name": "BITBURGER 0,0% RADLER ALKOHOLFREI",
+          "price": "3,90",
+          "volume": "0,33 l Fl.",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "ALKOHOLFREIE"
+        },
+        {
+          "code": "229",
+          "name": "ALKOHOLFREI",
+          "price": "5,90",
+          "volume": "0,5 l",
+          "marks": "",
+          "description": "",
+          "sourcePage": 6,
+          "group": "ALKOHOLFREIE"
+        }
+      ]
+    },
+    {
+      "id": "cocktails",
+      "name": "COCKTAILS",
+      "sourcePage": 7,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "231",
+          "name": "DARK ’N STORMY",
+          "price": "8,90",
+          "volume": "",
+          "marks": "",
+          "description": "Gosling's Black Rum | frischer Limettensaft | Spicy Ginger Beer | gedörrte Limetten",
+          "sourcePage": 7
+        },
+        {
+          "code": "232",
+          "name": "BOULEVARDIER",
+          "price": "8,60",
+          "volume": "",
+          "marks": "",
+          "description": "Maker's Mark Bourbon | Campari | roter Wermut | Orangen",
+          "sourcePage": 7
+        },
+        {
+          "code": "233",
+          "name": "MOSCOW MULE - ORIGINAL",
+          "price": "8,60",
+          "volume": "",
+          "marks": "",
+          "description": "Vodka | frischer Limettensaft | Spicy Ginger | Gurke",
+          "sourcePage": 7
+        },
+        {
+          "code": "234",
+          "name": "SEX AM STRAND",
+          "price": "8,60",
+          "volume": "",
+          "marks": "",
+          "description": "Vodka | Pfirsichlikör | frischer Zitronensaft | Ananassaft | Cranberrynektar | gedörrte Ananas",
+          "sourcePage": 7
+        },
+        {
+          "code": "235",
+          "name": "BERRY MOJITO",
+          "price": "8,90",
+          "volume": "",
+          "marks": "",
+          "description": "Kubanischer Rum | frischer Limettensaft | Zuckersirup | Soda | Minze | Himbeer",
+          "sourcePage": 7
+        },
+        {
+          "code": "236",
+          "name": "WHISKEY SOUR",
+          "price": "8,90",
+          "volume": "",
+          "marks": "",
+          "description": "Bourbon Whiskey | frischer Zitronensaft | Zuckersirup | Angotura | gedörrte Zitrone",
+          "sourcePage": 7
+        },
+        {
+          "code": "237",
+          "name": "PINA COLADA",
+          "price": "8,60",
+          "volume": "",
+          "marks": "",
+          "description": "Kubanischer Rum | Kokosmilch | Ananassaft | Kokossirup | gedörrte Ananas",
+          "sourcePage": 7
+        },
+        {
+          "code": "238",
+          "name": "MOJITO - ORIGINAL",
+          "price": "7,90",
+          "volume": "",
+          "marks": "",
+          "description": "Kubanischer Rum | frischer Limettensaft | Weißer Rohrzucker | Soda | Minze",
+          "sourcePage": 7
+        },
+        {
+          "code": "239",
+          "name": "HUGO",
+          "price": "7,90",
+          "volume": "",
+          "marks": "",
+          "description": "Holunderblütensirup | Limettensaft | Prosecco | Soda | Minze | Limette",
+          "sourcePage": 7
+        },
+        {
+          "code": "240",
+          "name": "APEROL SPRITZ",
+          "price": "7,90",
+          "volume": "",
+          "marks": "",
+          "description": "Aperol | Prosecco | Soda | gedörrte Orangen",
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "id": "alkoholfreie-cocktails",
+      "name": "ALKOHOLFREIE COCKTAILS",
+      "sourcePage": 8,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "250",
+          "name": "HUGO (ALKOHOLFREI)",
+          "price": "6,00",
+          "volume": "",
+          "marks": "",
+          "description": "Holunderblütensirup | Limettensaft | Soda | Minze | Limetten",
+          "sourcePage": 8
+        },
+        {
+          "code": "251",
+          "name": "SAFTMIXER",
+          "price": "6,20",
+          "volume": "",
+          "marks": "2, 4",
+          "description": "Frischer Zitronensaft | Orangensaft | Maracujanektar | Ananassaft | Grenadine | Ananas | Minze",
+          "sourcePage": 8
+        },
+        {
+          "code": "252",
+          "name": "HAMMER GARDEN",
+          "price": "6,20",
+          "volume": "",
+          "marks": "4, 9",
+          "description": "Holunderblütensirup | Limettensaft | Bluna Zitrone | Tonic Water | Minze | Gurke",
+          "sourcePage": 8
+        },
+        {
+          "code": "253",
+          "name": "IPANEMA",
+          "price": "6,20",
+          "volume": "",
+          "marks": "2, 4",
+          "description": "Limette | weißer Rohrzucker | Maracujanektar | Thomas Henry Ginger Ale",
+          "sourcePage": 8
+        },
+        {
+          "code": "254",
+          "name": "VIRGIN COLADA",
+          "price": "6,90",
+          "volume": "",
+          "marks": "G, 4, 10",
+          "description": "Kokossirup | Kokosmilch | Ananassaft | Minze",
+          "sourcePage": 8
+        },
+        {
+          "code": "255",
+          "name": "GINFIZZ ALKOHOLFREI",
+          "price": "7,90",
+          "volume": "",
+          "marks": "",
+          "description": "Siegfried Wonderleaf (alkoholfreier Gin) | Frischer Zitronensaft | Zuckersirup | Soda | Zitrone",
+          "sourcePage": 8
+        }
+      ]
+    },
+    {
+      "id": "whiskey-wodka",
+      "name": "WHISKEY – WODKA – JAPANESE WHISKY",
+      "sourcePage": 9,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "260",
+          "name": "CHIVAS REGAL 12 YEARS",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "260",
+              "name": "2 cl",
+              "price": "3,00"
+            },
+            {
+              "code": "260",
+              "name": "4 cl",
+              "price": "5,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "261",
+          "name": "JOHNNIE WALKER BLACK LABEL",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "261",
+              "name": "2 cl",
+              "price": "3,00"
+            },
+            {
+              "code": "261",
+              "name": "4 cl",
+              "price": "5,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "262",
+          "name": "JOHNNIE WALKER GOLD LABEL",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "262",
+              "name": "2 cl",
+              "price": "4,00"
+            },
+            {
+              "code": "262",
+              "name": "4 cl",
+              "price": "7,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "263",
+          "name": "JACK DANIEL’S OLD NO.7",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "263",
+              "name": "2 cl",
+              "price": "3,00"
+            },
+            {
+              "code": "263",
+              "name": "4 cl",
+              "price": "5,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "264",
+          "name": "BALLANTINE’S",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "264",
+              "name": "2 cl",
+              "price": "3,00"
+            },
+            {
+              "code": "264",
+              "name": "4 cl",
+              "price": "5,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "265",
+          "name": "TALISKER 10 YEARS",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "45,80%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "265",
+              "name": "2 cl",
+              "price": "4,00"
+            },
+            {
+              "code": "265",
+              "name": "4 cl",
+              "price": "7,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "266",
+          "name": "SKYY VODKA",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "266",
+              "name": "2 cl",
+              "price": "3,00"
+            },
+            {
+              "code": "266",
+              "name": "4 cl",
+              "price": "5,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "267",
+          "name": "TOKI WHISKY (JAPANE)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "43%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "267",
+              "name": "2 cl",
+              "price": "4,00"
+            },
+            {
+              "code": "267",
+              "name": "4 cl",
+              "price": "7,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "268",
+          "name": "NIKKA DAYS (JAPANE)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "268",
+              "name": "2 cl",
+              "price": "4,50"
+            },
+            {
+              "code": "268",
+              "name": "4 cl",
+              "price": "8,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "269",
+          "name": "CHOYA SAKE (JAPANE)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "40%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "269",
+              "name": "2 cl",
+              "price": "3,00"
+            },
+            {
+              "code": "269",
+              "name": "4 cl",
+              "price": "5,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "270",
+          "name": "ROKU",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "43%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "270",
+              "name": "2 cl",
+              "price": "3,50"
+            },
+            {
+              "code": "270",
+              "name": "4 cl",
+              "price": "6,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "271",
+          "name": "NIKKA",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "47%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "271",
+              "name": "2 cl",
+              "price": "5,00"
+            },
+            {
+              "code": "271",
+              "name": "4 cl",
+              "price": "9,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        }
+      ]
+    },
+    {
+      "id": "weisswein",
+      "name": "WEISSWEIN",
+      "sourcePage": 9,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "272",
+          "name": "GRAUBUGUNDER",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Weingut trocken Baden 12,5 vol%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "272",
+              "name": "0,2 l",
+              "price": "6,50"
+            },
+            {
+              "code": "272",
+              "name": "0,7 l",
+              "price": "23,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "273",
+          "name": "RIESLING (OLDSKOOL)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Weingut Andres pfalz trocken 12,0 vol%.",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "273",
+              "name": "0,2 l",
+              "price": "6,50"
+            },
+            {
+              "code": "273",
+              "name": "0,7 l",
+              "price": "23,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "274",
+          "name": "CUSTOZA (MOLINI)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Cantina di Custoza / Veneta / Italien / trocken / 12,5 vol%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "274",
+              "name": "0,2 l",
+              "price": "6,50"
+            },
+            {
+              "code": "274",
+              "name": "0,7 l",
+              "price": "23,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "275",
+          "name": "SCHEUREBE (MUSCHELKALK)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Weingut Baldauf / franken / trocken / 12,5 vol%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "275",
+              "name": "0,2 l",
+              "price": "7,50"
+            },
+            {
+              "code": "275",
+              "name": "0,7 l",
+              "price": "26,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "276",
+          "name": "GRILLO",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Villa carume / Sizilien / Italien / trocken / 12,5 vol%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "276",
+              "name": "0,2 l",
+              "price": "6,90"
+            },
+            {
+              "code": "276",
+              "name": "0,7 l",
+              "price": "26,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "277",
+          "name": "PALIS CHARDONNAY & SAUVIGNON BLANC",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Weingut Paladin / Veneto / Italien / Halbtrocken / 12,5 vol%",
+          "sourcePage": 9,
+          "variants": [
+            {
+              "code": "277",
+              "name": "0,2 l",
+              "price": "7,50"
+            },
+            {
+              "code": "277",
+              "name": "0,7 l",
+              "price": "26,90"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        }
+      ]
+    },
+    {
+      "id": "rotwein",
+      "name": "ROTWEIN",
+      "sourcePage": 10,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "280",
+          "name": "SPÄTBURGUNDER",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Weingut Laufen / Baden / trocken / 13,5 vol.%",
+          "sourcePage": 10,
+          "variants": [
+            {
+              "code": "280",
+              "name": "0,2 l",
+              "price": "6,50"
+            },
+            {
+              "code": "280",
+              "name": "0,7 l",
+              "price": "23,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "281",
+          "name": "MERLOT",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Cantina Valdadige / Trentino / Italien / trocken / 12,5 vol.%",
+          "sourcePage": 10,
+          "variants": [
+            {
+              "code": "281",
+              "name": "0,2 l",
+              "price": "6,20"
+            },
+            {
+              "code": "281",
+              "name": "0,7 l",
+              "price": "22,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "282",
+          "name": "LACRIMUS 5 (TEMPRANILLO)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Bodegas Rodriguez Sanzo / Rioja / Spanien / trocken / 13,5 vol.%",
+          "sourcePage": 10,
+          "variants": [
+            {
+              "code": "282",
+              "name": "0,2 l",
+              "price": "6,50"
+            },
+            {
+              "code": "282",
+              "name": "0,7 l",
+              "price": "23,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "283",
+          "name": "PRIMITIVO",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Cantina Torrevento / Apulien / Italien / trocken / 13,0 vol.%",
+          "sourcePage": 10,
+          "variants": [
+            {
+              "code": "283",
+              "name": "0,2 l",
+              "price": "6,90"
+            },
+            {
+              "code": "283",
+              "name": "0,7 l",
+              "price": "24,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        }
+      ]
+    },
+    {
+      "id": "rose-wein",
+      "name": "ROSE WEIN",
+      "sourcePage": 10,
+      "intro": "",
+      "quantity": "",
+      "items": [
+        {
+          "code": "284",
+          "name": "ROSECUVEE (WEGGEFÄHRTEN)",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Weingut Hammel & Cie / Pfalz / trocken / 11,5 vol.%",
+          "sourcePage": 10,
+          "variants": [
+            {
+              "code": "284",
+              "name": "0,2 l",
+              "price": "6,50"
+            },
+            {
+              "code": "284",
+              "name": "0,7 l",
+              "price": "23,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        },
+        {
+          "code": "285",
+          "name": "SANT EMILIANO ROSATO",
+          "price": null,
+          "volume": "",
+          "marks": "",
+          "description": "Weingut Pratello / Lombardei / Italien / trocken / 11,5 vol.%",
+          "sourcePage": 10,
+          "variants": [
+            {
+              "code": "285",
+              "name": "0,2 l",
+              "price": "7,90"
+            },
+            {
+              "code": "285",
+              "name": "0,7 l",
+              "price": "29,00"
+            }
+          ],
+          "variantLabel": "Menge wählen"
+        }
+      ]
+    }
+  ]
+}

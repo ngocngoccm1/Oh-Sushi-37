@@ -15,8 +15,9 @@
 | Địa chỉ | Hellweg Straße 30, 59597 Erwitte — Word |
 | Điện thoại | 02943 9800335 — Word |
 | Email | ohsushirestaurent@gmail.com — Word |
-| Montag–Donnerstag | 11:30–22:00 — Word |
-| Freitag–Sonntag | 11:30–23:00 — Word |
+| Montag | Ruhetag — ảnh khách cập nhật 05/10/2026 |
+| Dienstag–Donnerstag, Sonntag | 11:30–22:00 — ảnh khách cập nhật 05/10/2026 |
+| Freitag–Samstag | 11:30–22:30 — ảnh khách cập nhật 05/10/2026 |
 | Facebook | [Oh Sushi-37](https://www.facebook.com/share/1ErfTDVLSe/?mibextid=LQQJ4d) — Word |
 | Instagram | [Oh Sushi-37](https://www.instagram.com/ohsushirestaurent?stkn=bzJxaWx1Nmh0MXlp&utm_source=qr) — Word |
 | Brand palette | Word ban đầu: nâu–đen. Yêu cầu mới nhất: bám phong cách PDF. Bản mới lấy đen, vàng, đỏ và trắng của menu; xen giấy sáng để cân bằng. |

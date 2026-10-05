@@ -73,7 +73,17 @@
         dish.hidden = !visible;
         if (visible) categoryCount++;
       });
-      category.hidden = (selected !== 'all' && category.dataset.category !== selected) || categoryCount === 0;
+      category.querySelectorAll('.dish-group').forEach(group => {
+        let next=group.nextElementSibling;
+        let visible=false;
+        while (next && !next.classList.contains('dish-group')) {
+          if (!next.hidden) visible=true;
+          next=next.nextElementSibling;
+        }
+        group.hidden=!visible;
+      });
+      const matchesCategory = selected === 'all' || category.dataset.category === selected || category.dataset.menuType === selected;
+      category.hidden = !matchesCategory || categoryCount === 0;
       if (!category.hidden) count += categoryCount;
     });
     categorySelect.value = selected;
@@ -83,7 +93,7 @@
     });
     noResults.hidden = count > 0;
     searchClear.hidden = !search.value;
-    if (announce) status.textContent = `${count} ${count === 1 ? 'Gericht' : 'Gerichte'} angezeigt.`;
+    if (announce) status.textContent = `${count} ${count === 1 ? 'Eintrag' : 'Einträge'} angezeigt.`;
   }
   function selectCategory(id, clearSearch = true) {
     clearTimeout(searchTimer);
