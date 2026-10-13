@@ -1,0 +1,9 @@
+[
+  {"id":"group-getraenke","name":"Getränke","description":"Säfte, Limonaden, Tee, Bier, Cocktails & Wein.","categories":["saft","limonaden-eistee","kaffee-tee","bier","cocktails","alkoholfreie-cocktails","whiskey-wodka","weisswein","rotwein","rose-wein"]},
+  {"id":"group-vorspeisen","name":"Vorspeisen","description":"Suppen, Salate und kleine Gerichte zum Anfang.","categories":["suppe","salat","vorspeisen"]},
+  {"id":"group-hauptgerichte","name":"Hauptgerichte","description":"Curry, Pho, Deli, Signature-Gerichte und Bowls. Dazu Beilagen & Saucen.","categories":["hauptspeisen","deli","signature","bowl","beilage","sauce"]},
+  {"id":"group-sushi-vorspeisen","name":"Sushi-Vorspeisen","description":"Tatare, Carpaccio und Wakame Mix.","categories":["vorspeise-sushi"]},
+  {"id":"group-sushi","name":"Sushi","description":"Nigiri, Sashimi, Maki und unsere Rolls.","categories":["nigiri","sashimi","gunkan","maki","inside-out","fusion","aburi","crunchy","tempura"]},
+  {"id":"group-sushi-sets","name":"Sushi-Sets","description":"Eine Platte für den ganzen Tisch.","categories":["sets"]},
+  {"id":"group-desserts","name":"Desserts","description":"Etwas Süßes zum Schluss.","categories":["nachspeisen"]}
+]

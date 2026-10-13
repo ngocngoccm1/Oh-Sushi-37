@@ -88,7 +88,7 @@
       heading.append(element('h3', '', item.name), element('strong', '', money(unitPrice(line) * line.quantity)));
       row.append(heading);
       const variant = item.variants[line.variantIndex];
-      if (variant || line.option || item.volume) row.append(element('p', 'cart-item-option', [item.volume, variant?.name, line.option].filter(Boolean).join(' · ')));
+      if (variant || line.option || item.volume || item.serving) row.append(element('p', 'cart-item-option', [item.volume, item.serving, variant?.name, line.option].filter(Boolean).join(' · ')));
       if (item.marks) row.append(element('p', 'dish-marks', `${item.marksLabel}: ${item.marks}`));
       const bottom = element('div', 'cart-item-bottom');
       const stepper = element('div', 'quantity-stepper');
@@ -207,7 +207,7 @@
     const lines = ['Bestellanfrage — Oh! Sushi 37', '', ...cart.map(line => {
       const item = catalog.get(line.key);
       const variant = item.variants[line.variantIndex];
-      const options = [item.volume, variant?.name, line.option].filter(Boolean);
+      const options = [item.volume, item.serving, variant?.name, line.option].filter(Boolean);
       return `${line.quantity} × ${variant?.code || item.code} ${item.name}${options.length ? ' (' + options.join(' · ') + ')' : ''} — ${money(unitPrice(line) * line.quantity)}`;
     }), '', `Summe der Bestellung: ${money(total())}`];
     const name = document.querySelector('#customer-name').value.trim();

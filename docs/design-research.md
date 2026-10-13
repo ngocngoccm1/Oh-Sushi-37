@@ -1,3 +1,30 @@
+# Nguồn và hướng thiết kế hiện hành — 12/10/2026
+
+- Menu món ăn chuẩn: `2026-Oh-Sushi-37-A4-Vordruck.pdf`, 12 trang, 107 mục / 21 category / 39 lựa chọn giá.
+- Menu đồ uống chuẩn: `Oh-Sushi37-Drink-Menu-Vordruck.pdf`, 10 trang, 85 mục / 10 category / 48 lựa chọn giá.
+- Website: 192 mục, 31 category gốc, 7 nhóm dễ tìm theo yêu cầu trong chat: Getränke, Vorspeisen, Hauptgerichte, Sushi-Vorspeisen, Sushi, Sushi-Sets, Desserts. Beilagen/Sauce là mục nhỏ trong Hauptgerichte; không bỏ món.
+- Đọc và đối chiếu đủ 22 trang, Word gốc trong `client-notes.txt` và chỉnh giờ trong `client-updates.md`. Hai PDF mới là nguồn menu hiện hành; phần lịch sử bên dưới không thay thế bản chuẩn.
+
+## Nghiên cứu website Đức cho lần cập nhật này
+
+Đã truy cập lại trang chính thức CODA, MINA, Tim Raue, NENI và Sticks’n’Sushi Germany; đọc nội dung và kiểm tra screenshot Edge 1440px, gồm các phần phía dưới trang sau khi tải nội dung. Screenshot tham khảo chỉ nằm trong `.work/`, không dùng làm asset.
+
+**Primary: [Sticks’n’Sushi Germany](https://www.sticksnsushi.com/de/de/)**. Sushi, trải nghiệm cùng ăn, ảnh món chiếm diện tích lớn, đường dẫn trực tiếp tới menu/đặt bàn phù hợp personality Nhật–Việt casual dining. Áp dụng đường đi ngắn từ đầu trang tới nhóm món và món cụ thể; không dùng navigation pill, ảnh, chương trình hay code của reference.
+
+**Secondary: [MINA Berlin](https://minaberlin.de/)** cho nhịp ảnh/chữ và sự chuyển tiếp giữa trải nghiệm/menu; **[CODA](https://coda-berlin.com/)** cho khoảng trống và bố cục món editorial. [NENI Berlin](https://nenifood.com/restaurants/berlin) cho việc nhấn rõ nhóm nội dung và cảm giác hospitality; [Tim Raue](https://tim-raue.com/) cho contact/reservation rõ. Không lấy palette xanh MINA, lavender NENI hay gradient/pink Tim Raue, font độc quyền, thương hiệu, ảnh hoặc lời quảng cáo.
+
+## Quyết định hiện hành
+
+Nâu sâu `#241912`, giấy kem `#f4eee3`, vàng `#d8af55`, đỏ `#a13428`, mảng đỏ ấm `#943b31`. Màu xuất phát từ menu/logo và các ảnh mới trong PDF (gỗ, hoa, món ăn). Nền tre nâu cho khung menu, giấy sáng cho phần đọc món: giá/tên không đặt lên ảnh. Họa tiết giấy SVG riêng nhẹ, typography Bodoni Moda + Manrope local giữ personality menu. Navigation 7 nhóm trước ảnh hero; sidebar nhóm lớn, subnavigation đúng category PDF và native select trên mobile. Cấu trúc thay đổi giữa ảnh lớn, nền giấy, statement đỏ, ảnh đồ uống, khung menu nâu/giấy, reservation vàng và contact.
+
+Ảnh hiện hành được crop từ chính PDF bản chuẩn: sushi platter trang 11, thao tác sushi trang 8, đồ uống bìa PDF drinks, hoa trang 2 làm nền statement chia sẻ. Caption “Aus unserer Speisekarte/Getränkekarte”, không gọi là ảnh chụp thực tế nội thất nhà hàng. Không còn dùng các ảnh AI trong giao diện hiện tại; file cũ được giữ như lịch sử asset.
+
+`index.html` ở root, asset tương đối và `.nojekyll` phục vụ GitHub Pages. Địa chỉ/giờ/QR/email từ thông tin khách đã xác nhận giữ nguyên. Đặt món vẫn là yêu cầu qua email cần quán xác nhận.
+
+---
+
+## Lịch sử nghiên cứu và dữ liệu trước bản chuẩn 12/10/2026
+
 # Oh! Sushi 37 — phân tích nội dung và thiết kế
 
 ## Tài liệu đã đọc
@@ -22,7 +49,7 @@
 | Instagram | [Oh Sushi-37](https://www.instagram.com/ohsushirestaurent?stkn=bzJxaWx1Nmh0MXlp&utm_source=qr) — Word |
 | Brand palette | Word ban đầu: nâu–đen. Yêu cầu mới nhất: bám phong cách PDF. Bản mới lấy đen, vàng, đỏ và trắng của menu; xen giấy sáng để cân bằng. |
 | Ẩm thực | Nhật, Việt, châu Á — suy ra từ các món thật trong PDF |
-| Menu | 105 món, 21 nhóm, 39 lựa chọn; xem `data/menu.json` và `docs/menu-transcription.md` |
+| Menu lịch sử trước 12/10 | 105 món, 21 nhóm, 39 lựa chọn; xem `data/menu.json` và `docs/menu-transcription.md` |
 | Dị ứng/phụ gia | 14 nhóm A–N và toàn bộ mã phụ gia trong PDF trang 2 |
 | Booking URL / WhatsApp / order | Không được cung cấp hệ thống. Yêu cầu mới trong chat: đặt món. Hiện soạn yêu cầu qua email có thật của quán. |
 | Domain / canonical | Không được cung cấp |

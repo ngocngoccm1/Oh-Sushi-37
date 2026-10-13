@@ -32,3 +32,7 @@ Dialog đã kiểm tra tại 320/375/390/430/768/1024/1440/1920px; keyboard Tab/
 85 đồ uống từ PDF mới được thêm vào catalog, giữ 105 món cũ. Whiskey/wodka có 2 cl và 4 cl; rượu vang có 0,2 l và 0,7 l đúng nguồn. Khách phải chọn dung tích trước khi thêm; hai dung tích tạo hai dòng giỏ riêng. Dung tích cố định cũng xuất hiện trong giỏ và email nháp. Giá vẫn tính bằng cents từ catalog, không tin giá trong localStorage.
 
 Các ký hiệu đồ uống được ghi là “Kennzeichnungen (Getränkekarte)”. PDF đồ uống không kèm legend, vì vậy không áp cách diễn giải mã của PDF món ăn cho đồ uống.
+
+## Bản chuẩn và nhóm menu — 12/10/2026
+
+Catalog hiện có 107 món ăn và 85 đồ uống từ hai PDF Vordruck. Nhóm lớn trong `data/menu-groups.json` chỉ phục vụ điều hướng, không đổi giá hoặc category gốc. Maki 6 STK., Inside Out 8 STK., IKIGAI DELUXE riêng 12 STK.; lượng phần ăn được giữ trong giỏ/email cùng dung tích đồ uống. Các khóa cũ không còn khớp mã+tên mới bị loại khỏi giỏ đã lưu, tránh đổi nhầm một món sang món khác khi mã Maki/Inside Out thay đổi.

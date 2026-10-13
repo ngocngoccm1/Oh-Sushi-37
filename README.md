@@ -1,6 +1,10 @@
 # Oh! Sushi 37
 
-Landing page tiếng Đức, HTML/CSS/JS thuần. Thiết kế lấy đen–vàng–đỏ và graphic tre từ PDF, xen nền giấy sáng. Masthead chữ đậm, ảnh chữ nhật, các bố cục editorial khác nhau và menu HTML từ PDF món ăn 14 trang và PDF đồ uống 10 trang. Có giỏ hàng để soạn yêu cầu đặt món. Bảng màu dùng chung được khai báo trong `:root` của `styles.css`.
+Landing page tiếng Đức, HTML/CSS/JS thuần. Thiết kế lấy đen–vàng–đỏ và graphic tre từ PDF, phối nâu ấm và giấy kem. Bảy nhóm menu hiện ngay đầu trang; ảnh lấy từ chính menu khách gửi. Masthead chữ đậm, ảnh chữ nhật, các bố cục editorial khác nhau và menu HTML từ bản chuẩn PDF món ăn 12 trang và PDF đồ uống 10 trang. Có giỏ hàng để soạn yêu cầu đặt món. Bảng màu dùng chung được khai báo trong `:root` của `styles.css`.
+
+## GitHub Pages
+
+`index.html` nằm trực tiếp ở root project/repository. Asset và PDF dùng URL tương đối, hỗ trợ GitHub Pages dưới đường dẫn project. Có `.nojekyll` để phục vụ file tĩnh trực tiếp; không cần build bằng Node hoặc dịch vụ hosting khác. Trong GitHub Pages chọn branch đang triển khai và thư mục `/ (root)`. Đã kiểm tra trang dưới prefix `/Oh-Sushi-37/`.
 
 ## Chạy local
 
@@ -15,7 +19,8 @@ Mở http://localhost:4173/. Không cần npm hoặc framework. Website cũng c�
 ## Chỉnh nội dung
 
 - `index.html`: nội dung giới thiệu, thông tin quán, metadata, Restaurant schema.
-- `data/menu.json`: 105 món / 21 nhóm, giá, 39 lựa chọn, allergen và phụ gia.
+- `data/menu.json`: 107 món / 21 nhóm, giá, 39 lựa chọn, allergen và phụ gia.
+- `data/menu-groups.json`: 7 nhóm điều hướng theo yêu cầu khách, liên kết tới 31 category gốc; không đổi tên category/món trong PDF.
 - `data/drinks.json`: 85 đồ uống / 10 nhóm, dung tích, 48 lựa chọn dung tích/giá và ký hiệu đúng PDF mới.
 - Hai PDF gốc được giữ trong project và có link tải riêng trên website.
 - `styles.css`: typography, palette, bố cục và responsive.
@@ -50,4 +55,4 @@ Muốn đổi đích QR, cập nhật link/text ở footer trong `index.html`, r
 - `docs/quality-check.md`: kiểm tra responsive, nội dung, interaction và accessibility.
 - `docs/ordering.md`: hành vi đặt món, lưu trữ và hướng dẫn tích hợp kênh nhận đơn khác.
 
-Tài liệu chưa cung cấp domain, booking URL hoặc nội dung pháp lý đầy đủ. Website hiện dùng ảnh minh họa có ghi rõ; cần thay bằng ảnh thật khi có. Không bịa các dữ liệu còn thiếu.
+Tài liệu chưa cung cấp domain, booking URL hoặc nội dung pháp lý đầy đủ. Website dùng ảnh từ các PDF bản chuẩn khách gửi, có ghi nguồn trên giao diện. Không bịa các dữ liệu còn thiếu.

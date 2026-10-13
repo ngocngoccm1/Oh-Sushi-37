@@ -87,3 +87,16 @@ Có semantic landmarks, một h1, heading hierarchy, alt, focus states, skip lin
 - Kiểm tra 320/375/390/430/768/1024/1440/1920px, toàn bộ nhóm menu, navigation mobile, tìm kiếm, deep link, reduced motion và no-JS: không overflow, ảnh hỏng, link nội bộ hỏng hoặc lỗi JavaScript. Đã xem screenshot thực tế phần đồ uống/đơn hàng ở 320/390px và desktop 1440px.
 - Kiểm tra thêm nước ép dung tích cố định, hai mã bia cùng tên, rượu vang 0,2 l/0,7 l, whisky 2 cl/4 cl, số lượng, dòng giỏ riêng, tổng tiền, lưu/tải lại và nội dung email có dung tích. Đơn mẫu 6 dòng / 7 đồ uống tổng 62,70 € đúng cộng từng giá; email bị chặn trong test, không gửi đơn thử.
 - axe: toàn bộ 190 mục và legend mở, toàn bộ đồ uống, hộp chọn dung tích mobile và giỏ đồ uống ở 390/1440px đều 0 violations. Kiểm tra schema xác nhận giờ mới và địa chỉ cũ vẫn đúng; QR footer giữ nguyên đích Google Maps đã xác minh.
+
+
+## Bản chuẩn & giao diện mới — 12/10/2026
+
+- Đã render và đọc đủ 12 trang food + 10 trang drinks. Hai PDF local khớp byte/checksum với file khách gửi. Menu có 107 món, 85 đồ uống, 31 category gốc và 7 nhóm điều hướng; 39 lựa chọn món + 48 lựa chọn dung tích/giá.
+- Kiểm tra độc lập các sửa đổi của bản chuẩn: Baby Mini Tempura VEGIE/8 STK., mô tả Yakitori, Pho mã 34, Maki 6 STK. và mã M6–M15, thêm M15 Tori Maki / U26 Tori I.O, U16–U23/U25, BEST FRIEND PLATTE, Sumo 3 Nigiri, IKIGAI DELUXE riêng 12 STK. Giữ “HÄNSCHENSCHENKEL” đúng chữ in trong PDF.
+- HTML/catalog đối chiếu 192 mã, tên, mô tả, ký hiệu, trang nguồn, giá và giá lựa chọn; cả hai link tải PDF trả 200. Địa chỉ, giờ thứ Hai nghỉ, email và QR giữ đúng thông tin khách đã xác nhận.
+- Viewport 320/375/390/430/768/1024/1440/1920: không overflow ở trang đầu, tất cả 31 category và 7 nhóm; đủ 7 nhóm ngay đầu trang. Đã xem screenshot thật của hero, menu khai vị, sushi, món chính, đồ uống, story/QR ở mobile 320/390 và desktop 1440.
+- Kiểm tra click nhóm, subnavigation, native select mobile, active state, tìm kiếm Tori (5 kết quả có Tori trong nguồn), no-results/clear, deep link category/nhóm/allergen, navigation mobile/Escape/focus, reduced motion, menu 192 mục khi tắt JS. Tất cả pass.
+- Kiểm tra trang dưới prefix `/Oh-Sushi-37/`: HTML, JS, CSS, font, ảnh và PDF dùng đường dẫn tương đối, không lỗi asset. Root `index.html` và `.nojekyll` hỗ trợ GitHub Pages, không yêu cầu framework/build runtime.
+- axe: default 390/1440, navigation mobile, toàn bộ 192 mục/legend, giỏ hàng mobile/desktop, hộp lựa chọn và giỏ rỗng: 0 violations. Không có lỗi JavaScript, link nội bộ hỏng hoặc request tới third party lúc tải trang.
+- Ordering: kiểm tra biến thể, beilage, giới hạn số lượng, tính tiền, lưu/tải lại, email nháp/copy fallback; không gửi email thử. Các món mới và khẩu phần/dung tích được kiểm tra riêng ở cả tám kích thước; đơn 2×Tori Maki + Tori I.O + IKIGAI DELUXE + nước ép + vang 0,7 l tổng 80,60 € đúng giá. Khóa Maki cũ được loại thay vì ghép sang món mới.
+- Build static chạy lại phải cho cùng HTML. Ảnh hiện hành đều lấy từ PDF khách cung cấp, caption/alt ghi rõ; ảnh AI và file PDF cũ không còn được tham chiếu trong giao diện.

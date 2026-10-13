@@ -1,5 +1,5 @@
 {
-  "source": "2026-Oh-Sushi-37-Drink-Demo-2.pdf",
+  "source": "Oh-Sushi37-Drink-Menu-Vordruck.pdf",
   "categories": [
     {
       "id": "saft",
@@ -689,7 +689,7 @@
         },
         {
           "code": "263",
-          "name": "JACK DANIEL’S OLD NO.7",
+          "name": "JACK DANIEL'S OLD NO.7",
           "price": null,
           "volume": "",
           "marks": "",
@@ -711,7 +711,7 @@
         },
         {
           "code": "264",
-          "name": "BALLANTINE’S",
+          "name": "BALLANTINE'S",
           "price": null,
           "volume": "",
           "marks": "",

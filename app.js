@@ -55,16 +55,20 @@
   const searchClear = document.querySelector('.search-clear');
   const categoryLinks = [...document.querySelectorAll('.category-link')];
   const categories = [...document.querySelectorAll('.menu-category')];
+  const groups = new Map(JSON.parse(document.querySelector('#menu-groups').textContent).map(group => [group.id, group]));
   const status = document.querySelector('.menu-status');
   const noResults = document.querySelector('.no-results');
-  const menuNav = document.querySelector('.menu-nav');
+  const subnav = document.querySelector('.menu-subnav');
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('de').replace(/ß/g, 'ss');
   const searchable = new Map(categories.flatMap(category => [...category.querySelectorAll('.menu-dish')].map(dish => [dish, normalize([...dish.children].filter(node => !node.classList.contains('dish-order')).map(node => node.textContent).join(' '))])));
-  let selected = 'fusion';
+  let selected = 'group-vorspeisen';
   let searchTimer;
 
   function filterMenu({announce = true} = {}) {
     const term = normalize(search.value.trim());
+    const activeCategory = categories.find(category => category.dataset.category === selected);
+    const activeGroupId = groups.has(selected) ? selected : activeCategory?.dataset.menuGroup;
+    const activeGroup = groups.get(activeGroupId);
     let count = 0;
     categories.forEach(category => {
       let categoryCount = 0;
@@ -74,50 +78,54 @@
         if (visible) categoryCount++;
       });
       category.querySelectorAll('.dish-group').forEach(group => {
-        let next=group.nextElementSibling;
-        let visible=false;
+        let next = group.nextElementSibling;
+        let visible = false;
         while (next && !next.classList.contains('dish-group')) {
-          if (!next.hidden) visible=true;
-          next=next.nextElementSibling;
+          if (!next.hidden) visible = true;
+          next = next.nextElementSibling;
         }
-        group.hidden=!visible;
+        group.hidden = !visible;
       });
-      const matchesCategory = selected === 'all' || category.dataset.category === selected || category.dataset.menuType === selected;
+      const matchesCategory = selected === 'all' || category.dataset.category === selected || category.dataset.menuType === selected || category.dataset.menuGroup === selected;
       category.hidden = !matchesCategory || categoryCount === 0;
       if (!category.hidden) count += categoryCount;
     });
     categorySelect.value = selected;
     categoryLinks.forEach(link => {
-      if (link.dataset.category === selected) link.setAttribute('aria-current', 'true');
+      const isOverview = link.classList.contains('category-overview');
+      const active = isOverview ? link.dataset.category === activeGroupId : link.dataset.category === selected;
+      if (active) link.setAttribute('aria-current', 'true');
       else link.removeAttribute('aria-current');
+      if (link.classList.contains('subcategory-link')) link.hidden = link.dataset.parentGroup !== activeGroupId;
     });
+    subnav.hidden = !activeGroup;
+    document.querySelector('#active-menu-title').textContent = activeGroup?.name || (selected === 'speisen' ? 'Alle Speisen' : 'Die ganze Karte');
+    document.querySelector('#active-menu-description').textContent = activeGroup?.description || 'Speisen und Getränke. Entdecken Sie Ihre Auswahl.';
+    const groupIndex = [...groups.keys()].indexOf(activeGroupId) + 1;
+    document.querySelector('#active-menu-index').textContent = groupIndex ? `${String(groupIndex).padStart(2, '0')} / UNSERE KARTE` : 'UNSERE KARTE';
     noResults.hidden = count > 0;
     searchClear.hidden = !search.value;
     if (announce) status.textContent = `${count} ${count === 1 ? 'Eintrag' : 'Einträge'} angezeigt.`;
   }
   function selectCategory(id, clearSearch = true) {
     clearTimeout(searchTimer);
-    if (!categoryLinks.some(link => link.dataset.category === id)) return;
+    if (id === 'getraenke') id = 'group-getraenke';
+    if (!['all', 'speisen'].includes(id) && !groups.has(id) && !categories.some(category => category.dataset.category === id)) return;
     selected = id;
     if (clearSearch) search.value = '';
     filterMenu();
-    const active = categoryLinks.find(link => link.dataset.category === id);
-    if (active) {
-      const firstVisible = categoryLinks[Math.max(0, categoryLinks.indexOf(active) - 4)];
-      menuNav.scrollTop = Math.max(0, firstVisible.offsetTop - categoryLinks[0].offsetTop);
-    }
   }
+  const scrollToMenu = () => document.querySelector('#menu-content').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start'});
   categoryLinks.forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
     selectCategory(link.dataset.category);
+    if (groups.has(selected)) history.replaceState(null, '', `#${selected}`);
+    if (innerWidth < 768 && link.classList.contains('category-overview')) scrollToMenu();
   }));
   categorySelect.addEventListener('change', () => selectCategory(categorySelect.value));
   search.addEventListener('input', () => {
     clearTimeout(searchTimer);
-    searchTimer = setTimeout(() => {
-      selected = 'all';
-      filterMenu();
-    }, 120);
+    searchTimer = setTimeout(() => { selected = 'all'; filterMenu(); }, 120);
   });
   searchClear.addEventListener('click', () => {
     clearTimeout(searchTimer);
@@ -125,9 +133,17 @@
     filterMenu();
     search.focus();
   });
-  document.querySelectorAll('[data-show-category]').forEach(link => link.addEventListener('click', () => selectCategory(link.dataset.showCategory)));
+  document.querySelectorAll('[data-show-category]').forEach(link => link.addEventListener('click', event => {
+    selectCategory(link.dataset.showCategory);
+    if (groups.has(selected)) {
+      event.preventDefault();
+      history.replaceState(null, '', `#${selected}`);
+      scrollToMenu();
+    }
+  }));
   function revealHash() {
     const id = window.location.hash.slice(1);
+    if (groups.has(id)) { selectCategory(id); requestAnimationFrame(scrollToMenu); }
     if (id.startsWith('menu-')) {
       const category = categories.find(item => item.id === id);
       if (category) selectCategory(category.dataset.category);
@@ -137,6 +153,7 @@
   window.addEventListener('hashchange', revealHash);
   document.querySelectorAll('a[href="#allergene"]').forEach(link => link.addEventListener('click', () => { document.querySelector('#allergene').open = true; }));
   document.querySelector('.menu-toolbar').hidden = false;
+  document.querySelector('.menu-group-intro').hidden = false;
   document.body.classList.add('menu-enhanced');
   selectCategory(selected);
   revealHash();

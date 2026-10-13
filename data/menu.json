@@ -1,5 +1,5 @@
 {
-  "source": "2026-Oh-Sushi-37-A4-Copyright.pdf",
+  "source": "2026-Oh-Sushi-37-A4-Vordruck.pdf",
   "categories": [
     {
       "id": "suppe",
@@ -105,17 +105,17 @@
     {
       "id": "vorspeisen",
       "name": "VORSPEISEN",
-      "sourcePage": 4,
+      "sourcePage": 3,
       "intro": "",
       "quantity": "",
       "items": [
         {
           "code": "15",
-          "name": "BABY MINI TEMPURA (VEGI, [UNLESERLICH] STK.)",
+          "name": "BABY MINI TEMPURA (VEGIE, 8 STK.)",
           "price": "6,50",
           "marks": "A, F, K",
           "description": "Frisches Gemüse, umhüllt von knusprigen Frühlingsblättern.",
-          "sourcePage": 4
+          "sourcePage": 3
         },
         {
           "code": "16",
@@ -123,15 +123,15 @@
           "price": "6,90",
           "marks": "A, I, L",
           "description": "Bratteigtaschen gefüllt mit Hühnerfleisch, dazu Süß-Chili-Dip.",
-          "sourcePage": 4
+          "sourcePage": 3
         },
         {
           "code": "17",
           "name": "YAKITORI (2 STK.)",
           "price": "7,50",
           "marks": "A, F, K",
-          "description": "",
-          "sourcePage": 4
+          "description": "gegrillte Hähnchenschenkel-Spieße, mit Teriyakisoße und Sesam",
+          "sourcePage": 3
         },
         {
           "code": "18",
@@ -139,7 +139,7 @@
           "price": "6,90",
           "marks": "A, B, C, K",
           "description": "Traditionelle hausgemachte Frühlingsrollen mit Glasnudeln, Morcheln, Frühlingszwiebeln, Kohlrabi, Hähnchenschenkel und Garnelen.",
-          "sourcePage": 4
+          "sourcePage": 3
         },
         {
           "code": "19",
@@ -147,7 +147,7 @@
           "price": null,
           "marks": "A, B, C, E, F, K",
           "description": "Frische Rolle gefüllt mit Salat, Reisnudeln, Erdnüssen, serviert mit Hoisin-Soße",
-          "sourcePage": 4,
+          "sourcePage": 3,
           "variants": [
             {
               "code": "A",
@@ -172,7 +172,7 @@
           "price": "8,90",
           "marks": "A, B, C, K, 1",
           "description": "3 × Tempura Garnelen und Salat mit Unagi-Cocktail-Soße.",
-          "sourcePage": 4
+          "sourcePage": 3
         },
         {
           "code": "21",
@@ -180,7 +180,7 @@
           "price": "6,50",
           "marks": "",
           "description": "Japanische Sojabohnen mit Meersalz.",
-          "sourcePage": 4
+          "sourcePage": 3
         },
         {
           "code": "22",
@@ -188,16 +188,16 @@
           "price": null,
           "marks": "A, B, C, E, K",
           "description": "Sommerrollen, Gyoza, Edamame, Yaki Tori, Kimchi-Salat, Frühlingsrollen, dazu Teriyaki-Soße. Gemischte Vorspeisenplatte für:",
-          "sourcePage": 4,
+          "sourcePage": 3,
           "variants": [
             {
               "code": "",
-              "name": "2 Personen / 2 people",
+              "name": "2 PERSONEN / 2 people",
               "price": "28,00"
             },
             {
               "code": "",
-              "name": "3 Personen / 3 people",
+              "name": "3 PERSONEN / 3 people",
               "price": "39,90"
             }
           ]
@@ -207,7 +207,7 @@
     {
       "id": "hauptspeisen",
       "name": "HAUPTSPEISEN",
-      "sourcePage": 5,
+      "sourcePage": 4,
       "intro": "",
       "quantity": "",
       "items": [
@@ -217,7 +217,7 @@
           "price": null,
           "marks": "A, C, G, H, K, 4",
           "description": "Cremige Curry-Kokos-Soße mit Pilzen, Zucchini, Karotten, Brokkoli und Sesam, serviert mit Kurkuma-Reis. Wahlweise mit:",
-          "sourcePage": 5,
+          "sourcePage": 4,
           "variants": [
             {
               "code": "A",
@@ -226,7 +226,7 @@
             },
             {
               "code": "B",
-              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "name": "GEGRILLTE HÄNSCHENSCHENKEL / chicken thigh",
               "price": "16,90"
             },
             {
@@ -236,7 +236,7 @@
             },
             {
               "code": "D",
-              "name": "GARNELEN / prawns",
+              "name": "GEGRILLTE GARNELEN / prawns",
               "price": "20,90"
             },
             {
@@ -261,8 +261,8 @@
           "name": "UDON",
           "price": null,
           "marks": "A, B, H, K, 4",
-          "description": "Gebratene japanische Udon-Nudeln mit Paprika, Zucchini und Karotten in hausgemachter Unagi-Soße, dazu Röstzwiebeln. Wahlweise mit:",
-          "sourcePage": 5,
+          "description": "Gebratene Japanische Udon-Nudeln mit Paprika, Zucchini und Karotten in hausgemachter Unagi-Soße, dazu Röstzwiebeln. Wahlweise mit:",
+          "sourcePage": 4,
           "variants": [
             {
               "code": "A",
@@ -271,7 +271,7 @@
             },
             {
               "code": "B",
-              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "name": "GEGRILLTE HÄNSCHENSCHENKEL / chicken thigh",
               "price": "16,90"
             },
             {
@@ -286,7 +286,7 @@
             },
             {
               "code": "E",
-              "name": "GARNELEN / prawns",
+              "name": "GEGRILLTE GARNELEN / prawns",
               "price": "20,50"
             },
             {
@@ -307,7 +307,7 @@
           "price": null,
           "marks": "A, B, D, K",
           "description": "Tamarind Soße mit Paprika, Pilze, Zucchini, Karotten, Brokkoli, serviert mit Kurkuma-Reis. Wahlweise mit:",
-          "sourcePage": 5,
+          "sourcePage": 4,
           "variants": [
             {
               "code": "A",
@@ -316,7 +316,7 @@
             },
             {
               "code": "B",
-              "name": "HÄHNCHENSCHENKEL / chicken thigh",
+              "name": "GEGRILLTE HÄNSCHENSCHENKEL / chicken thigh",
               "price": "16,90"
             },
             {
@@ -331,7 +331,7 @@
             },
             {
               "code": "E",
-              "name": "GARNELEN / prawns",
+              "name": "GEGRILLTE GARNELEN / prawns",
               "price": "20,50"
             },
             {
@@ -344,15 +344,16 @@
               "name": "LACHS MEDIUM / medium salmon",
               "price": "21,50"
             }
-          ]
+          ],
+          "spicy": true
         },
         {
-          "code": "33",
+          "code": "34",
           "name": "PHO IN LOVE",
           "price": null,
           "marks": "A, B, F",
           "description": "Traditionelle vietnamesische Reisbandnudelsuppe mit einer kräftigen Rinderbrühe und frischen Kräutern.",
-          "sourcePage": 5,
+          "sourcePage": 4,
           "variants": [
             {
               "code": "A",
@@ -376,7 +377,7 @@
     {
       "id": "deli",
       "name": "DELI",
-      "sourcePage": 6,
+      "sourcePage": 5,
       "intro": "",
       "quantity": "",
       "items": [
@@ -386,7 +387,7 @@
           "price": "18,90",
           "marks": "A, D, K",
           "description": "Im Wok geschwenkte Rinderstreifen mit Ananas, Tomaten, Zuckerschoten, Peperoni und Zwiebeln. Dazu Kurkuma-Reis.",
-          "sourcePage": 6
+          "sourcePage": 5
         },
         {
           "code": "37",
@@ -394,7 +395,7 @@
           "price": "22,90",
           "marks": "A, C, K, N",
           "description": "Gebratene Jakobsmuscheln mit Zitronengras, Chili und saisonalem Gemüse, Limettenblättern, dazu Kurkuma-Reis.",
-          "sourcePage": 6
+          "sourcePage": 5
         },
         {
           "code": "38",
@@ -402,7 +403,7 @@
           "price": "18,90",
           "marks": "A, H, 4",
           "description": "Knusprige Entenbrust mit frischer Ananas, Brokkoli, Tomaten in frischer Süß-Sauer-Soße. Dazu Duftreis. Mit Kurkuma-Reis.",
-          "sourcePage": 6
+          "sourcePage": 5
         },
         {
           "code": "39",
@@ -410,14 +411,14 @@
           "price": "17,50",
           "marks": "A, D, E, K",
           "description": "Mariniertes Rindfleisch gebraten auf Reisnudeln mit gemischtem Salat, Koriander, Erdnüssen, Röstzwiebeln, dazu Fisch-Limetten-Dressing.",
-          "sourcePage": 6
+          "sourcePage": 5
         }
       ]
     },
     {
       "id": "signature",
       "name": "Oh! SUSHI37 SIGNATURE",
-      "sourcePage": 6,
+      "sourcePage": 5,
       "intro": "Gebratenes saisonales Gemüse in Yakinikusoße mit Wildkräutersalat. Dazu wahlweise Süßkartoffeln, Pommes oder Reis.",
       "quantity": "",
       "items": [
@@ -427,7 +428,7 @@
           "price": "23,90",
           "marks": "A, D, K",
           "description": "Medium gegrilltes Lachsfilet.",
-          "sourcePage": 6
+          "sourcePage": 5
         },
         {
           "code": "42",
@@ -435,7 +436,7 @@
           "price": "24,50",
           "marks": "D, K, N",
           "description": "Gegrillte Garnelen und Jakobsmuscheln mit Rosmarin.",
-          "sourcePage": 6
+          "sourcePage": 5
         },
         {
           "code": "43",
@@ -443,14 +444,14 @@
           "price": "22,90",
           "marks": "A, D, I",
           "description": "Geschwenktes Rinderfilet mit Paprika, Zwiebeln, Knoblauch, Koriander, Lauchzwiebeln und Pilzen.",
-          "sourcePage": 6
+          "sourcePage": 5
         }
       ]
     },
     {
       "id": "bowl",
       "name": "BOWL",
-      "sourcePage": 6,
+      "sourcePage": 5,
       "intro": "",
       "quantity": "",
       "items": [
@@ -459,8 +460,8 @@
           "name": "FITNESS BOWL",
           "price": null,
           "marks": "A, D, G, J, K",
-          "description": "Sushi-Reis, Avocado, japanische Bohnen, Gurke, gemischter Salat mit Cocktail-Unagi-Soße",
-          "sourcePage": 6,
+          "description": "Sushi-Reis, Avocado, Japanische Bohnen, Gurke, gemischter Salat mit Cocktail-Unagi-Soße",
+          "sourcePage": 5,
           "variants": [
             {
               "code": "A",
@@ -479,7 +480,7 @@
     {
       "id": "vorspeise-sushi",
       "name": "VORSPEISE SUSHI",
-      "sourcePage": 7,
+      "sourcePage": 6,
       "intro": "",
       "quantity": "",
       "items": [
@@ -489,7 +490,7 @@
           "price": "13,90",
           "marks": "D, G, J, K",
           "description": "Mit Lauchzwiebeln, Koriander, scharfer Sauce & Reiscrackern auf Avocadobett. Wahlweise mit Lachs oder Thunfisch.",
-          "sourcePage": 7
+          "sourcePage": 6
         },
         {
           "code": "24",
@@ -497,7 +498,7 @@
           "price": "13,90",
           "marks": "D, G, J, K",
           "description": "Mit Zwiebeln, Lotuswurzel, Shiso Purple und Ponzu-Oliven-Soße. Wahlweise mit Lachs (flambiert) oder Thunfisch (flambiert).",
-          "sourcePage": 7
+          "sourcePage": 6
         },
         {
           "code": "25",
@@ -505,7 +506,7 @@
           "price": null,
           "marks": "A, D, F, J, K, N",
           "description": "Wakame Salat mit Sakura-Sprossen, Shiso Purple, Sesam-Teriyaki-Dressing und ...",
-          "sourcePage": 7,
+          "sourcePage": 6,
           "variants": [
             {
               "code": "A",
@@ -529,7 +530,7 @@
     {
       "id": "nigiri",
       "name": "NIGIRI",
-      "sourcePage": 7,
+      "sourcePage": 6,
       "intro": "Sushi-Reishäppchen mit verschiedenen Toppings.",
       "quantity": "2 STK.",
       "items": [
@@ -539,7 +540,7 @@
           "price": "5,90",
           "marks": "D, N",
           "description": "Sushi-Reishäppchen mit Lachs.",
-          "sourcePage": 7
+          "sourcePage": 6
         },
         {
           "code": "N2",
@@ -547,7 +548,7 @@
           "price": "6,20",
           "marks": "D, N",
           "description": "Sushi-Reishäppchen mit Thunfisch.",
-          "sourcePage": 7
+          "sourcePage": 6
         },
         {
           "code": "N3",
@@ -555,7 +556,7 @@
           "price": "6,50",
           "marks": "D, N",
           "description": "Sushi-Reishäppchen mit Garnelen.",
-          "sourcePage": 7
+          "sourcePage": 6
         },
         {
           "code": "N4",
@@ -563,7 +564,7 @@
           "price": "6,50",
           "marks": "D, N",
           "description": "Sushi-Reishäppchen mit BBQ Aal.",
-          "sourcePage": 7
+          "sourcePage": 6
         },
         {
           "code": "N5",
@@ -571,14 +572,14 @@
           "price": "7,50",
           "marks": "D, N",
           "description": "Sushi-Reishäppchen mit Jakobsmuscheln.",
-          "sourcePage": 7
+          "sourcePage": 6
         }
       ]
     },
     {
       "id": "sashimi",
       "name": "SASHIMI",
-      "sourcePage": 8,
+      "sourcePage": 6,
       "intro": "Rohes Fischfilet oder Meeresfrüchte auf Seetang-Salat und Sesam-Dressing.",
       "quantity": "6 STK.",
       "items": [
@@ -588,7 +589,7 @@
           "price": "17,90",
           "marks": "B, D, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 6
         },
         {
           "code": "S41",
@@ -596,7 +597,7 @@
           "price": "17,90",
           "marks": "B, D, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 6
         },
         {
           "code": "S42",
@@ -604,7 +605,7 @@
           "price": "18,50",
           "marks": "B, D, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 6
         },
         {
           "code": "S43",
@@ -612,7 +613,7 @@
           "price": "18,50",
           "marks": "B, D, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 6
         },
         {
           "code": "S44",
@@ -620,14 +621,15 @@
           "price": "34,00",
           "marks": "B, D, N",
           "description": "Lachs, Thunfisch, Jakobsmuscheln, Garnelen.",
-          "sourcePage": 8
+          "sourcePage": 6,
+          "quantity": "12 STK."
         }
       ]
     },
     {
       "id": "gunkan",
       "name": "GUNKAN",
-      "sourcePage": 8,
+      "sourcePage": 7,
       "intro": "",
       "quantity": "2 STK.",
       "items": [
@@ -637,7 +639,7 @@
           "price": "7,90",
           "marks": "D, F, G, K",
           "description": "Flambierter Lachs mit Lauchzwiebeln und Spezial-Sauce.",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
           "code": "G46",
@@ -645,161 +647,169 @@
           "price": "7,90",
           "marks": "D, F, G, K",
           "description": "Flambierter Thunfisch mit Lauchzwiebeln und Spezial-Sauce.",
-          "sourcePage": 8
+          "sourcePage": 7
         }
       ]
     },
     {
       "id": "maki",
       "name": "MAKI",
-      "sourcePage": 8,
+      "sourcePage": 7,
       "intro": "",
-      "quantity": "2 STK.",
+      "quantity": "6 STK.",
       "items": [
         {
-          "code": "M8",
+          "code": "M6",
           "name": "AVOCADO – AVOCADO",
           "price": "5,50",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M9",
+          "code": "M7",
           "name": "KAPPA – GURKE",
           "price": "5,00",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M10",
+          "code": "M8",
           "name": "SAKE – LACHS",
           "price": "6,00",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M11",
+          "code": "M9",
           "name": "TEKKA – TUNA",
           "price": "6,20",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M12",
+          "code": "M10",
           "name": "EBI – GARNELEN",
           "price": "6,90",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M13",
+          "code": "M11",
           "name": "FRY EBI – TEMPURA GARNELEN",
           "price": "6,90",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M14",
+          "code": "M12",
           "name": "SALMONSKIN – GEBACKENE LACHSHAUT",
           "price": "6,00",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M15",
+          "code": "M13",
           "name": "KANI – SURIMI & AVOCADO",
           "price": "5,90",
           "marks": "B, D, K, N",
           "description": "",
-          "sourcePage": 8
+          "sourcePage": 7
         },
         {
-          "code": "M16",
+          "code": "M14",
           "name": "HOT TUNA",
           "price": "5,50",
           "marks": "B, D, K, N",
           "description": "Gekochter Thunfisch, Mayo, Chilisauce, Pfeffer, Lauchzwiebeln.",
-          "sourcePage": 8
+          "sourcePage": 7
+        },
+        {
+          "code": "M15",
+          "name": "TORI MAKI - HÜHNERFLEISCH",
+          "price": "5,00",
+          "marks": "",
+          "description": "",
+          "sourcePage": 7
         }
       ]
     },
     {
       "id": "inside-out",
       "name": "URA MAKI INSIDE OUT",
-      "sourcePage": 9,
+      "sourcePage": 7,
       "intro": "Füllung mit Frischkäse, gewickelt in Reis, ummantelt von Fischrogen oder Sesam.",
       "quantity": "8 STK.",
       "items": [
         {
-          "code": "U17",
+          "code": "U16",
           "name": "ALASKA",
           "price": "10,50",
           "marks": "B, D, G, J, K, N",
           "description": "Lachs, Avocado, Frischkäse, Tobiko.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
-          "code": "U18",
+          "code": "U17",
           "name": "CALIFORNIA",
           "price": "9,50",
           "marks": "B, D, G, J, K, N",
           "description": "Avocado, Surimi, Frischkäse, Tobiko.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
-          "code": "U19",
+          "code": "U18",
           "name": "MAGURO",
           "price": "11,90",
           "marks": "B, D, G, J, K, N",
           "description": "Thunfisch, Avocado, Frischkäse, Tobiko.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
-          "code": "U20",
+          "code": "U19",
           "name": "UNAGI",
           "price": "12,50",
           "marks": "B, D, G, J, K, N",
           "description": "BBQ Aal, Avocado, Frischkäse, Sesam.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
-          "code": "U21",
+          "code": "U20",
           "name": "EBI TEMPURA",
           "price": "11,90",
           "marks": "B, D, G, J, K, N",
           "description": "Gebackene Garnelen, Avocado, Frischkäse, Sesam.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
-          "code": "U22",
+          "code": "U21",
           "name": "SALMONSKIN",
           "price": "10,50",
           "marks": "B, D, G, J, K, N",
           "description": "Gebackene Lachshaut, Gurke, Sesam.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
-          "code": "U23",
+          "code": "U22",
           "name": "VEGGIE",
           "price": "8,90",
           "marks": "B, D, G, J, K, N",
           "description": "Avocado, Gurke, Mango, Oshinko, Sesam.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
-          "code": "U24",
+          "code": "U23",
           "name": "SPICY MAGURO",
           "price": "10,50",
           "marks": "B, D, G, J, K, N",
           "description": "Thunfischtatar, Avocado, Lauchzwiebeln und scharfe Soße.",
-          "sourcePage": 9
+          "sourcePage": 7
         },
         {
           "code": "U25",
@@ -807,14 +817,22 @@
           "price": "10,50",
           "marks": "B, D, G, J, K, N",
           "description": "Lachstatar, Avocado, Lauchzwiebeln und scharfe Soße.",
-          "sourcePage": 9
+          "sourcePage": 7
+        },
+        {
+          "code": "U26",
+          "name": "TORI I.O",
+          "price": "10,00",
+          "marks": "",
+          "description": "Hühnerfleisch, Gurke, Frischkäse, Sesam",
+          "sourcePage": 7
         }
       ]
     },
     {
       "id": "fusion",
       "name": "FUSION ROLLS",
-      "sourcePage": 10,
+      "sourcePage": 8,
       "intro": "Spezialitäten des Sushi-Meisters.",
       "quantity": "8 STK.",
       "items": [
@@ -824,7 +842,7 @@
           "price": "14,50",
           "marks": "B, D, G, J, K, N",
           "description": "Kreative Kreation unseres Sushi-Chefs.",
-          "sourcePage": 10
+          "sourcePage": 8
         },
         {
           "code": "F27",
@@ -832,7 +850,7 @@
           "price": "17,90",
           "marks": "B, D, G, J, K, N",
           "description": "Kreative Kreation unseres Sushi-Chefs.",
-          "sourcePage": 10
+          "sourcePage": 8
         },
         {
           "code": "F28",
@@ -840,7 +858,7 @@
           "price": "16,50",
           "marks": "B, D, G, J, K, N",
           "description": "Lachshaut, Avocado, Philadelphia, Surimi, Gurke, Sesam, bedeckt mit BBQ Aal und Unagi-Soße.",
-          "sourcePage": 10
+          "sourcePage": 8
         },
         {
           "code": "F29",
@@ -848,7 +866,7 @@
           "price": "17,50",
           "marks": "B, D, G, J, K, N",
           "description": "Avocado, Gurke, Mango, Philadelphia, Surimi, Tempura Garnelen, Lachs, Thunfisch und Jakobsmuscheln, dazu Unagi-Soße und Sesam.",
-          "sourcePage": 10
+          "sourcePage": 8
         },
         {
           "code": "F30",
@@ -856,7 +874,7 @@
           "price": "17,50",
           "marks": "B, D, G, J, K, N",
           "description": "Ebi Tempura, Gurke, Avocado, Surimi, Mango, Thunfischmantel, Philadelphia und Unagi-Soße, Sesam.",
-          "sourcePage": 10
+          "sourcePage": 8
         },
         {
           "code": "F31",
@@ -864,7 +882,7 @@
           "price": "17,50",
           "marks": "B, D, G, J, K, N",
           "description": "Lachstatar, Gurke, Mango, Surimi, Avocado, Lauchzwiebeln, scharfe Soße.",
-          "sourcePage": 10
+          "sourcePage": 8
         },
         {
           "code": "F32",
@@ -872,14 +890,14 @@
           "price": "17,50",
           "marks": "B, D, G, J, K, N",
           "description": "Thunfischtatar, Gurke, Lauchzwiebeln, Avocado, Surimi, Mango, scharfe Soße.",
-          "sourcePage": 10
+          "sourcePage": 8
         }
       ]
     },
     {
       "id": "aburi",
       "name": "ABURI FUSION ROLL",
-      "sourcePage": 11,
+      "sourcePage": 9,
       "intro": "Flambierte Spezialitäten des Sushimeisters.",
       "quantity": "8 STK.",
       "items": [
@@ -889,7 +907,7 @@
           "price": "15,90",
           "marks": "B, D, G, I, K, N",
           "description": "Thunfischtatar, Avocado, Lauchzwiebeln, Surimi, Gurke, Cocktailsoße, Spicy Soße, Tobiko.",
-          "sourcePage": 11
+          "sourcePage": 9
         },
         {
           "code": "A34",
@@ -897,7 +915,7 @@
           "price": "15,90",
           "marks": "B, D, G, I, K, N",
           "description": "Lachstatar, Avocado, Gurke, Surimi, Lauchzwiebeln, Cocktailsoße, Spicy Soße, Tobiko.",
-          "sourcePage": 11
+          "sourcePage": 9
         },
         {
           "code": "A35",
@@ -905,7 +923,7 @@
           "price": "16,50",
           "marks": "B, D, G, I, K, N",
           "description": "Lachs, Thunfisch, Avocado, Gurke, Surimi, Cocktailsoße, Spicy Soße, Unagi-Soße und Tobiko.",
-          "sourcePage": 11
+          "sourcePage": 9
         },
         {
           "code": "A36",
@@ -913,7 +931,7 @@
           "price": "16,50",
           "marks": "B, D, G, I, K, N",
           "description": "Avocado, Gurke, Philadelphia, Surimi, Mango, Lachshaut & flambierter Lachsmantel.",
-          "sourcePage": 11
+          "sourcePage": 9
         },
         {
           "code": "A37",
@@ -921,7 +939,7 @@
           "price": "17,90",
           "marks": "B, D, G, I, K, N",
           "description": "Avocado, Gurke, Philadelphia und gebackene Garnelen, bedeckt mit flambiertem Rindfleisch, dazu Unagi-Soße.",
-          "sourcePage": 11
+          "sourcePage": 9
         },
         {
           "code": "A38",
@@ -929,7 +947,7 @@
           "price": "17,50",
           "marks": "B, D, G, I, K, N",
           "description": "Ebi Tempura, Gurke, Avocado, Mango, Surimi, Philadelphia, Lachsmantel, Cocktailsoße, Unagi-Soße, Spicy Soße.",
-          "sourcePage": 11
+          "sourcePage": 9
         },
         {
           "code": "A39",
@@ -937,14 +955,14 @@
           "price": "17,50",
           "marks": "B, D, G, I, K, N",
           "description": "Lachstatar, Avocado, Gurke, Garnelen, Philadelphia, Surimi, Lauchzwiebeln, Cocktailsoße, Unagi-Soße und Tobiko.",
-          "sourcePage": 11
+          "sourcePage": 9
         }
       ]
     },
     {
       "id": "crunchy",
       "name": "CRUNCHY BIG ROLL",
-      "sourcePage": 12,
+      "sourcePage": 10,
       "intro": "Gebackenes Sushi im Tempuramantel. Mit Frischkäse, Cocktailsoße und Unagi-Soße.",
       "quantity": "10 STK.",
       "items": [
@@ -954,7 +972,7 @@
           "price": "16,50",
           "marks": "B, D, G, I, K, N",
           "description": "Lachs, Avocado. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
-          "sourcePage": 12
+          "sourcePage": 10
         },
         {
           "code": "T48",
@@ -962,7 +980,7 @@
           "price": "16,50",
           "marks": "B, D, G, I, K, N",
           "description": "Thunfisch, Avocado. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
-          "sourcePage": 12
+          "sourcePage": 10
         },
         {
           "code": "T49",
@@ -970,7 +988,7 @@
           "price": "16,90",
           "marks": "B, D, G, I, K, N",
           "description": "Tempura Garnelen, Avocado. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
-          "sourcePage": 12
+          "sourcePage": 10
         },
         {
           "code": "T50",
@@ -978,7 +996,7 @@
           "price": "16,50",
           "marks": "B, D, G, I, K, N",
           "description": "Huhn, Avocado, Gurke. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
-          "sourcePage": 12
+          "sourcePage": 10
         },
         {
           "code": "T51",
@@ -986,7 +1004,7 @@
           "price": "14,90",
           "marks": "B, D, G, I, K, N",
           "description": "Grüner Spargel, Avocado, Gurke, Mango, eingelegter Rettich. Gebackenes Sushi im Tempuramantel mit Frischkäse, Cocktailsoße und Unagi-Soße.",
-          "sourcePage": 12
+          "sourcePage": 10
         },
         {
           "code": "T52",
@@ -994,14 +1012,14 @@
           "price": "19,90",
           "marks": "B, D, G, K, N",
           "description": "Surimi, Avocado, Gurke, Frischkäse, scharf gewürzter Thunfisch, Unagi-Soße.",
-          "sourcePage": 12
+          "sourcePage": 10
         }
       ]
     },
     {
       "id": "tempura",
       "name": "TEMPURA MINI ROLL",
-      "sourcePage": 12,
+      "sourcePage": 10,
       "intro": "Gebackenes Sushi im Tempuramantel. Mit Mango-Soße und Unagi-Soße.",
       "quantity": "8 STK.",
       "items": [
@@ -1011,7 +1029,7 @@
           "price": "10,50",
           "marks": "D, G, K",
           "description": "",
-          "sourcePage": 12
+          "sourcePage": 10
         },
         {
           "code": "T54",
@@ -1019,7 +1037,7 @@
           "price": "10,50",
           "marks": "D, G, K",
           "description": "",
-          "sourcePage": 12
+          "sourcePage": 10
         },
         {
           "code": "T56",
@@ -1027,14 +1045,14 @@
           "price": "9,90",
           "marks": "D, G, K",
           "description": "",
-          "sourcePage": 12
+          "sourcePage": 10
         }
       ]
     },
     {
       "id": "sets",
       "name": "SUSHI SET",
-      "sourcePage": 13,
+      "sourcePage": 11,
       "intro": "",
       "quantity": "",
       "items": [
@@ -1044,7 +1062,7 @@
           "price": "22,00",
           "marks": "D, G, K",
           "description": "6 St. Sake Maki, 3 St. Sake Nigiri, 3 St. Sake Sashimi.",
-          "sourcePage": 13
+          "sourcePage": 11
         },
         {
           "code": "M99",
@@ -1052,7 +1070,7 @@
           "price": "22,90",
           "marks": "D, G, K",
           "description": "6 St. Tekka Maki, 3 St. Maguro Nigiri, 3 Maguro Sashimi.",
-          "sourcePage": 13
+          "sourcePage": 11
         },
         {
           "code": "M100",
@@ -1060,7 +1078,7 @@
           "price": "23,50",
           "marks": "B, D, G, K",
           "description": "8 St. California I-O, 6 St. Sake Maki, 3 St. flambierte Sashimi Tuna.",
-          "sourcePage": 13
+          "sourcePage": 11
         },
         {
           "code": "M101",
@@ -1068,7 +1086,7 @@
           "price": "19,00",
           "marks": "K",
           "description": "8 St. Vegetarische I-O, 6 St. Kappa Maki, 6 St. Avocado Maki und Wakame-Salat.",
-          "sourcePage": 13
+          "sourcePage": 11
         },
         {
           "code": "M102",
@@ -1076,23 +1094,23 @@
           "price": "29,00",
           "marks": "B, D, G, K, N",
           "description": "8 St. Dragon Roll, 6 St. verschiedene Nigiri.",
-          "sourcePage": 13
+          "sourcePage": 11
         },
         {
           "code": "M103",
-          "name": "BEST FRIEND PLATE",
+          "name": "BEST FRIEND PLATTE",
           "price": "50,00",
           "marks": "A, B, D, G, K, N",
           "description": "8 St. Freestyle Roll, 6 St. Maki, 2 St. Nigiri, 10 St. Toronto Crunchy, 3 St. Sashimi.",
-          "sourcePage": 13
+          "sourcePage": 11
         },
         {
           "code": "M104",
           "name": "SUMO PLATTE",
           "price": "75,00",
           "marks": "A, B, D, G, K, N",
-          "description": "8 St. Freestyle Roll, 8 St. Fusion Roll, 6 St. Maki, 1 St. Nigiri, 6 St. Sashimi, 10 St. Crunchy Big Roll.",
-          "sourcePage": 13
+          "description": "8 St. Freestyle Roll, 8 St. Fusion Roll, 6 St. Maki, 3 St. Nigiri, 6 St. Sashimi, 10 St. Crunchy Big Roll.",
+          "sourcePage": 11
         },
         {
           "code": "M105",
@@ -1100,7 +1118,7 @@
           "price": "100,00",
           "marks": "A, B, D, G, K, N",
           "description": "8 St. Freestyle Roll, 8 St. Aburi Fusion Roll, 8 St. Inside Out, 6 St. Maki, 4 St. Nigiri, 20 St. Crunchy Big Roll, 6 St. Sashimi.",
-          "sourcePage": 13
+          "sourcePage": 11
         },
         {
           "code": "M106",
@@ -1108,14 +1126,14 @@
           "price": "145,00",
           "marks": "A, B, D, G, K, N",
           "description": "All-in-Kreation des Sushi-Chefs (Überraschungsmenü).",
-          "sourcePage": 13
+          "sourcePage": 11
         }
       ]
     },
     {
       "id": "nachspeisen",
       "name": "NACHSPEISEN",
-      "sourcePage": 14,
+      "sourcePage": 12,
       "intro": "",
       "quantity": "",
       "items": [
@@ -1125,7 +1143,7 @@
           "price": "3,50",
           "marks": "A, E, 4",
           "description": "Gebackene Banane mit Vanilleeis, dazu Honig und Erdnüssen.",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "251",
@@ -1133,7 +1151,7 @@
           "price": "4,90",
           "marks": "A, G",
           "description": "Hausgemachte Panna Cotta mit Mango.",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "252",
@@ -1141,7 +1159,7 @@
           "price": "5,90",
           "marks": "A, G, 4",
           "description": "Japanische Reisküchlein mit Grüntee-Eisfüllung.",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "254",
@@ -1149,7 +1167,7 @@
           "price": "6,50",
           "marks": "A, C, G, 4",
           "description": "Knusprig gebackenes Vanilleeis im Kokosmantel.",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "256",
@@ -1157,14 +1175,14 @@
           "price": "5,50",
           "marks": "A, E, G, K",
           "description": "Schwarzer Klebreis mit Kokosmilch, Mangopüree und Ingwer.",
-          "sourcePage": 14
+          "sourcePage": 12
         }
       ]
     },
     {
       "id": "beilage",
       "name": "BEILAGE",
-      "sourcePage": 14,
+      "sourcePage": 12,
       "intro": "",
       "quantity": "",
       "items": [
@@ -1174,7 +1192,7 @@
           "price": "3,00",
           "marks": "",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "B2",
@@ -1182,7 +1200,7 @@
           "price": "6,50",
           "marks": "",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "B3",
@@ -1190,7 +1208,7 @@
           "price": "4,00",
           "marks": "",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "B4",
@@ -1198,14 +1216,14 @@
           "price": "4,50",
           "marks": "",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         }
       ]
     },
     {
       "id": "sauce",
       "name": "SAUCE",
-      "sourcePage": 14,
+      "sourcePage": 12,
       "intro": "",
       "quantity": "",
       "items": [
@@ -1215,7 +1233,7 @@
           "price": "1,50",
           "marks": "D, F, N",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "C2",
@@ -1223,7 +1241,7 @@
           "price": "1,50",
           "marks": "A, F, G",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "C3",
@@ -1231,7 +1249,7 @@
           "price": "1,50",
           "marks": "A, F",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         },
         {
           "code": "C4",
@@ -1239,7 +1257,7 @@
           "price": "1,00",
           "marks": "A",
           "description": "",
-          "sourcePage": 14
+          "sourcePage": 12
         }
       ]
     }

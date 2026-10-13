@@ -1,3 +1,21 @@
+# Asset hiện hành — 12/10/2026
+
+Ảnh đang dùng trong website được crop từ bản PDF chuẩn khách cung cấp; không lấy ảnh nhà hàng tham khảo và không sửa nội dung ảnh bằng AI.
+
+| Asset | Nguồn | Xử lý |
+| --- | --- | --- |
+| `menu-sushi-640/960/1536.webp` | PDF món ăn trang 11, phần ảnh dưới menu Sushi Set | Crop bỏ toàn bộ chữ menu; WebP, giữ tỉ lệ; bản lớn thực tế 1415px, khai báo srcset đúng 1415w |
+| `menu-craft-480/960.webp` | PDF món ăn trang 8, phần ảnh dưới Fusion Rolls | Crop phần ảnh, giữ bàn tay và món, object-fit cho portrait |
+| `menu-drinks-480/960.webp` | Bìa PDF đồ uống | Crop bỏ logo và heading, WebP responsive |
+| `menu-blossom-960.webp` | PDF đồ uống trang 2 | Ảnh trang trí nền section chia sẻ; alt rỗng, lazy load, phủ nâu để chữ rõ |
+| `paper.svg`, `bamboo.svg` | Vector riêng của project | Texture nhẹ dùng bằng CSS, không sao chép từ website tham khảo |
+
+Các ảnh có caption nguồn trên giao diện và alt mô tả những gì ảnh thể hiện. Chúng không chứng minh ảnh thực tế tại địa điểm nhà hàng. Hai font local Bodoni Moda/Manrope giữ giấy phép OFL như trước. QR địa chỉ không thay đổi.
+
+---
+
+## Lịch sử asset trước 12/10/2026 (không còn dùng ảnh AI trên trang hiện hành)
+
 # Ảnh sử dụng
 
 Project ban đầu không có ảnh món ăn, ảnh nhà hàng hay ảnh nhân viên. Có logo trong trang bìa PDF; logo này được crop từ nguồn khách cung cấp, không thiết kế lại.
