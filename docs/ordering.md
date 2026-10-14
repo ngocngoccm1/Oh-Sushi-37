@@ -18,7 +18,7 @@ Nút Bestellung kopieren sao chép nội dung; nếu clipboard bị chặn, hi�
 - Khóa món gồm category, số nguồn và tên, tránh ghi đè các mã 33/42 trùng trong PDF.
 - Giá tính bằng integer cents; không lấy giá từ localStorage. Dữ liệu giỏ đã lưu được kiểm tra lại với catalog khi tải trang.
 - `localStorage` chỉ chứa mã lựa chọn/biến thể/beilage/số lượng. Tên, điện thoại và ghi chú không được lưu. Nếu storage bị chặn, giỏ vẫn hoạt động trong lượt truy cập đó.
-- `orders.js` chứa email nhận đơn và logic giao diện; `styles.css` chứa dialog/cart responsive.
+- `orders.js` chứa logic giỏ hàng; `contact.js` đọc email nhận từ Restaurant JSON-LD và xử lý email/copy; `dialogs.js` quản lý dialog/focus dùng chung với đặt bàn. `styles.css` chứa dialog/cart responsive.
 - Không có payment gateway, backend xác nhận hoặc phí giao hàng tự tạo. Khi được cung cấp hệ thống nhận đơn thực tế, thay bước mailto bằng tích hợp endpoint/link đó và bổ sung trạng thái nhận đơn theo phản hồi thật.
 
 ## Kiểm tra
@@ -36,3 +36,7 @@ Các ký hiệu đồ uống được ghi là “Kennzeichnungen (Getränkekarte
 ## Bản chuẩn và nhóm menu — 12/10/2026
 
 Catalog hiện có 107 món ăn và 85 đồ uống từ hai PDF Vordruck. Nhóm lớn trong `data/menu-groups.json` chỉ phục vụ điều hướng, không đổi giá hoặc category gốc. Maki 6 STK., Inside Out 8 STK., IKIGAI DELUXE riêng 12 STK.; lượng phần ăn được giữ trong giỏ/email cùng dung tích đồ uống. Các khóa cũ không còn khớp mã+tên mới bị loại khỏi giỏ đã lưu, tránh đổi nhầm một món sang món khác khi mã Maki/Inside Out thay đổi.
+
+## CTA và đặt bàn — 14/10/2026
+
+Hero có Gerichte bestellen dẫn thẳng tới phần chọn món. Bestellen trong header và thanh điện thoại mở giỏ; giỏ rỗng có nút chọn món. Reservieren mở form đặt bàn riêng, xem `docs/reservations.md`. Hai luồng dùng chung dialog/contact helper, giữ thông tin email và số điện thoại từ nguồn thật.

@@ -100,3 +100,13 @@ Có semantic landmarks, một h1, heading hierarchy, alt, focus states, skip lin
 - axe: default 390/1440, navigation mobile, toàn bộ 192 mục/legend, giỏ hàng mobile/desktop, hộp lựa chọn và giỏ rỗng: 0 violations. Không có lỗi JavaScript, link nội bộ hỏng hoặc request tới third party lúc tải trang.
 - Ordering: kiểm tra biến thể, beilage, giới hạn số lượng, tính tiền, lưu/tải lại, email nháp/copy fallback; không gửi email thử. Các món mới và khẩu phần/dung tích được kiểm tra riêng ở cả tám kích thước; đơn 2×Tori Maki + Tori I.O + IKIGAI DELUXE + nước ép + vang 0,7 l tổng 80,60 € đúng giá. Khóa Maki cũ được loại thay vì ghép sang món mới.
 - Build static chạy lại phải cho cùng HTML. Ảnh hiện hành đều lấy từ PDF khách cung cấp, caption/alt ghi rõ; ảnh AI và file PDF cũ không còn được tham chiếu trong giao diện.
+
+## Đặt bàn và đặt món — 14/10/2026
+
+- Thêm form đặt bàn từ header/hero/section đặt bàn/navigation điện thoại/thanh dưới. Ngày, giờ, số khách, tên và số điện thoại bắt buộc; ghi chú tùy chọn. Lịch đọc trực tiếp từ Restaurant JSON-LD theo Europe/Berlin. Không gửi email hoặc đơn thử tới quán.
+- Kiểm tra thứ Hai nghỉ, ngày đã qua, giờ trước mở cửa/đúng giờ đóng cửa, thứ Sáu 22:15 được phép và Chủ Nhật 22:15 bị chặn, giờ đã qua trong ngày, số khách 0/số lẻ/để trống, tên chỉ chứa khoảng trắng. Email có đúng địa chỉ, ngày tiếng Đức, giờ địa phương, số khách, tên, điện thoại và Unicode ghi chú. Sao chép và fallback textarea pass.
+- Kiểm tra form tại 320/375/390/430/768/1024/1440/1920px: không tràn ngang. Xem screenshot thực tế form, hero và section đặt bàn trên mobile 320/390 và desktop 1440. Viewport thấp 320×480 vẫn cuộn được tới thông tin khách và nút đóng luôn trong màn hình.
+- Tab/Shift+Tab giữ focus trong dialog, Escape/nút đóng trả focus, navigation mobile đóng và bỏ inert trước khi mở form, đổi giữa giỏ/form chỉ có một dialog và body lock được giải phóng đúng. Reload không giữ thông tin khách.
+- Chạy lại giỏ hàng: 192 mục/87 giá lựa chọn khớp nguồn, biến thể/beilage, số lượng/tổng tiền, tăng/giảm/xóa, persistence/dữ liệu hỏng, email nháp và copy fallback pass. Hero dẫn tới menu và focus bộ lọc mobile.
+- Chạy lại toàn bộ trang/menu ở tám viewport, 31 category/7 nhóm, tìm kiếm/deep link/navigation, ảnh decode, link nội bộ, PDF, schema và no-JS. Kiểm tra prefix GitHub Pages `/Oh-Sushi-37/` bao gồm các JS mới: pass, không lỗi asset hoặc JavaScript.
+- axe: form đặt bàn/copy fallback 390/1440, giỏ hàng mobile/desktop/hộp lựa chọn/giỏ rỗng, trang mặc định 390/1440 và navigation mobile đều 0 violations.

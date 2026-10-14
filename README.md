@@ -26,6 +26,8 @@ Mở http://localhost:4173/. Không cần npm hoặc framework. Website cũng c�
 - `styles.css`: typography, palette, bố cục và responsive.
 - `app.js`: navigation mobile, lọc menu, tìm kiếm và liên kết đến nhóm món.
 - `orders.js`: chọn biến thể, giỏ hàng, lưu lựa chọn local, tổng tiền và soạn email đặt món.
+- `reservations.js`: form đặt bàn, kiểm tra ngày/giờ theo lịch quán tại Europe/Berlin và soạn email yêu cầu.
+- `dialogs.js` / `contact.js`: quản lý dialog, focus bàn phím và email/copy dùng chung cho hai luồng.
 - `assets/`: logo, ảnh WebP và font local có giấy phép OFL.
 
 Sau khi chỉnh menu, chạy:
@@ -36,7 +38,7 @@ python3 scripts/build.py
 
 Script cập nhật các vùng HTML menu/preview/legend và catalog đặt món trong `index.html`. Không cần tải JSON trong trình duyệt. Khi tắt JavaScript, toàn bộ menu vẫn hiện và navigation dùng anchor; đặt món tương tác cần JavaScript.
 
-Đặt bàn qua số điện thoại có thật. Map mở Google Maps sau khi người dùng bấm; không dùng iframe, analytics hay third-party tracking trên trang.
+Đặt bàn: nút Reservieren/Tisch anfragen mở form ngày, giờ, số khách, tên và điện thoại. Form dùng lịch trong Restaurant JSON-LD; chặn thứ Hai nghỉ, ngày/giờ đã qua và giờ ngoài lịch mở cửa. Nút E-Mail-Anfrage öffnen tạo email nháp đến địa chỉ thật của quán; khách gửi và chờ phản hồi xác nhận. Có sao chép yêu cầu và gọi điện dự phòng. Thông tin cá nhân không được lưu. Map mở Google Maps sau khi người dùng bấm; không dùng iframe, analytics hay third-party tracking trên trang.
 
 Đặt món: thêm món từ menu, chọn biến thể/beilage hoặc dung tích nếu có lựa chọn trong PDF, kiểm tra giỏ hàng rồi điền tên/số điện thoại. Nút gửi mở email nháp đến `ohsushirestaurent@gmail.com`; khách cần gửi trong ứng dụng email và chờ quán xác nhận. Có nút sao chép đơn và gọi quán. Chưa có backend nhận đơn, thanh toán hay dịch vụ giao hàng được cung cấp. Xem `docs/ordering.md`.
 

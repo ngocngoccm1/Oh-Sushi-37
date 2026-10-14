@@ -22,12 +22,12 @@
     else if (restoreFocus) toggle.focus();
   }
   toggle.addEventListener('click', () => setNav(!navOpen));
-  document.addEventListener('before-order-open', () => { if (navOpen) setNav(false); });
+  document.addEventListener('before-service-open', () => { if (navOpen) setNav(false); });
   mobileNav.addEventListener('click', (event) => {
     const link = event.target.closest('a');
     if (!link) return;
     setNav(false);
-    if (link.hash) {
+    if (link.hash && !link.hasAttribute('data-open-reservation')) {
       const destination = document.querySelector(link.hash);
       if (destination) {
         destination.setAttribute('tabindex', '-1');
@@ -123,6 +123,11 @@
     if (innerWidth < 768 && link.classList.contains('category-overview')) scrollToMenu();
   }));
   categorySelect.addEventListener('change', () => selectCategory(categorySelect.value));
+  document.querySelectorAll('[data-start-order]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault();
+    scrollToMenu();
+    (innerWidth < 768 ? categorySelect : search).focus({preventScroll: true});
+  }));
   search.addEventListener('input', () => {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => { selected = 'all'; filterMenu(); }, 120);

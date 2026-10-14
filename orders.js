@@ -3,7 +3,7 @@
   const catalog = new Map(JSON.parse(document.querySelector('#order-catalog').textContent).map(item => [item.key, item]));
   const money = cents => new Intl.NumberFormat('de-DE', {style: 'currency', currency: 'EUR'}).format(cents / 100);
   const storageKey = 'oh-sushi-37-cart-v1';
-  const recipient = 'ohsushirestaurent@gmail.com';
+  const {openDraft, copyDraft} = window.RestaurantContact;
   const cartDialog = document.querySelector('#cart-dialog');
   const dishDialog = document.querySelector('#dish-dialog');
   const cartItems = document.querySelector('#cart-items');
@@ -17,7 +17,7 @@
   let cart = [];
   let currentDish;
   let toastTimer;
-  let opener;
+  const {open: openDialog, close: closeDialog} = window.RestaurantDialogs;
 
   function validLine(line) {
     if (!line || typeof line !== 'object') return false;
@@ -46,33 +46,6 @@
     toast.classList.add('is-visible');
     toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 2800);
   }
-  function openDialog(dialog, button) {
-    document.dispatchEvent(new Event('before-order-open'));
-    opener = button || document.activeElement;
-    dialog.showModal();
-    document.body.classList.add('order-open');
-  }
-  function closeDialog(dialog) { dialog.close(); }
-  [dishDialog, cartDialog].forEach(dialog => {
-    dialog.querySelector('[data-close-dialog]').addEventListener('click', () => closeDialog(dialog));
-    dialog.addEventListener('keydown', event => {
-      if (event.key !== 'Tab') return;
-      const controls = [...dialog.querySelectorAll('button, a[href], input, select, textarea')].filter(control => !control.disabled && control.getClientRects().length);
-      const first = controls[0];
-      const last = controls[controls.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    });
-    dialog.addEventListener('close', () => {
-      document.body.classList.remove('order-open');
-      if (opener?.isConnected) opener.focus({preventScroll: true});
-    });
-    dialog.addEventListener('click', event => {
-      if (event.target !== dialog) return;
-      const rect = dialog.getBoundingClientRect();
-      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeDialog(dialog);
-    });
-  });
   function element(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -201,7 +174,7 @@
   });
   document.querySelector('#browse-dishes').addEventListener('click', () => {
     closeDialog(cartDialog);
-    document.querySelector('#speisekarte').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    document.querySelector('#menu-content').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   });
   function orderText() {
     const lines = ['Bestellanfrage — Oh! Sushi 37', '', ...cart.map(line => {
@@ -226,22 +199,11 @@
       field.value = field.value.trim();
     });
     if (!cart.length || !orderForm.reportValidity()) return;
-    const link = document.createElement('a');
-    link.href = `mailto:${recipient}?subject=${encodeURIComponent('Bestellanfrage — Oh! Sushi 37')}&body=${encodeURIComponent(orderText())}`;
-    link.click();
+    openDraft('Bestellanfrage — Oh! Sushi 37', orderText());
     feedback.textContent = 'Bitte senden Sie den Entwurf in Ihrem E-Mail-Programm. Falls sich kein Programm öffnet, kopieren Sie Ihre Bestellung oder rufen Sie uns an. Ihre Auswahl bleibt im Warenkorb.';
   });
   document.querySelector('#copy-order').addEventListener('click', async () => {
-    const text = orderText();
-    try {
-      await navigator.clipboard.writeText(text);
-      feedback.textContent = 'Bestellung kopiert. Sie können sie in Ihre Nachricht an das Restaurant einfügen.';
-    } catch {
-      document.querySelector('#manual-copy-field').hidden = false;
-      const field = document.querySelector('#manual-order-text');
-      field.value = text; field.focus(); field.select();
-      feedback.textContent = 'Bitte kopieren Sie den markierten Text und senden Sie ihn an das Restaurant.';
-    }
+    await copyDraft(orderText(), feedback, document.querySelector('#manual-copy-field'), document.querySelector('#manual-order-text'));
   });
   renderCart();
 })();
