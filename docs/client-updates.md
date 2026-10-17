@@ -17,3 +17,7 @@ Nguồn: ảnh viết tay khách gửi trong chat (`codex-clipboard-3034d4dd-7e8
 QR cuối trang mở liên kết Google Maps đang có của quán, dùng đúng địa chỉ hiện tại. Chưa có URL website chính thức nên không mã hóa localhost, URL triển khai phỏng đoán hay domain tự đặt. QR là SVG đen/trắng có vùng trống bốn module, phục vụ local, có link mở Maps trực tiếp cho người đang dùng điện thoại.
 
 Khi cần đổi đích QR: sửa link `footer-qr-code`, link/text đi kèm trong `index.html`, sau đó chạy `scripts/generate_qr.py` trong môi trường Python có package `qrcode`. Không cần thư viện QR hoặc dịch vụ bên ngoài lúc người dùng tải website.
+
+## Menu đồ uống — 17/10/2026
+
+Khách yêu cầu đổi menu đồ uống và push, kèm PDF `NEW-2026 Oh Sushi 37 A4 Vordruck.pdf` (12 trang). Menu đã cập nhật đủ 89 đồ uống và legend trang 11. Trang 11 của PDF ghi Mo. 11:30–22:00, Di. Ruhetag, Mi.–Fr. 11:30–22:00, Sa.–So. 11:30–22:30; khác lịch khách trực tiếp xác nhận ở trên. Phạm vi lần này là menu, vì vậy giữ giờ đã xác nhận 05/10, địa chỉ đầy đủ và QR Maps hiện có. Đã báo khác biệt giờ cho khách trong chat.

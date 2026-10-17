@@ -40,3 +40,7 @@ Catalog hiện có 107 món ăn và 85 đồ uống từ hai PDF Vordruck. Nhóm
 ## CTA và đặt bàn — 14/10/2026
 
 Hero có Gerichte bestellen dẫn thẳng tới phần chọn món. Bestellen trong header và thanh điện thoại mở giỏ; giỏ rỗng có nút chọn món. Reservieren mở form đặt bàn riêng, xem `docs/reservations.md`. Hai luồng dùng chung dialog/contact helper, giữ thông tin email và số điện thoại từ nguồn thật.
+
+## Menu đồ uống — 17/10/2026
+
+Catalog hiện có 107 món ăn + 89 đồ uống = 196 mục, theo PDF đồ uống `NEW-2026-Oh-Sushi-37-A4-Vordruck.pdf`. Bốn cà phê mã 200–203 được thêm với giá và ký hiệu đúng nguồn; không tự thêm dung tích. Giữ 48 biến thể dung tích/giá. Nội dung email/cart dùng bản mới. Trang 11 có bảng ký hiệu đồ uống nên giao diện có legend riêng, thay ghi chú cũ “không có legend”. Các cập nhật 05/10 và 12/10 phía trên là lịch sử của các bản PDF trước.

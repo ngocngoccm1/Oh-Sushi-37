@@ -80,7 +80,9 @@ for group in groups:
     options += f'<optgroup label="{e(group["name"])}"><option value="{group["id"]}">Alle {e(group["name"])}</option>'
     options += ''.join(f'<option value="{e(c["id"])}">{e(c["name"])}</option>' for c in categories if c['menuGroup'] == group['id'])
     options += '</optgroup>'
-allergens = '<div><h3>Allergene</h3><dl>' + ''.join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in data['allergens'].items()) + '</dl></div><div><h3>Zusatzstoffe</h3><dl>' + ''.join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in data['additives'].items()) + '</dl></div>'
+def legend(source):
+    return ''.join('<div><h3>' + title + '</h3><dl>' + ''.join(f'<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>' for k, v in source[field].items()) + '</dl></div>'
+                   for title, field in [('Allergene', 'allergens'), ('Zusatzstoffe', 'additives')])
 previews = []
 for cat_id, code, label in [('nigiri', 'N1', '01 / NIGIRI'), ('fusion', 'F29', '02 / FUSION ROLLS'), ('signature', '41', '03 / SIGNATURE'), ('sets', 'M103', '04 / ZUM TEILEN')]:
     cat = next(c for c in categories if c['id'] == cat_id)
@@ -100,7 +102,8 @@ def embedded_json(id, value):
 replace_block('MENU', '\n'.join(sections))
 replace_block('CATEGORY NAV', nav)
 replace_block('SUBCATEGORY NAV', subnav)
-replace_block('ALLERGENS', allergens)
+replace_block('ALLERGENS', legend(data))
+replace_block('DRINK ALLERGENS', legend(drinks))
 replace_block('PREVIEWS', '\n'.join(previews))
 replace_block('ORDER CATALOG', embedded_json('order-catalog', catalog) + '\n' + embedded_json('menu-groups', groups))
 html = re.sub(r'(<select id="menu-category"[^>]*>).*?(</select>)', lambda m: m.group(1) + options + m.group(2), html, flags=re.S)

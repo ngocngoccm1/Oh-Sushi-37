@@ -1,5 +1,5 @@
 {
-  "source": "Oh-Sushi37-Drink-Menu-Vordruck.pdf",
+  "source": "NEW-2026-Oh-Sushi-37-A4-Vordruck.pdf",
   "categories": [
     {
       "id": "saft",
@@ -270,6 +270,42 @@
       "quantity": "",
       "items": [
         {
+          "code": "200",
+          "name": "KAFFE",
+          "price": "3,20",
+          "volume": "",
+          "marks": "9",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
+          "code": "201",
+          "name": "ESPRESSO",
+          "price": "3,00",
+          "volume": "",
+          "marks": "9",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
+          "code": "202",
+          "name": "DOPPELTER ESPRESSO",
+          "price": "3,90",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
+          "code": "203",
+          "name": "CAPPUCCINO",
+          "price": "3,50",
+          "volume": "",
+          "marks": "",
+          "description": "",
+          "sourcePage": 5
+        },
+        {
           "code": "205",
           "name": "HEISSE SCHOKOLADE",
           "price": "3,10",
@@ -465,7 +501,7 @@
           "price": "8,90",
           "volume": "",
           "marks": "",
-          "description": "Gosling's Black Rum | frischer Limettensaft | Spicy Ginger Beer | gedörrte Limetten",
+          "description": "Gosling’s Black Rum | frischer Limettensaft | Spicy Ginger Beer | gedörrte Limetten",
           "sourcePage": 7
         },
         {
@@ -474,7 +510,7 @@
           "price": "8,60",
           "volume": "",
           "marks": "",
-          "description": "Maker's Mark Bourbon | Campari | roter Wermut | Orangen",
+          "description": "Maker’s Mark Bourbon | Campari | roter Wermut | Orangen",
           "sourcePage": 7
         },
         {
@@ -537,7 +573,7 @@
           "price": "7,90",
           "volume": "",
           "marks": "",
-          "description": "Holunderblütensirup | Limettensaft | Prosecco | Soda | Minze | Limette",
+          "description": "Holunderblütersirup | Limettensaft | Prosecco | Soda | Minze | Limette",
           "sourcePage": 7
         },
         {
@@ -564,7 +600,7 @@
           "price": "6,00",
           "volume": "",
           "marks": "",
-          "description": "Holunderblütensirup | Limettensaft | Soda | Minze | Limetten",
+          "description": "Holunderblütersirup | Limettensaft | Soda | Minze | Limetten",
           "sourcePage": 8
         },
         {
@@ -582,7 +618,7 @@
           "price": "6,20",
           "volume": "",
           "marks": "4, 9",
-          "description": "Holunderblütensirup | Limettensaft | Bluna Zitrone | Tonic Water | Minze | Gurke",
+          "description": "Holunderblütersirup | Limettensaft | Bluna Zitrone | Tonic Water | Minze | Gurke",
           "sourcePage": 8
         },
         {
@@ -616,7 +652,7 @@
     },
     {
       "id": "whiskey-wodka",
-      "name": "WHISKEY – WODKA – JAPANESE WHISKY",
+      "name": "WHISKEY - WODKA - JAPANESE WHISKY",
       "sourcePage": 9,
       "intro": "",
       "quantity": "",
@@ -689,7 +725,7 @@
         },
         {
           "code": "263",
-          "name": "JACK DANIEL'S OLD NO.7",
+          "name": "JACK DANIEL’S OLD NO.7",
           "price": null,
           "volume": "",
           "marks": "",
@@ -711,7 +747,7 @@
         },
         {
           "code": "264",
-          "name": "BALLANTINE'S",
+          "name": "BALLANTINE’S",
           "price": null,
           "volume": "",
           "marks": "",
@@ -1063,7 +1099,7 @@
           "price": null,
           "volume": "",
           "marks": "",
-          "description": "Cantina Valdadige / Trentino / Italien / trocken / 12,5 vol.%",
+          "description": "Cantina Valdadige / Trentino / italien / trocken / 12,5 vol.%",
           "sourcePage": 10,
           "variants": [
             {
@@ -1178,5 +1214,38 @@
         }
       ]
     }
-  ]
+  ],
+  "allergens": {
+    "A": "Glutenhaltiges Getreide: A1 Weizen, A2 Roggen, A3 Gerste, A4 Hafer, A5 Dinkel, A6 Kamut/Khorasan, A7 Hybridstämme",
+    "B": "Krebstiere und daraus gewonnene Erzeugnisse",
+    "C": "Eier und daraus gewonnene Erzeugnisse",
+    "D": "Fische und daraus gewonnene Erzeugnisse",
+    "E": "Erdnüsse und daraus gewonnene Erzeugnisse",
+    "F": "Sojabohnen und daraus gewonnene Erzeugnisse",
+    "G": "Milch und Milchprodukte einschließlich Laktose",
+    "H": "Schalenfrüchte: H1 Mandeln, H2 Haselnüsse, H3 Walnuss, H4 Cashew, H5 Pecannuss, H6 Paranuss, H7 Pistazie",
+    "I": "Sellerie und daraus gewonnene Erzeugnisse",
+    "J": "Senf und daraus gewonnene Erzeugnisse",
+    "K": "Sesamsamen und daraus gewonnene Erzeugnisse",
+    "L": "Schwefeldioxid und Sulfite",
+    "M": "Lupinen und daraus gewonnene Erzeugnisse",
+    "N": "Weichtiere und daraus gewonnene Erzeugnisse"
+  },
+  "additives": {
+    "1": "mit Farbstoff",
+    "2": "mit Konservierungsstoff",
+    "2a": "mit Nitritpökelsalz",
+    "2b": "mit Nitrat (bei Lebensmitteln mit Natrium- oder Natriumnitrat)",
+    "3": "mit Antioxidationsmittel",
+    "4": "mit Geschmacksverstärker",
+    "5": "geschwärzt",
+    "6": "mit Phosphat",
+    "7": "koffeinhaltig",
+    "8": "chininhaltig",
+    "9": "gewachst",
+    "10": "mit Taurin",
+    "11": "enthält eine Phenylalaninquelle (z. B. Aspartam)",
+    "12": "mit Süßungsmittel"
+  },
+  "legendSourcePage": 11
 }

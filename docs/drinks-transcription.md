@@ -1,10 +1,12 @@
-# Menu đồ uống — bản chuẩn 12/10/2026
+# Menu đồ uống — cập nhật 17/10/2026
 
-Nguồn hiện hành: `Oh-Sushi37-Drink-Menu-Vordruck.pdf`. Đối chiếu toàn bộ các trang của bản chuẩn khách gửi ngày 12/10/2026. PDF không có text trực tiếp; đã render, đọc bằng mắt và dùng OCR hỗ trợ, không đưa OCR chưa kiểm tra vào dữ liệu. Tên/mã/giá/mô tả/ký hiệu lấy từ bản in. Giá hiển thị theo định dạng Đức (dấu phẩy thập phân); giá trị tiền giữ nguyên.
+Nguồn hiện hành: `NEW-2026-Oh-Sushi-37-A4-Vordruck.pdf`, giữ nguyên byte của file khách gửi `NEW-2026 Oh Sushi 37 A4 Vordruck.pdf`. Đã đọc toàn bộ 12 trang bằng text extract và đối chiếu ảnh render: 1–2 bìa/trang trí, 3–10 menu, 11 thông tin quán và bảng ký hiệu, 12 trang trí. Tên, mã, giá, dung tích, mô tả và ký hiệu theo bản in.
 
-85 mục / 10 category, 48 lựa chọn dung tích/giá. Đã đọc đủ 10 trang: 1 là bìa, 2 trang trí, 3–10 có menu. Tên, giá, dung tích và ký hiệu trùng bản trước, đã đối chiếu lại tất cả trang.
+89 mục / 10 category, 48 lựa chọn dung tích/giá; cùng 107 món ăn hiện tại, website có 196 mục. Bổ sung mã 200 KAFFE (3,20 €, ký hiệu 9), 201 ESPRESSO (3,00 €, ký hiệu 9), 202 DOPPELTER ESPRESSO (3,90 €), 203 CAPPUCCINO (3,50 €) tại trang 5. Giá và dung tích của 85 mục trước không đổi trong bản mới. Giữ cách viết/Unicode trong bản mới, gồm Holunderblütersirup, Gosling’s, Maker’s, JACK DANIEL’S, BALLANTINE’S và mô tả MERLOT “italien”.
 
-Giữ 0,3 l ở JAPANISCHE ASAHI, “0,33 l Fl.” ở RADLER VOM FASS, 0,7 l ở vang và 40% ở CHOYA SAKE. Không thêm dung tích cho món không được ghi. Giữ cách viết GRAUBUGUNDER, PALIS, JAPANE, Veneta, Villa carume, Angotura. PDF không có legend; không áp bảng mã món ăn cho các ký hiệu của đồ uống.
+Giữ 0,3 l ở JAPANISCHE ASAHI, 0,33 l Fl. ở RADLER VOM FASS, 0,7 l ở vang và 40% ở CHOYA SAKE. Không thêm dung tích hoặc dị ứng chưa được in. Bản mới có legend ở trang 11; dữ liệu riêng trong `data/drinks.json`, không suy diễn từ món ăn. Giữ mã 9 của KAFFE/ESPRESSO và nội dung legend đúng nguồn dù cách gán mã trong PDF có điểm khác thông thường; không tự sửa.
+
+Trang 11 ghi thứ Ba nghỉ và lịch khác với cập nhật khách đã xác nhận ngày 05/10 (thứ Hai nghỉ), địa chỉ viết gọn Hellweg 30 và domain https://www.oh-sushi37.de/. Yêu cầu 17/10 chỉ đổi menu đồ uống, vì vậy lịch/địa chỉ/schema/QR trên web tiếp tục theo yêu cầu trực tiếp trước. Xem `client-updates.md`.
 
 ## Trang 3 — SAFT
 
@@ -47,6 +49,10 @@ Giữ 0,3 l ở JAPANISCHE ASAHI, “0,33 l Fl.” ở RADLER VOM FASS, 0,7 l �
 
 | Mã | Tên | Giá / Dung tích (€) | Ký hiệu | Mô tả |
 | --- | --- | --- | --- | --- |
+| 200 | KAFFE | 3,20 | 9 |  |
+| 201 | ESPRESSO | 3,00 | 9 |  |
+| 202 | DOPPELTER ESPRESSO | 3,90 |  |  |
+| 203 | CAPPUCCINO | 3,50 |  |  |
 | 205 | HEISSE SCHOKOLADE | 3,10 | 10 |  |
 | 206 | JAZZMINE BABY | 3,80 |  | Grüner Tee |
 | 207 | WHITE N’ROSES | 4,20 |  | Weißer und Grüner Tee mit rosiger Note |
@@ -75,37 +81,37 @@ Giữ 0,3 l ở JAPANISCHE ASAHI, “0,33 l Fl.” ở RADLER VOM FASS, 0,7 l �
 
 | Mã | Tên | Giá / Dung tích (€) | Ký hiệu | Mô tả |
 | --- | --- | --- | --- | --- |
-| 231 | DARK ’N STORMY | 8,90 |  | Gosling's Black Rum  /  frischer Limettensaft  /  Spicy Ginger Beer  /  gedörrte Limetten |
-| 232 | BOULEVARDIER | 8,60 |  | Maker's Mark Bourbon  /  Campari  /  roter Wermut  /  Orangen |
+| 231 | DARK ’N STORMY | 8,90 |  | Gosling’s Black Rum  /  frischer Limettensaft  /  Spicy Ginger Beer  /  gedörrte Limetten |
+| 232 | BOULEVARDIER | 8,60 |  | Maker’s Mark Bourbon  /  Campari  /  roter Wermut  /  Orangen |
 | 233 | MOSCOW MULE - ORIGINAL | 8,60 |  | Vodka  /  frischer Limettensaft  /  Spicy Ginger  /  Gurke |
 | 234 | SEX AM STRAND | 8,60 |  | Vodka  /  Pfirsichlikör  /  frischer Zitronensaft  /  Ananassaft  /  Cranberrynektar  /  gedörrte Ananas |
 | 235 | BERRY MOJITO | 8,90 |  | Kubanischer Rum  /  frischer Limettensaft  /  Zuckersirup  /  Soda  /  Minze  /  Himbeer |
 | 236 | WHISKEY SOUR | 8,90 |  | Bourbon Whiskey  /  frischer Zitronensaft  /  Zuckersirup  /  Angotura  /  gedörrte Zitrone |
 | 237 | PINA COLADA | 8,60 |  | Kubanischer Rum  /  Kokosmilch  /  Ananassaft  /  Kokossirup  /  gedörrte Ananas |
 | 238 | MOJITO - ORIGINAL | 7,90 |  | Kubanischer Rum  /  frischer Limettensaft  /  Weißer Rohrzucker  /  Soda  /  Minze |
-| 239 | HUGO | 7,90 |  | Holunderblütensirup  /  Limettensaft  /  Prosecco  /  Soda  /  Minze  /  Limette |
+| 239 | HUGO | 7,90 |  | Holunderblütersirup  /  Limettensaft  /  Prosecco  /  Soda  /  Minze  /  Limette |
 | 240 | APEROL SPRITZ | 7,90 |  | Aperol  /  Prosecco  /  Soda  /  gedörrte Orangen |
 
 ## Trang 8 — ALKOHOLFREIE COCKTAILS
 
 | Mã | Tên | Giá / Dung tích (€) | Ký hiệu | Mô tả |
 | --- | --- | --- | --- | --- |
-| 250 | HUGO (ALKOHOLFREI) | 6,00 |  | Holunderblütensirup  /  Limettensaft  /  Soda  /  Minze  /  Limetten |
+| 250 | HUGO (ALKOHOLFREI) | 6,00 |  | Holunderblütersirup  /  Limettensaft  /  Soda  /  Minze  /  Limetten |
 | 251 | SAFTMIXER | 6,20 | 2, 4 | Frischer Zitronensaft  /  Orangensaft  /  Maracujanektar  /  Ananassaft  /  Grenadine  /  Ananas  /  Minze |
-| 252 | HAMMER GARDEN | 6,20 | 4, 9 | Holunderblütensirup  /  Limettensaft  /  Bluna Zitrone  /  Tonic Water  /  Minze  /  Gurke |
+| 252 | HAMMER GARDEN | 6,20 | 4, 9 | Holunderblütersirup  /  Limettensaft  /  Bluna Zitrone  /  Tonic Water  /  Minze  /  Gurke |
 | 253 | IPANEMA | 6,20 | 2, 4 | Limette  /  weißer Rohrzucker  /  Maracujanektar  /  Thomas Henry Ginger Ale |
 | 254 | VIRGIN COLADA | 6,90 | G, 4, 10 | Kokossirup  /  Kokosmilch  /  Ananassaft  /  Minze |
 | 255 | GINFIZZ ALKOHOLFREI | 7,90 |  | Siegfried Wonderleaf (alkoholfreier Gin)  /  Frischer Zitronensaft  /  Zuckersirup  /  Soda  /  Zitrone |
 
-## Trang 9 — WHISKEY – WODKA – JAPANESE WHISKY
+## Trang 9 — WHISKEY - WODKA - JAPANESE WHISKY
 
 | Mã | Tên | Giá / Dung tích (€) | Ký hiệu | Mô tả |
 | --- | --- | --- | --- | --- |
 | 260 | CHIVAS REGAL 12 YEARS | 2 cl / 3,00; 4 cl / 5,90 |  | 40% |
 | 261 | JOHNNIE WALKER BLACK LABEL | 2 cl / 3,00; 4 cl / 5,90 |  | 40% |
 | 262 | JOHNNIE WALKER GOLD LABEL | 2 cl / 4,00; 4 cl / 7,90 |  | 40% |
-| 263 | JACK DANIEL'S OLD NO.7 | 2 cl / 3,00; 4 cl / 5,90 |  | 40% |
-| 264 | BALLANTINE'S | 2 cl / 3,00; 4 cl / 5,90 |  | 40% |
+| 263 | JACK DANIEL’S OLD NO.7 | 2 cl / 3,00; 4 cl / 5,90 |  | 40% |
+| 264 | BALLANTINE’S | 2 cl / 3,00; 4 cl / 5,90 |  | 40% |
 | 265 | TALISKER 10 YEARS | 2 cl / 4,00; 4 cl / 7,90 |  | 45,80% |
 | 266 | SKYY VODKA | 2 cl / 3,00; 4 cl / 5,90 |  | 40% |
 | 267 | TOKI WHISKY (JAPANE) | 2 cl / 4,00; 4 cl / 7,90 |  | 43% |
@@ -130,7 +136,7 @@ Giữ 0,3 l ở JAPANISCHE ASAHI, “0,33 l Fl.” ở RADLER VOM FASS, 0,7 l �
 | Mã | Tên | Giá / Dung tích (€) | Ký hiệu | Mô tả |
 | --- | --- | --- | --- | --- |
 | 280 | SPÄTBURGUNDER | 0,2 l / 6,50; 0,7 l / 23,00 |  | Weingut Laufen / Baden / trocken / 13,5 vol.% |
-| 281 | MERLOT | 0,2 l / 6,20; 0,7 l / 22,00 |  | Cantina Valdadige / Trentino / Italien / trocken / 12,5 vol.% |
+| 281 | MERLOT | 0,2 l / 6,20; 0,7 l / 22,00 |  | Cantina Valdadige / Trentino / italien / trocken / 12,5 vol.% |
 | 282 | LACRIMUS 5 (TEMPRANILLO) | 0,2 l / 6,50; 0,7 l / 23,00 |  | Bodegas Rodriguez Sanzo / Rioja / Spanien / trocken / 13,5 vol.% |
 | 283 | PRIMITIVO | 0,2 l / 6,90; 0,7 l / 24,00 |  | Cantina Torrevento / Apulien / Italien / trocken / 13,0 vol.% |
 
@@ -140,3 +146,41 @@ Giữ 0,3 l ở JAPANISCHE ASAHI, “0,33 l Fl.” ở RADLER VOM FASS, 0,7 l �
 | --- | --- | --- | --- | --- |
 | 284 | ROSECUVEE (WEGGEFÄHRTEN) | 0,2 l / 6,50; 0,7 l / 23,00 |  | Weingut Hammel & Cie / Pfalz / trocken / 11,5 vol.% |
 | 285 | SANT EMILIANO ROSATO | 0,2 l / 7,90; 0,7 l / 29,00 |  | Weingut Pratello / Lombardei / Italien / trocken / 11,5 vol.% |
+
+## Trang 11 — Allergene
+
+| Ký hiệu | Nội dung nguồn |
+| --- | --- |
+| A | Glutenhaltiges Getreide: A1 Weizen, A2 Roggen, A3 Gerste, A4 Hafer, A5 Dinkel, A6 Kamut/Khorasan, A7 Hybridstämme |
+| B | Krebstiere und daraus gewonnene Erzeugnisse |
+| C | Eier und daraus gewonnene Erzeugnisse |
+| D | Fische und daraus gewonnene Erzeugnisse |
+| E | Erdnüsse und daraus gewonnene Erzeugnisse |
+| F | Sojabohnen und daraus gewonnene Erzeugnisse |
+| G | Milch und Milchprodukte einschließlich Laktose |
+| H | Schalenfrüchte: H1 Mandeln, H2 Haselnüsse, H3 Walnuss, H4 Cashew, H5 Pecannuss, H6 Paranuss, H7 Pistazie |
+| I | Sellerie und daraus gewonnene Erzeugnisse |
+| J | Senf und daraus gewonnene Erzeugnisse |
+| K | Sesamsamen und daraus gewonnene Erzeugnisse |
+| L | Schwefeldioxid und Sulfite |
+| M | Lupinen und daraus gewonnene Erzeugnisse |
+| N | Weichtiere und daraus gewonnene Erzeugnisse |
+
+## Trang 11 — Zusatzstoffe
+
+| Ký hiệu | Nội dung nguồn |
+| --- | --- |
+| 1 | mit Farbstoff |
+| 2 | mit Konservierungsstoff |
+| 2a | mit Nitritpökelsalz |
+| 2b | mit Nitrat (bei Lebensmitteln mit Natrium- oder Natriumnitrat) |
+| 3 | mit Antioxidationsmittel |
+| 4 | mit Geschmacksverstärker |
+| 5 | geschwärzt |
+| 6 | mit Phosphat |
+| 7 | koffeinhaltig |
+| 8 | chininhaltig |
+| 9 | gewachst |
+| 10 | mit Taurin |
+| 11 | enthält eine Phenylalaninquelle (z. B. Aspartam) |
+| 12 | mit Süßungsmittel |

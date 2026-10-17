@@ -153,10 +153,10 @@
       const category = categories.find(item => item.id === id);
       if (category) selectCategory(category.dataset.category);
     }
-    if (id === 'allergene') document.querySelector('#allergene').open = true;
+    if (['allergene', 'allergene-getraenke'].includes(id)) document.getElementById(id).open = true;
   }
   window.addEventListener('hashchange', revealHash);
-  document.querySelectorAll('a[href="#allergene"]').forEach(link => link.addEventListener('click', () => { document.querySelector('#allergene').open = true; }));
+  document.querySelectorAll('a[href="#allergene"], a[href="#allergene-getraenke"]').forEach(link => link.addEventListener('click', () => { document.querySelector(link.hash).open = true; }));
   document.querySelector('.menu-toolbar').hidden = false;
   document.querySelector('.menu-group-intro').hidden = false;
   document.body.classList.add('menu-enhanced');

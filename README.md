@@ -1,6 +1,6 @@
 # Oh! Sushi 37
 
-Landing page tiếng Đức, HTML/CSS/JS thuần. Thiết kế lấy đen–vàng–đỏ và graphic tre từ PDF, phối nâu ấm và giấy kem. Bảy nhóm menu hiện ngay đầu trang; ảnh lấy từ chính menu khách gửi. Masthead chữ đậm, ảnh chữ nhật, các bố cục editorial khác nhau và menu HTML từ bản chuẩn PDF món ăn 12 trang và PDF đồ uống 10 trang. Có giỏ hàng để soạn yêu cầu đặt món. Bảng màu dùng chung được khai báo trong `:root` của `styles.css`.
+Landing page tiếng Đức, HTML/CSS/JS thuần. Thiết kế lấy đen–vàng–đỏ và graphic tre từ PDF, phối nâu ấm và giấy kem. Bảy nhóm menu hiện ngay đầu trang; ảnh lấy từ chính menu khách gửi. Masthead chữ đậm, ảnh chữ nhật, các bố cục editorial khác nhau và menu HTML từ bản chuẩn PDF món ăn 12 trang và PDF đồ uống mới 12 trang. Có giỏ hàng để soạn yêu cầu đặt món. Bảng màu dùng chung được khai báo trong `:root` của `styles.css`.
 
 ## GitHub Pages
 
@@ -21,8 +21,8 @@ Mở http://localhost:4173/. Không cần npm hoặc framework. Website cũng c�
 - `index.html`: nội dung giới thiệu, thông tin quán, metadata, Restaurant schema.
 - `data/menu.json`: 107 món / 21 nhóm, giá, 39 lựa chọn, allergen và phụ gia.
 - `data/menu-groups.json`: 7 nhóm điều hướng theo yêu cầu khách, liên kết tới 31 category gốc; không đổi tên category/món trong PDF.
-- `data/drinks.json`: 85 đồ uống / 10 nhóm, dung tích, 48 lựa chọn dung tích/giá và ký hiệu đúng PDF mới.
-- Hai PDF gốc được giữ trong project và có link tải riêng trên website.
+- `data/drinks.json`: 89 đồ uống / 10 nhóm, dung tích, 48 lựa chọn dung tích/giá và ký hiệu đúng PDF mới.
+- Hai PDF hiện hành có link tải riêng trên website; nguồn đồ uống mới là `NEW-2026-Oh-Sushi-37-A4-Vordruck.pdf`. Bản cũ được giữ làm lịch sử.
 - `styles.css`: typography, palette, bố cục và responsive.
 - `app.js`: navigation mobile, lọc menu, tìm kiếm và liên kết đến nhóm món.
 - `orders.js`: chọn biến thể, giỏ hàng, lưu lựa chọn local, tổng tiền và soạn email đặt món.

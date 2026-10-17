@@ -187,6 +187,7 @@ h2{font:700 clamp(55px,6.2vw,110px)/1.02 var(--serif);letter-spacing:-.045em}
 .menu-footnote{display:flex;gap:30px;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding:22px 0;margin-top:35px}
 .menu-footnote p{font-size:10px;max-width:580px;color:var(--muted)}
 .menu-footnote .text-link{white-space:nowrap;font-size:10px}
+.menu-note-links{display:flex;flex-wrap:wrap;gap:10px 24px;flex-shrink:0;max-width:100%}
 .allergen-details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:10px;scroll-margin-top:110px}
 .allergen-details summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:72px;padding:16px 0;font:700 29px/1.2 var(--serif)}
 .allergen-details summary::-webkit-details-marker{display:none}
