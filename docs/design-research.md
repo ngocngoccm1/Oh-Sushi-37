@@ -146,3 +146,5 @@ Oh! Sushi 37 dùng wordmark Bodoni thu gọn và cân giữa trên ảnh sushi l
 Palette: nền #0b0b0b, panel #141414, field #151515, chữ #f5f5f5, chữ phụ #ababab, đường kẻ trắng 19% opacity. Token cũ `--copper` và `--gold` nay ánh xạ sang xám trung tính để giữ các component dùng chung đồng nhất. Bỏ texture giấy/tre, mảng màu đỏ/vàng, dotted leaders trang trí và stripe đỏ; dùng đường mảnh, button trắng–đen. Giữ hai font local Bodoni Moda và Manrope, giảm độ nặng và mật độ masthead, mobile có bố cục riêng.
 
 Đặt món/đặt bàn và bảng menu cũng dùng theme tối; native input theo `color-scheme: dark`. Bản in menu dùng nền trắng/chữ đen. Root index.html/asset tương đối tiếp tục dùng GitHub Pages.
+
+Điều chỉnh tiếp ngày 24/10 theo yêu cầu khách: logo hiển thị màu gốc, bỏ grayscale riêng ở `.brand-mark`; palette giao diện tiếp tục đen–trắng.

@@ -1,6 +1,6 @@
 # Oh! Sushi 37
 
-Landing page tiếng Đức, HTML/CSS/JS thuần. Giao diện đen–trắng theo yêu cầu ngày 24/10/2026, lấy cảm hứng từ cách CODA dùng nền tối, ảnh lớn, bố cục thoáng và navigation tiết chế. Typography Bodoni Moda + Manrope, các sắc xám trung tính và đường kẻ mảnh; màu tự nhiên chỉ ở ảnh món ăn/đồ uống của khách. Menu HTML có 107 món ăn và 89 đồ uống, cùng đặt bàn/giỏ hàng. Palette khai báo trong `:root` của `styles.css`.
+Landing page tiếng Đức, HTML/CSS/JS thuần. Giao diện đen–trắng theo yêu cầu ngày 24/10/2026, lấy cảm hứng từ cách CODA dùng nền tối, ảnh lớn, bố cục thoáng và navigation tiết chế. Typography Bodoni Moda + Manrope, các sắc xám trung tính và đường kẻ mảnh; màu gốc được giữ ở logo và ảnh món ăn/đồ uống của khách. Menu HTML có 107 món ăn và 89 đồ uống, cùng đặt bàn/giỏ hàng. Palette khai báo trong `:root` của `styles.css`.
 
 ## GitHub Pages
 

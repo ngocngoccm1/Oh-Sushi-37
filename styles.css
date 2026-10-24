@@ -40,7 +40,7 @@ h2{font:600 clamp(55px,6.2vw,110px)/1.08 var(--serif);letter-spacing:-.045em}
 .site-header{height:var(--header-height);position:absolute;z-index:20;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 var(--gutter);border-bottom:1px solid var(--line);background:var(--bg)}
 .site-header.is-scrolled{position:fixed;height:76px}
 .brand{display:flex;align-items:center;gap:13px;flex-shrink:0}
-.brand-mark{width:52px;height:52px;object-fit:contain;filter:grayscale(1)}
+.brand-mark{width:52px;height:52px;object-fit:contain}
 .brand-type{font:700 19px/1.1 var(--sans);letter-spacing:-.04em;white-space:nowrap}
 .brand-type>span{color:var(--copper)}
 .brand-type small{display:block;font:600 7px/1.5 var(--sans);letter-spacing:.16em;margin-top:7px}
