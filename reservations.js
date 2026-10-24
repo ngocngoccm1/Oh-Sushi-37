@@ -21,7 +21,7 @@
     dateField.min = today;
     dateField.setCustomValidity(''); timeField.setCustomValidity(''); guestsField.setCustomValidity('');
     timeField.removeAttribute('min'); timeField.removeAttribute('max');
-    hoursHint.textContent = 'Dienstag–Sonntag ab 11:30 Uhr. Montag ist Ruhetag.';
+    hoursHint.textContent = 'Montag ab 08:00 Uhr, Mittwoch–Sonntag ab 11:30 Uhr. Dienstag ist Ruhetag.';
     if (dateField.value) {
       const date = new Date(`${dateField.value}T12:00:00Z`);
       if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== dateField.value || dateField.value < today) {
@@ -30,8 +30,8 @@
         const weekday = new Intl.DateTimeFormat('en-US', {weekday: 'long', timeZone: 'Europe/Berlin'}).format(date);
         const hours = schedule.find(entry => [].concat(entry.dayOfWeek).some(day => day.split('/').pop() === weekday));
         if (!hours || hours.opens === hours.closes) {
-          dateField.setCustomValidity('Montag ist Ruhetag. Bitte wählen Sie einen anderen Tag.');
-          hoursHint.textContent = 'Montag ist Ruhetag. Bitte wählen Sie einen anderen Tag.';
+          dateField.setCustomValidity('Dienstag ist Ruhetag. Bitte wählen Sie einen anderen Tag.');
+          hoursHint.textContent = 'Dienstag ist Ruhetag. Bitte wählen Sie einen anderen Tag.';
         } else {
           hoursHint.textContent = `Öffnungszeiten an diesem Tag: ${hours.opens}–${hours.closes} Uhr. Ihre Anfrage wird vom Restaurant bestätigt.`;
           timeField.min = hours.opens;

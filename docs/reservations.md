@@ -6,7 +6,7 @@ Yêu cầu ngày 14/10/2026 bổ sung đặt bàn và làm rõ đặt món. Quá
 
 1. Bấm Reservieren trong header, menu điện thoại hoặc thanh cố định dưới màn hình; cũng có Tisch reservieren ở hero và Tisch anfragen ở section đặt bàn.
 2. Điền ngày, giờ mong muốn, số khách, tên và số điện thoại. Ghi chú tùy chọn.
-3. Form kiểm tra lịch từ `openingHoursSpecification` trong Restaurant JSON-LD. Thứ Hai nghỉ; thứ Ba/Tư/Năm/Chủ Nhật 11:30–22:00; thứ Sáu/Bảy 11:30–22:30. Giờ phải từ lúc mở cửa và trước lúc đóng cửa. Ngày/giờ đã qua bị chặn theo Europe/Berlin, kể cả khi thiết bị khách đang ở múi giờ khác.
+3. Form kiểm tra lịch từ `openingHoursSpecification` trong Restaurant JSON-LD. Lịch hiện hành từ 24/10/2026: thứ Hai 08:00–22:00; thứ Ba nghỉ; thứ Tư/Năm/Sáu 11:30–22:00; thứ Bảy/Chủ nhật 11:30–22:30. Giờ phải từ lúc mở cửa và trước lúc đóng cửa. Ngày/giờ đã qua bị chặn theo Europe/Berlin, kể cả khi thiết bị khách đang ở múi giờ khác.
 4. E-Mail-Anfrage öffnen mở email nháp gồm thông tin khách và thời gian mong muốn. Khách cần gửi trong ứng dụng email; chỉ có đặt bàn sau khi quán xác nhận.
 5. Anfrage kopieren sao chép cùng nội dung; nếu clipboard bị chặn, hiện ô văn bản để sao chép thủ công. Restaurant anrufen gọi số thực tế của quán.
 

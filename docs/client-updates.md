@@ -21,3 +21,21 @@ Khi cần đổi đích QR: sửa link `footer-qr-code`, link/text đi kèm tron
 ## Menu đồ uống — 17/10/2026
 
 Khách yêu cầu đổi menu đồ uống và push, kèm PDF `NEW-2026 Oh Sushi 37 A4 Vordruck.pdf` (12 trang). Menu đã cập nhật đủ 89 đồ uống và legend trang 11. Trang 11 của PDF ghi Mo. 11:30–22:00, Di. Ruhetag, Mi.–Fr. 11:30–22:00, Sa.–So. 11:30–22:30; khác lịch khách trực tiếp xác nhận ở trên. Phạm vi lần này là menu, vì vậy giữ giờ đã xác nhận 05/10, địa chỉ đầy đủ và QR Maps hiện có. Đã báo khác biệt giờ cho khách trong chat.
+
+## Giao diện và giờ mở cửa — 24/10/2026 (hiện hành)
+
+Khách yêu cầu trực tiếp nền đen, chữ trắng, thanh lịch theo hướng hospitality cao cấp; tham khảo https://coda-berlin.com/. Thay palette đỏ/vàng/giấy bằng đen và xám trung tính, bỏ nền texture; dùng ảnh khách đã cung cấp, không lấy ảnh hoặc nội dung của CODA.
+
+Lịch sau thay thế các lịch 05/10 và giờ in trong PDF:
+
+| Ngày | Giờ hiện tại |
+| --- | --- |
+| Montag | 08:00–22:00 |
+| Dienstag | Ruhetag |
+| Mittwoch | 11:30–22:00 |
+| Donnerstag | 11:30–22:00 |
+| Freitag | 11:30–22:00 |
+| Samstag | 11:30–22:30 |
+| Sonntag | 11:30–22:30 |
+
+Đồng bộ bảng giờ, hero, phần đặt bàn, meta description, Restaurant JSON-LD và kiểm tra giờ trong form. Địa chỉ/liên hệ/QR và dữ liệu menu không đổi. PDF được giữ nguyên bản nguồn, không sửa giờ trực tiếp trong tài liệu khách gửi.

@@ -1,6 +1,6 @@
 # Oh! Sushi 37
 
-Landing page tiếng Đức, HTML/CSS/JS thuần. Thiết kế lấy đen–vàng–đỏ và graphic tre từ PDF, phối nâu ấm và giấy kem. Bảy nhóm menu hiện ngay đầu trang; ảnh lấy từ chính menu khách gửi. Masthead chữ đậm, ảnh chữ nhật, các bố cục editorial khác nhau và menu HTML từ bản chuẩn PDF món ăn 12 trang và PDF đồ uống mới 12 trang. Có giỏ hàng để soạn yêu cầu đặt món. Bảng màu dùng chung được khai báo trong `:root` của `styles.css`.
+Landing page tiếng Đức, HTML/CSS/JS thuần. Giao diện đen–trắng theo yêu cầu ngày 24/10/2026, lấy cảm hứng từ cách CODA dùng nền tối, ảnh lớn, bố cục thoáng và navigation tiết chế. Typography Bodoni Moda + Manrope, các sắc xám trung tính và đường kẻ mảnh; màu tự nhiên chỉ ở ảnh món ăn/đồ uống của khách. Menu HTML có 107 món ăn và 89 đồ uống, cùng đặt bàn/giỏ hàng. Palette khai báo trong `:root` của `styles.css`.
 
 ## GitHub Pages
 
@@ -38,13 +38,13 @@ python3 scripts/build.py
 
 Script cập nhật các vùng HTML menu/preview/legend và catalog đặt món trong `index.html`. Không cần tải JSON trong trình duyệt. Khi tắt JavaScript, toàn bộ menu vẫn hiện và navigation dùng anchor; đặt món tương tác cần JavaScript.
 
-Đặt bàn: nút Reservieren/Tisch anfragen mở form ngày, giờ, số khách, tên và điện thoại. Form dùng lịch trong Restaurant JSON-LD; chặn thứ Hai nghỉ, ngày/giờ đã qua và giờ ngoài lịch mở cửa. Nút E-Mail-Anfrage öffnen tạo email nháp đến địa chỉ thật của quán; khách gửi và chờ phản hồi xác nhận. Có sao chép yêu cầu và gọi điện dự phòng. Thông tin cá nhân không được lưu. Map mở Google Maps sau khi người dùng bấm; không dùng iframe, analytics hay third-party tracking trên trang.
+Đặt bàn: nút Reservieren/Tisch anfragen mở form ngày, giờ, số khách, tên và điện thoại. Form dùng lịch trong Restaurant JSON-LD; chặn thứ Ba nghỉ, ngày/giờ đã qua và giờ ngoài lịch mở cửa. Nút E-Mail-Anfrage öffnen tạo email nháp đến địa chỉ thật của quán; khách gửi và chờ phản hồi xác nhận. Có sao chép yêu cầu và gọi điện dự phòng. Thông tin cá nhân không được lưu. Map mở Google Maps sau khi người dùng bấm; không dùng iframe, analytics hay third-party tracking trên trang.
 
 Đặt món: thêm món từ menu, chọn biến thể/beilage hoặc dung tích nếu có lựa chọn trong PDF, kiểm tra giỏ hàng rồi điền tên/số điện thoại. Nút gửi mở email nháp đến `ohsushirestaurent@gmail.com`; khách cần gửi trong ứng dụng email và chờ quán xác nhận. Có nút sao chép đơn và gọi quán. Chưa có backend nhận đơn, thanh toán hay dịch vụ giao hàng được cung cấp. Xem `docs/ordering.md`.
 
 ## Giờ mở cửa và QR
 
-Giờ mới theo ảnh khách gửi 05/10/2026: thứ Hai nghỉ; thứ Ba–Năm và Chủ nhật 11:30–22:00; thứ Sáu–Bảy 11:30–22:30. QR SVG ở footer mở Google Maps theo địa chỉ đang có, kèm link mở trực tiếp. Xem `docs/client-updates.md`.
+Giờ hiện hành theo yêu cầu trực tiếp 24/10/2026: thứ Hai 08:00–22:00; thứ Ba nghỉ; thứ Tư–Sáu 11:30–22:00; thứ Bảy–Chủ nhật 11:30–22:30. Lịch trong bảng giờ, meta description, Restaurant JSON-LD và form đặt bàn được đồng bộ. QR SVG ở footer mở Google Maps theo địa chỉ đang có, kèm link mở trực tiếp. Xem `docs/client-updates.md`.
 
 Muốn đổi đích QR, cập nhật link/text ở footer trong `index.html`, rồi chạy `python3 scripts/generate_qr.py` với package build-only `qrcode` đã cài. Website không tải dịch vụ QR bên ngoài.
 

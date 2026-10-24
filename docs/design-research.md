@@ -136,3 +136,13 @@ Quan sát: photography rất lớn, ít nội dung, danh sách contact/opening h
 Ảnh hiện tại là ảnh minh họa tạo bằng imagegen, có ghi “Bildillustration” và alt phù hợp; không phải ảnh thực tế nhà hàng. Xem `docs/image-assets.md` để thay bằng ảnh khách cung cấp.
 
 Chưa có dữ liệu pháp lý để soạn Impressum/Datenschutz hoàn chỉnh; chưa thêm các link pháp lý giả. Chưa có domain để đặt canonical và URL tuyệt đối cho OpenGraph. Khi khách bổ sung, cập nhật những mục này trước khi public website.
+
+## Điều chỉnh theo CODA — 24/10/2026
+
+Yêu cầu trực tiếp mới ưu tiên nền đen, chữ trắng và cảm giác thanh lịch, cao cấp. Tham khảo lại website chính thức [CODA Berlin](https://coda-berlin.com/) ở trang chủ: nền tối, ảnh ẩm thực lớn, khoảng trống, navigation gọn và bố cục xen kẽ ảnh/text. Xem text trang và ảnh chụp trình duyệt thực tế; không dùng ảnh, copy, logo, source hoặc bố cục nguyên bản của reference. CODA là primary reference cho đợt này.
+
+Oh! Sushi 37 dùng wordmark Bodoni thu gọn và cân giữa trên ảnh sushi lớn + text lệch phải, các khoảng thở rộng và một hệ đen–xám–trắng xuyên suốt. Ảnh khách vẫn giữ màu tự nhiên, nền hoa trang trí chuyển grayscale, logo được hiển thị grayscale bằng CSS và giữ file gốc. Bảy lối vào menu theo sau hero. Bố cục và font pair riêng, không tự gắn danh hiệu sao/hotel/fine-dining vào nội dung nhà hàng.
+
+Palette: nền #0b0b0b, panel #141414, field #151515, chữ #f5f5f5, chữ phụ #ababab, đường kẻ trắng 19% opacity. Token cũ `--copper` và `--gold` nay ánh xạ sang xám trung tính để giữ các component dùng chung đồng nhất. Bỏ texture giấy/tre, mảng màu đỏ/vàng, dotted leaders trang trí và stripe đỏ; dùng đường mảnh, button trắng–đen. Giữ hai font local Bodoni Moda và Manrope, giảm độ nặng và mật độ masthead, mobile có bố cục riêng.
+
+Đặt món/đặt bàn và bảng menu cũng dùng theme tối; native input theo `color-scheme: dark`. Bản in menu dùng nền trắng/chữ đen. Root index.html/asset tương đối tiếp tục dùng GitHub Pages.
