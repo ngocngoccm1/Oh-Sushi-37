@@ -39,3 +39,7 @@ Lịch sau thay thế các lịch 05/10 và giờ in trong PDF:
 | Sonntag | 11:30–22:30 |
 
 Đồng bộ bảng giờ, hero, phần đặt bàn, meta description, Restaurant JSON-LD và kiểm tra giờ trong form. Địa chỉ/liên hệ/QR và dữ liệu menu không đổi. PDF được giữ nguyên bản nguồn, không sửa giờ trực tiếp trong tài liệu khách gửi.
+
+## Tắt đặt món mang về — 25/10/2026
+
+Khách yêu cầu tắt đặt mang về trên web và push. Đã bỏ chức năng đặt món: giỏ hàng, thêm món, tổng tiền và gửi/copy đơn. Bỏ script đặt món và catalog nhúng; script build chỉ tạo menu xem món/giá cùng các nhóm. Header giữ đặt bàn; hero đổi thành xem thực đơn; thanh điện thoại gồm Reservieren / Speisekarte. Form đặt bàn, lịch mở cửa, logo màu gốc, nội dung menu/PDF và QR Maps giữ nguyên.

@@ -129,3 +129,11 @@ Có semantic landmarks, một h1, heading hierarchy, alt, focus states, skip lin
 - Full page và 31 category / 7 nhóm tại 320/375/390/430/768/1024/1440/1920px: không overflow, ảnh decode được, không lỗi asset/link nội bộ/JavaScript. Chạy lại tìm kiếm, deep link, navigation mobile/keyboard, no-JS đủ 196 mục và GitHub Pages prefix.
 - Xem ảnh chụp thực tế hero 320/390/768/1440, intro/sharing/menu/drinks/reservation/contact và form mobile/desktop. Kiểm tra màu computed của các surface: đen/xám trung tính, không còn texture giấy/tre. Bản in menu nền trắng/chữ đen.
 - Axe: trang mặc định và form đặt bàn 390/1440, navigation mobile, toàn bộ menu, giỏ hàng mobile/desktop, hộp biến thể và giỏ rỗng đều 0 violations. Chạy lại toàn bộ giỏ: biến thể, beilage, quantity, tổng tiền, persistence/dữ liệu lỗi, email/copy/fallback, Tab/Escape/focus pass. Dữ liệu 107 món + 89 đồ uống và các PDF không chỉnh.
+
+## Tắt đặt món mang về — 25/10/2026
+
+- Không còn nút Bestellen/Hinzufügen, giỏ hàng, form gửi đơn, catalog hoặc request orders.js. Xóa script chức năng đặt món và generation controls/catalog khỏi build; build lặp lại giữ trạng thái tắt. Có giỏ hợp lệ từ bản cũ trong localStorage cũng không làm hiện lại chức năng.
+- Hero/thanh điện thoại dẫn tới menu xem món/giá, focus đúng bộ lọc mobile/search desktop. Đặt bàn từ section/mobile navigation/thanh dưới vẫn mở form; Tab/Escape/focus, email nháp/copy/fallback và lịch mới tiếp tục pass. Email kiểm thử bị chặn, không gửi tới quán.
+- Kiểm tra 320/375/390/430/768/1024/1440/1920px: không tràn ngang, header không có giỏ trống hoặc khoảng chừa icon, thanh dưới có Reservieren/Speisekarte. Xem screenshot thực tế hero mobile/desktop và menu mobile.
+- Chạy lại 196 mục / 31 category / 7 nhóm, tên/mô tả/giá/biến thể/ký hiệu, tìm kiếm/deep link/native select/mobile navigation, ảnh/link/PDF và no-JS, GitHub Pages prefix: pass. Dữ liệu menu và Restaurant JSON-LD không đổi.
+- Axe trang và form đặt bàn 390/1440, navigation mobile và toàn bộ menu: 0 violations. Không lỗi JavaScript/asset. Bản in ẩn header/form, menu nền trắng/chữ đen.

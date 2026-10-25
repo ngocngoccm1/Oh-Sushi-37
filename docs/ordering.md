@@ -1,5 +1,7 @@
 # Đặt món — Oh! Sushi 37
 
+**Hiện tại: đã tắt theo yêu cầu trực tiếp 25/10/2026.** Website chỉ xem menu và đặt bàn. Đã bỏ giỏ hàng/nút thêm món/form đơn, script `orders.js` và catalog đặt hàng khỏi bản phục vụ. Build không tái tạo các controls này. Giỏ cũ trong localStorage không được đọc và không làm hiện lại UI. Các phần bên dưới là lịch sử của chức năng trước khi tắt.
+
 Yêu cầu trong chat bổ sung khả năng đặt món. Word chỉ cung cấp email và số điện thoại; chưa có hệ thống tiếp nhận đơn, booking URL, WhatsApp hoặc thông tin giao hàng/thanh toán.
 
 ## Luồng hiện tại

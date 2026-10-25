@@ -1,7 +1,6 @@
 """Build the root index.html from the reviewed food/drink PDF transcriptions."""
 import json
 import re
-import unicodedata
 from html import escape as e
 from pathlib import Path
 
@@ -16,34 +15,13 @@ categories = [dict(c, menuType=kind, source=source['source'], menuGroup=parent[c
 assert len(parent) == len(categories), 'Every PDF category must have exactly one menu group.'
 assert len(set(c['id'] for c in categories)) == len(categories)
 html = (ROOT / 'index.html').read_text(encoding='utf-8')
-catalog = []
 
 def markings(item):
     label = item.get('marksLabel', 'Allergene und Zusatzstoffe')
     return f'<span class="dish-marks"><span class="sr-only">{e(label)}: </span>{e(item["marks"])}</span>' if item['marks'] else ''
 
-def slug(value):
-    return re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode().lower()).strip('-')
-
-def cents(value):
-    return int(value.replace(',', '')) if value else None
-
 def dish(item, category):
     item = dict(item, marksLabel='Kennzeichnungen (Getränkekarte)' if category['menuType'] == 'getraenke' else 'Allergene und Zusatzstoffe')
-    key = f'{category["id"]}-{item["code"].lower()}-{slug(item["name"])}'
-    options, option_label = [], ''
-    if category['id'] == 'vorspeise-sushi' and item['code'] in ('23', '24'):
-        options, option_label = ['Lachs', 'Thunfisch'], 'Fisch wählen'
-    elif category['id'] == 'signature':
-        options, option_label = ['Süßkartoffeln', 'Pommes', 'Reis'], 'Beilage wählen'
-    catalog.append({
-        'key': key, 'code': item['code'], 'name': item['name'], 'description': item['description'],
-        'marks': item['marks'], 'marksLabel': item['marksLabel'], 'volume': item.get('volume', ''),
-        'serving': item.get('quantity', category['quantity']), 'menuType': category['menuType'],
-        'variantLabel': item.get('variantLabel', 'Variante wählen'), 'price': cents(item['price']),
-        'variants': [{'code': v['code'], 'name': v['name'], 'price': cents(v['price'])} for v in item.get('variants', [])],
-        'options': options, 'optionLabel': option_label
-    })
     price = f'<span class="dish-price">{e(item["price"])} €</span>' if item['price'] else ''
     desc = f'<p class="dish-description">{e(item["description"])}</p>' if item['description'] else ''
     volume = f'<span class="dish-volume">{e(item["volume"])}</span>' if item.get('volume') else ''
@@ -55,9 +33,7 @@ def dish(item, category):
             code = f'<span class="variant-code">{e(v["code"])}</span>' if category['menuType'] == 'speisen' else ''
             return f'<div><dt>{code}{e(v["name"])}</dt><dd>{e(v["price"])} €</dd></div>'
         variants = '<dl class="dish-variants">' + ''.join(variant_row(v) for v in item['variants']) + '</dl>'
-    label = 'Auswählen' if options or 'variants' in item else 'Hinzufügen'
-    control = f'<div class="dish-order"><button type="button" class="dish-add" data-add-dish="{e(key)}" aria-label="{e(item["name"])} {label.lower()}" hidden>{label}<span aria-hidden="true">+</span></button></div>'
-    return f'<li class="menu-dish" data-code="{e(item["code"])}" data-source-file="{e(category["source"])}" data-source-page="{item["sourcePage"]}"><div class="dish-top"><span class="dish-code">{e(item["code"])}</span><div class="dish-name-wrap"><h4>{e(item["name"])}</h4>{volume}{serving}{spicy}{markings(item)}</div>{price}</div>{desc}{variants}{control}</li>'
+    return f'<li class="menu-dish" data-code="{e(item["code"])}" data-source-file="{e(category["source"])}" data-source-page="{item["sourcePage"]}"><div class="dish-top"><span class="dish-code">{e(item["code"])}</span><div class="dish-name-wrap"><h4>{e(item["name"])}</h4>{volume}{serving}{spicy}{markings(item)}</div>{price}</div>{desc}{variants}</li>'
 
 sections = []
 for cat in categories:
@@ -105,7 +81,7 @@ replace_block('SUBCATEGORY NAV', subnav)
 replace_block('ALLERGENS', legend(data))
 replace_block('DRINK ALLERGENS', legend(drinks))
 replace_block('PREVIEWS', '\n'.join(previews))
-replace_block('ORDER CATALOG', embedded_json('order-catalog', catalog) + '\n' + embedded_json('menu-groups', groups))
+replace_block('MENU DATA', embedded_json('menu-groups', groups))
 html = re.sub(r'(<select id="menu-category"[^>]*>).*?(</select>)', lambda m: m.group(1) + options + m.group(2), html, flags=re.S)
 (ROOT / 'index.html').write_text(html, encoding='utf-8')
-print(f'Built {len(groups)} menu groups, {len(categories)} PDF categories and {len(catalog)} items.')
+print(f'Built {len(groups)} menu groups, {len(categories)} PDF categories and {sum(len(c["items"]) for c in categories)} items.')

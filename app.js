@@ -60,7 +60,7 @@
   const noResults = document.querySelector('.no-results');
   const subnav = document.querySelector('.menu-subnav');
   const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('de').replace(/ß/g, 'ss');
-  const searchable = new Map(categories.flatMap(category => [...category.querySelectorAll('.menu-dish')].map(dish => [dish, normalize([...dish.children].filter(node => !node.classList.contains('dish-order')).map(node => node.textContent).join(' '))])));
+  const searchable = new Map(categories.flatMap(category => [...category.querySelectorAll('.menu-dish')].map(dish => [dish, normalize([...dish.children].map(node => node.textContent).join(' '))])));
   let selected = 'group-vorspeisen';
   let searchTimer;
 
@@ -123,7 +123,7 @@
     if (innerWidth < 768 && link.classList.contains('category-overview')) scrollToMenu();
   }));
   categorySelect.addEventListener('change', () => selectCategory(categorySelect.value));
-  document.querySelectorAll('[data-start-order]').forEach(link => link.addEventListener('click', event => {
+  document.querySelectorAll('[data-browse-menu]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
     scrollToMenu();
     (innerWidth < 768 ? categorySelect : search).focus({preventScroll: true});
