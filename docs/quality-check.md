@@ -137,3 +137,11 @@ Có semantic landmarks, một h1, heading hierarchy, alt, focus states, skip lin
 - Kiểm tra 320/375/390/430/768/1024/1440/1920px: không tràn ngang, header không có giỏ trống hoặc khoảng chừa icon, thanh dưới có Reservieren/Speisekarte. Xem screenshot thực tế hero mobile/desktop và menu mobile.
 - Chạy lại 196 mục / 31 category / 7 nhóm, tên/mô tả/giá/biến thể/ký hiệu, tìm kiếm/deep link/native select/mobile navigation, ảnh/link/PDF và no-JS, GitHub Pages prefix: pass. Dữ liệu menu và Restaurant JSON-LD không đổi.
 - Axe trang và form đặt bàn 390/1440, navigation mobile và toàn bộ menu: 0 violations. Không lỗi JavaScript/asset. Bản in ẩn header/form, menu nền trắng/chữ đen.
+
+## Bật lại đặt món — 26/10/2026
+
+- Khôi phục chọn món/biến thể, giỏ, số lượng/tổng tiền, persistence, email nháp/copy/fallback và các CTA đặt món. Build tạo lại controls và catalog 196 mục từ dữ liệu hiện hành; chạy lại build cho cùng index.html. Dữ liệu menu, Restaurant JSON-LD, giờ mở cửa, liên hệ và form đặt bàn không đổi.
+- Đối chiếu toàn bộ catalog với 107 món + 89 đồ uống và 87 lựa chọn giá. Chọn nhiều biến thể/beilage, quantity 1–99, tăng/giảm/xóa, giỏ rỗng, tải lại, dữ liệu lưu hỏng/giá giả, email có đúng món/giá và copy/fallback: pass. Email kiểm thử bị chặn, không gửi tới quán.
+- Kiểm tra giỏ/cấu hình và toàn bộ menu tại 320/375/390/430/768/1024/1440/1920px: không tràn ngang. Xem screenshot thật giỏ hàng mobile/desktop và hộp chọn món mobile. Nội dung 196 mục, 31 category/7 nhóm, tìm kiếm/deep link, navigation, no-JS và GitHub Pages prefix tiếp tục pass.
+- Kiểm tra riêng 4 cà phê mới, whisky 2 cl/4 cl, vang 0,7 l, tổng mẫu 60,20 €, persistence và email nháp. PDF menu tải đúng byte nguồn; legend đồ uống mở đúng.
+- Chạy lại form đặt bàn với lịch thứ Hai 08:00, thứ Ba nghỉ, thứ Sáu 22:00 và cuối tuần 22:30; Tab/Escape/focus, email/copy/fallback pass. Axe giỏ 390/1440, hộp biến thể, giỏ rỗng, đồ uống/cà phê/legend, form đặt bàn, trang mặc định/navigation mobile: 0 violations. Không tích hợp email gửi tự động hoặc PDF hóa đơn vào luồng đặt món trong đợt này.

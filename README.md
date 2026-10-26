@@ -1,6 +1,6 @@
 # Oh! Sushi 37
 
-Landing page tiếng Đức, HTML/CSS/JS thuần. Giao diện đen–trắng theo yêu cầu ngày 24/10/2026, lấy cảm hứng từ cách CODA dùng nền tối, ảnh lớn, bố cục thoáng và navigation tiết chế. Typography Bodoni Moda + Manrope, các sắc xám trung tính và đường kẻ mảnh; màu gốc được giữ ở logo và ảnh món ăn/đồ uống của khách. Menu HTML có 107 món ăn và 89 đồ uống, và form đặt bàn. Chức năng đặt món mang về đã tắt theo yêu cầu ngày 25/10/2026. Palette khai báo trong `:root` của `styles.css`.
+Landing page tiếng Đức, HTML/CSS/JS thuần. Giao diện đen–trắng theo yêu cầu ngày 24/10/2026, lấy cảm hứng từ cách CODA dùng nền tối, ảnh lớn, bố cục thoáng và navigation tiết chế. Typography Bodoni Moda + Manrope, các sắc xám trung tính và đường kẻ mảnh; màu gốc được giữ ở logo và ảnh món ăn/đồ uống của khách. Menu HTML có 107 món ăn và 89 đồ uống, cùng form đặt bàn và giỏ hàng đặt món. Đặt món mang về đã được bật lại theo yêu cầu ngày 26/10/2026. Palette khai báo trong `:root` của `styles.css`.
 
 ## GitHub Pages
 
@@ -25,8 +25,9 @@ Mở http://localhost:4173/. Không cần npm hoặc framework. Website cũng c�
 - Hai PDF hiện hành có link tải riêng trên website; nguồn đồ uống mới là `NEW-2026-Oh-Sushi-37-A4-Vordruck.pdf`. Bản cũ được giữ làm lịch sử.
 - `styles.css`: typography, palette, bố cục và responsive.
 - `app.js`: navigation mobile, lọc menu, tìm kiếm và liên kết đến nhóm món.
+- `orders.js`: chọn món/biến thể, giỏ hàng, số lượng, tổng tiền và email yêu cầu đặt món.
 - `reservations.js`: form đặt bàn, kiểm tra ngày/giờ theo lịch quán tại Europe/Berlin và soạn email yêu cầu.
-- `dialogs.js` / `contact.js`: quản lý dialog, focus bàn phím và email/copy của form đặt bàn.
+- `dialogs.js` / `contact.js`: quản lý dialog, focus bàn phím và email/copy dùng chung cho đặt bàn và đặt món.
 - `assets/`: logo, ảnh WebP và font local có giấy phép OFL.
 
 Sau khi chỉnh menu, chạy:
@@ -35,11 +36,11 @@ Sau khi chỉnh menu, chạy:
 python3 scripts/build.py
 ```
 
-Script cập nhật HTML menu/preview/legend và dữ liệu nhóm menu trong `index.html`. Không cần tải JSON trong trình duyệt. Khi tắt JavaScript, toàn bộ menu vẫn hiện và navigation dùng anchor. Build không tạo nút thêm món hoặc catalog đặt hàng.
+Script cập nhật HTML menu/preview/legend, nút chọn món, catalog đặt hàng và dữ liệu nhóm menu trong `index.html`. Không cần tải JSON trong trình duyệt. Khi tắt JavaScript, toàn bộ menu vẫn hiện và navigation dùng anchor; giỏ hàng tương tác cần JavaScript.
 
 Đặt bàn: nút Reservieren/Tisch anfragen mở form ngày, giờ, số khách, tên và điện thoại. Form dùng lịch trong Restaurant JSON-LD; chặn thứ Ba nghỉ, ngày/giờ đã qua và giờ ngoài lịch mở cửa. Nút E-Mail-Anfrage öffnen tạo email nháp đến địa chỉ thật của quán; khách gửi và chờ phản hồi xác nhận. Có sao chép yêu cầu và gọi điện dự phòng. Thông tin cá nhân không được lưu. Map mở Google Maps sau khi người dùng bấm; không dùng iframe, analytics hay third-party tracking trên trang.
 
-Đặt món mang về đã tắt: không còn giỏ hàng, nút thêm món, form gửi đơn hoặc script đặt món. CTA hero và thanh điện thoại dẫn tới thực đơn để xem món/giá. Dữ liệu menu/PDF vẫn đầy đủ; form đặt bàn hoạt động độc lập.
+Đặt món mang về đã bật: thêm món từ menu, chọn biến thể/beilage hoặc dung tích theo nguồn, kiểm tra số lượng/tổng tiền, điền tên và điện thoại. Nút gửi mở email nháp đến `ohsushirestaurent@gmail.com`; khách cần gửi trong ứng dụng email và chờ quán xác nhận. Có sao chép đơn/copy thủ công và gọi điện dự phòng. Chỉ lưu lựa chọn món trong localStorage, không lưu tên/điện thoại/ghi chú. Chưa tích hợp gửi email tự động, PDF hóa đơn hoặc thanh toán. Form đặt bàn vẫn hoạt động độc lập.
 
 ## Giờ mở cửa và QR
 
@@ -54,6 +55,6 @@ Muốn đổi đích QR, cập nhật link/text ở footer trong `index.html`, r
 - `docs/drinks-transcription.md`: bản chép đồ uống, giá từng dung tích và các điểm cần giữ nguyên theo nguồn.
 - `docs/image-assets.md`: ảnh minh họa, prompt và hướng dẫn thay ảnh thật.
 - `docs/quality-check.md`: kiểm tra responsive, nội dung, interaction và accessibility.
-- `docs/ordering.md`: trạng thái tắt đặt món hiện tại và lịch sử chức năng trước đây.
+- `docs/ordering.md`: luồng đặt món hiện tại và lịch sử tắt/bật chức năng.
 
 Tài liệu chưa cung cấp domain, booking URL hoặc nội dung pháp lý đầy đủ. Website dùng ảnh từ các PDF bản chuẩn khách gửi, có ghi nguồn trên giao diện. Không bịa các dữ liệu còn thiếu.

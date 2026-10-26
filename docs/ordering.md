@@ -1,6 +1,6 @@
 # Đặt món — Oh! Sushi 37
 
-**Hiện tại: đã tắt theo yêu cầu trực tiếp 25/10/2026.** Website chỉ xem menu và đặt bàn. Đã bỏ giỏ hàng/nút thêm món/form đơn, script `orders.js` và catalog đặt hàng khỏi bản phục vụ. Build không tái tạo các controls này. Giỏ cũ trong localStorage không được đọc và không làm hiện lại UI. Các phần bên dưới là lịch sử của chức năng trước khi tắt.
+**Hiện tại: đã bật lại theo yêu cầu trực tiếp 26/10/2026.** Có thêm món, giỏ hàng, số lượng/tổng tiền và email nháp đến `ohsushirestaurent@gmail.com`. Khách cần tự gửi email và chờ quán xác nhận. Việc tắt ngày 25/10 đã được thay thế bằng yêu cầu bật lại này. Chưa tích hợp email tự động hoặc PDF hóa đơn.
 
 Yêu cầu trong chat bổ sung khả năng đặt món. Word chỉ cung cấp email và số điện thoại; chưa có hệ thống tiếp nhận đơn, booking URL, WhatsApp hoặc thông tin giao hàng/thanh toán.
 
@@ -46,3 +46,7 @@ Hero có Gerichte bestellen dẫn thẳng tới phần chọn món. Bestellen tr
 ## Menu đồ uống — 17/10/2026
 
 Catalog hiện có 107 món ăn + 89 đồ uống = 196 mục, theo PDF đồ uống `NEW-2026-Oh-Sushi-37-A4-Vordruck.pdf`. Bốn cà phê mã 200–203 được thêm với giá và ký hiệu đúng nguồn; không tự thêm dung tích. Giữ 48 biến thể dung tích/giá. Nội dung email/cart dùng bản mới. Trang 11 có bảng ký hiệu đồ uống nên giao diện có legend riêng, thay ghi chú cũ “không có legend”. Các cập nhật 05/10 và 12/10 phía trên là lịch sử của các bản PDF trước.
+
+## Bật lại đặt món — 26/10/2026
+
+Khôi phục chức năng trước ngày tắt: `orders.js`, catalog nhúng 196 mục, nút thêm/chọn món, giỏ hàng trong header/mobile/floating desktop và form email nháp. Script build tiếp tục tạo controls/catalog từ 107 món + 89 đồ uống, giữ 87 lựa chọn giá và source menu hiện hành. Theme đen–trắng, logo màu gốc, lịch thứ Ba nghỉ và form đặt bàn không đổi. Các file PDF/email mẫu trong `.work/invoice-sample` là tài liệu thử riêng, không tham gia luồng đặt món hay bản build website.

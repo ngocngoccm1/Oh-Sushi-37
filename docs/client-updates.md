@@ -43,3 +43,7 @@ Lịch sau thay thế các lịch 05/10 và giờ in trong PDF:
 ## Tắt đặt món mang về — 25/10/2026
 
 Khách yêu cầu tắt đặt mang về trên web và push. Đã bỏ chức năng đặt món: giỏ hàng, thêm món, tổng tiền và gửi/copy đơn. Bỏ script đặt món và catalog nhúng; script build chỉ tạo menu xem món/giá cùng các nhóm. Header giữ đặt bàn; hero đổi thành xem thực đơn; thanh điện thoại gồm Reservieren / Speisekarte. Form đặt bàn, lịch mở cửa, logo màu gốc, nội dung menu/PDF và QR Maps giữ nguyên.
+
+## Bật lại đặt món — 26/10/2026 (hiện hành)
+
+Khách yêu cầu bật chức năng đặt món và push. Khôi phục chọn món/biến thể, giỏ hàng, số lượng/tổng tiền, lưu lựa chọn, email nháp/copy/gọi quán theo kênh liên hệ gốc. Hero có Gerichte bestellen; header và thanh điện thoại có Bestellen. Giữ đặt bàn, menu bản mới 196 mục, theme đen–trắng, logo màu gốc và lịch 24/10. Yêu cầu này thay thế việc tắt đặt món ngày 25/10.
