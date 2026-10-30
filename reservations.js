@@ -9,31 +9,32 @@
   const phoneField = document.querySelector('#booking-phone');
   const feedback = document.querySelector('#booking-feedback');
   const hoursHint = document.querySelector('#booking-hours');
-  const schedule = JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent).openingHoursSpecification;
+  const calendar = window.RestaurantCalendar;
   const {open} = window.RestaurantDialogs;
   const {openDraft, copyDraft} = window.RestaurantContact;
-  const partsInBerlin = () => Object.fromEntries(new Intl.DateTimeFormat('en-CA', {timeZone: 'Europe/Berlin', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23'}).formatToParts(new Date()).map(part => [part.type, part.value]));
   const minutes = time => { const [h, m] = time.split(':').map(Number); return h * 60 + m; };
 
   function validate() {
-    const now = partsInBerlin();
-    const today = `${now.year}-${now.month}-${now.day}`;
+    const now = calendar.now();
+    const today = now.date;
     dateField.min = today;
     dateField.setCustomValidity(''); timeField.setCustomValidity(''); guestsField.setCustomValidity('');
     timeField.removeAttribute('min'); timeField.removeAttribute('max');
-    hoursHint.textContent = 'Montag ab 08:00 Uhr, Mittwoch–Sonntag ab 11:30 Uhr. Dienstag ist Ruhetag.';
+    const holidayNote = 'An Feiertagen können die Öffnungszeiten abweichen.';
+    hoursHint.textContent = `Bitte wählen Sie ein Datum. ${holidayNote}`;
     if (dateField.value) {
       const date = new Date(`${dateField.value}T12:00:00Z`);
       if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== dateField.value || dateField.value < today) {
         dateField.setCustomValidity('Bitte wählen Sie ein Datum ab heute.');
       } else {
-        const weekday = new Intl.DateTimeFormat('en-US', {weekday: 'long', timeZone: 'Europe/Berlin'}).format(date);
-        const hours = schedule.find(entry => [].concat(entry.dayOfWeek).some(day => day.split('/').pop() === weekday));
+        const dayName = new Intl.DateTimeFormat('de-DE', {weekday: 'long', timeZone: 'Europe/Berlin'}).format(date);
+        const hours = calendar.forDate(dateField.value);
         if (!hours || hours.opens === hours.closes) {
-          dateField.setCustomValidity('Dienstag ist Ruhetag. Bitte wählen Sie einen anderen Tag.');
-          hoursHint.textContent = 'Dienstag ist Ruhetag. Bitte wählen Sie einen anderen Tag.';
+          const message = `${dayName} ist Ruhetag. Bitte wählen Sie einen anderen Tag.`;
+          dateField.setCustomValidity(message);
+          hoursHint.textContent = `${message} ${holidayNote}`;
         } else {
-          hoursHint.textContent = `Öffnungszeiten an diesem Tag: ${hours.opens}–${hours.closes} Uhr. Ihre Anfrage wird vom Restaurant bestätigt.`;
+          hoursHint.textContent = `Öffnungszeiten an diesem Tag: ${hours.opens}–${hours.closes} Uhr. ${holidayNote} Ihre Anfrage wird vom Restaurant bestätigt.`;
           timeField.min = hours.opens;
           const latest = minutes(hours.closes) - 1;
           timeField.max = `${String(Math.floor(latest / 60)).padStart(2, '0')}:${String(latest % 60).padStart(2, '0')}`;
@@ -69,6 +70,7 @@
     open(dialog, link);
   }));
   [dateField, timeField, guestsField].forEach(field => field.addEventListener('input', () => { validate(); feedback.textContent = ''; }));
+  document.addEventListener('restaurant-calendar-change', validate);
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!validRequest()) return;

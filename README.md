@@ -26,7 +26,8 @@ Mở http://localhost:4173/. Không cần npm hoặc framework. Website cũng c�
 - `styles.css`: typography, palette, bố cục và responsive.
 - `app.js`: navigation mobile, lọc menu, tìm kiếm và liên kết đến nhóm món.
 - `orders.js`: chọn món/biến thể, giỏ hàng, số lượng, tổng tiền và email yêu cầu đặt món.
-- `reservations.js`: form đặt bàn, kiểm tra ngày/giờ theo lịch quán tại Europe/Berlin và soạn email yêu cầu.
+- `calendar.js`: đọc lịch có ngày hiệu lực từ Restaurant JSON-LD, chuyển giờ theo Europe/Berlin và tự ẩn thông báo ưu đãi khi hết hạn.
+- `reservations.js`: form đặt bàn, kiểm tra ngày/giờ theo lịch có hiệu lực cho ngày khách chọn và soạn email yêu cầu.
 - `dialogs.js` / `contact.js`: quản lý dialog, focus bàn phím và email/copy dùng chung cho đặt bàn và đặt món.
 - `assets/`: logo, ảnh WebP và font local có giấy phép OFL.
 
@@ -38,13 +39,17 @@ python3 scripts/build.py
 
 Script cập nhật HTML menu/preview/legend, nút chọn món, catalog đặt hàng và dữ liệu nhóm menu trong `index.html`. Không cần tải JSON trong trình duyệt. Khi tắt JavaScript, toàn bộ menu vẫn hiện và navigation dùng anchor; giỏ hàng tương tác cần JavaScript.
 
-Đặt bàn: nút Reservieren/Tisch anfragen mở form ngày, giờ, số khách, tên và điện thoại. Form dùng lịch trong Restaurant JSON-LD; chặn thứ Ba nghỉ, ngày/giờ đã qua và giờ ngoài lịch mở cửa. Nút E-Mail-Anfrage öffnen tạo email nháp đến địa chỉ thật của quán; khách gửi và chờ phản hồi xác nhận. Có sao chép yêu cầu và gọi điện dự phòng. Thông tin cá nhân không được lưu. Map mở Google Maps sau khi người dùng bấm; không dùng iframe, analytics hay third-party tracking trên trang.
+Đặt bàn: nút Reservieren/Tisch anfragen mở form ngày, giờ, số khách, tên và điện thoại. Form dùng lịch trong Restaurant JSON-LD; chặn ngày nghỉ theo từng giai đoạn (thứ Ba đến hết 07/11, thứ Hai từ 08/11/2026), ngày/giờ đã qua và giờ ngoài lịch mở cửa. Nút E-Mail-Anfrage öffnen tạo email nháp đến địa chỉ thật của quán; khách gửi và chờ phản hồi xác nhận. Có sao chép yêu cầu và gọi điện dự phòng. Thông tin cá nhân không được lưu. Map mở Google Maps sau khi người dùng bấm; không dùng iframe, analytics hay third-party tracking trên trang.
 
 Đặt món mang về đã bật: thêm món từ menu, chọn biến thể/beilage hoặc dung tích theo nguồn, kiểm tra số lượng/tổng tiền, điền tên và điện thoại. Nút gửi mở email nháp đến `ohsushirestaurent@gmail.com`; khách cần gửi trong ứng dụng email và chờ quán xác nhận. Có sao chép đơn/copy thủ công và gọi điện dự phòng. Chỉ lưu lựa chọn món trong localStorage, không lưu tên/điện thoại/ghi chú. Chưa tích hợp gửi email tự động, PDF hóa đơn hoặc thanh toán. Form đặt bàn vẫn hoạt động độc lập.
 
 ## Giờ mở cửa và QR
 
-Giờ hiện hành theo yêu cầu trực tiếp 24/10/2026: thứ Hai 08:00–22:00; thứ Ba nghỉ; thứ Tư–Sáu 11:30–22:00; thứ Bảy–Chủ nhật 11:30–22:30. Lịch trong bảng giờ, meta description, Restaurant JSON-LD và form đặt bàn được đồng bộ. QR SVG ở footer mở Google Maps theo địa chỉ đang có, kèm link mở trực tiếp. Xem `docs/client-updates.md`.
+Lịch 24/10 được giữ đến hết 07/11/2026. Từ 08/11/2026: thứ Hai nghỉ; thứ Ba–Năm 11:30–22:00; thứ Sáu–Chủ nhật 11:30–22:30. Có ghi chú giờ ngày lễ có thể thay đổi. Restaurant JSON-LD có validThrough/validFrom; form chọn lịch theo ngày đặt bàn, cả trước khi lịch mới có hiệu lực. Bảng giờ cũ tự ẩn từ 08/11 theo Europe/Berlin.
+
+Thông báo ưu đãi 20% hiển thị đến hết ngày 07/11/2026 (giờ Đức), tự ẩn khi sang ngày 08/11. Chỉ hiển thị thông báo theo xác nhận của khách; giá menu/catalog/giỏ hàng không tự giảm. Không tự đặt ngày bắt đầu hoặc điều kiện ưu đãi chưa được cung cấp. Tab đang mở cập nhật tại ranh giới phút và khi trở lại từ nền. Khi JavaScript tắt, hai lịch vẫn có ngày hiệu lực rõ ràng, thông báo ưu đãi mặc định ẩn.
+
+QR SVG ở footer tiếp tục mở Google Maps theo địa chỉ đang có. Xem `docs/client-updates.md`.
 
 Muốn đổi đích QR, cập nhật link/text ở footer trong `index.html`, rồi chạy `python3 scripts/generate_qr.py` với package build-only `qrcode` đã cài. Website không tải dịch vụ QR bên ngoài.
 

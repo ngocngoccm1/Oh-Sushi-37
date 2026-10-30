@@ -47,3 +47,21 @@ Khách yêu cầu tắt đặt mang về trên web và push. Đã bỏ chức n�
 ## Bật lại đặt món — 26/10/2026 (hiện hành)
 
 Khách yêu cầu bật chức năng đặt món và push. Khôi phục chọn món/biến thể, giỏ hàng, số lượng/tổng tiền, lưu lựa chọn, email nháp/copy/gọi quán theo kênh liên hệ gốc. Hero có Gerichte bestellen; header và thanh điện thoại có Bestellen. Giữ đặt bàn, menu bản mới 196 mục, theme đen–trắng, logo màu gốc và lịch 24/10. Yêu cầu này thay thế việc tắt đặt món ngày 25/10.
+
+## Hạn ưu đãi và lịch từ 08/11 — 30/10/2026 (hiện hành)
+
+Khách xác nhận chương trình giảm 20% trong hai tuần kết thúc vào cuối ngày 07/11/2026. Trong câu trả lời bổ sung, khách chọn chỉ hiện thông báo và giữ giá gốc trong menu; không tự trừ 20% ở giỏ hàng. Không suy diễn ngày bắt đầu hoặc phạm vi ưu đãi. Thông báo dùng ngày kết thúc bao gồm cả 07/11, tự ẩn từ 00:00 ngày 08/11 theo Europe/Berlin.
+
+Từ 08/11/2026:
+
+| Ngày | Giờ |
+| --- | --- |
+| Montag | Ruhetag |
+| Dienstag | 11:30–22:00 |
+| Mittwoch | 11:30–22:00 |
+| Donnerstag | 11:30–22:00 |
+| Freitag | 11:30–22:30 |
+| Samstag | 11:30–22:30 |
+| Sonntag | 11:30–22:30 |
+
+Thêm “An Feiertagen können die Öffnungszeiten abweichen.” Không tự đặt giờ ngày lễ. Lịch 24/10 còn áp dụng đến hết 07/11. Hai giai đoạn có ngày hiệu lực trong bảng giờ và JSON-LD; form áp dụng theo ngày đặt bàn, do đó có thể đặt thứ Ba 10/11 ngay trước khi lịch mới bắt đầu, đồng thời chặn thứ Hai 09/11. Website vẫn thuần HTML/CSS/JS trên GitHub Pages, không thêm dịch vụ bên ngoài.

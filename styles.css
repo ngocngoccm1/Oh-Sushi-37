@@ -52,6 +52,10 @@ h2{font:600 clamp(55px,6.2vw,110px)/1.08 var(--serif);letter-spacing:-.045em}
 .header-reserve:hover{background:var(--cream);color:var(--dark)}
 .header-reserve>span{font-size:18px}
 .nav-toggle{display:none}
+.promotion-notice{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 var(--gutter) 32px;padding:14px 0 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.promotion-notice>strong{font:600 clamp(25px,3vw,36px)/1.2 var(--serif);white-space:nowrap}
+.promotion-notice>p{text-align:right;font-size:12px;color:var(--cream)}
+.promotion-notice>p>span{display:block;font-size:10px;color:var(--muted);margin-top:3px}
 /* A quiet wordmark, framed photography and generous black space. */
 .hero{padding-top:calc(var(--header-height) + 44px);background:var(--bg)}
 .hero-masthead{padding:0 var(--gutter) 38px}
@@ -217,6 +221,9 @@ h2{font:600 clamp(55px,6.2vw,110px)/1.08 var(--serif);letter-spacing:-.045em}
 .contact-details{display:grid;grid-template-columns:1fr;gap:36px;max-width:450px;padding-top:7px}
 .contact-details h3{font:700 29px/1.2 var(--serif);margin-bottom:21px}
 .hours dl>div{display:flex;gap:25px;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-size:12px}
+.hours-period:not([hidden])+.hours-period{border-top:1px solid var(--line);padding-top:25px;margin-top:28px}
+.hours-period h4{font:600 11px/1.7 var(--sans);letter-spacing:.035em;margin-bottom:12px;color:var(--cream)}
+.holiday-hours{font-size:11px;color:var(--muted);line-height:1.8;margin-top:20px}
 .hours dt{color:var(--muted)}
 .hours dd{font-variant-numeric:tabular-nums}
 .contact-direct>a{display:block;width:fit-content;max-width:100%;min-height:36px;font-size:13px;overflow-wrap:anywhere}
@@ -331,6 +338,7 @@ body.order-open{overflow:hidden}
 @media(max-width:767px){
  :root{--gutter:24px;--header-height:76px}
  html{scroll-padding-top:96px}body{font-size:14px}
+ .promotion-notice{gap:16px;margin-bottom:26px;padding:13px 0}.promotion-notice>p{font-size:10px}.promotion-notice>p>span{font-size:9px}
  .section-space{padding-top:65px;padding-bottom:65px}
  .section-top{margin-bottom:34px;gap:15px}.section-top>.muted{display:none}.section-top>.eyebrow:first-child{gap:10px}
  .eyebrow{font-size:8px;letter-spacing:.13em}.text-link{font-size:11px;gap:18px}
